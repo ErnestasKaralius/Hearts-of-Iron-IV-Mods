@@ -1,0 +1,14 @@
+################
+##### LUX ######
+################
+
+LUX_purchase_equipment = {
+
+	icon = ger_military_buildup
+
+	priority = 1
+
+	allowed = {
+		tag = LUX
+	}
+}

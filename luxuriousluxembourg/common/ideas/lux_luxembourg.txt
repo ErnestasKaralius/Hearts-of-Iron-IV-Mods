@@ -1,0 +1,105 @@
+ideas = {
+	country = {
+		LUX_Bobux = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = spr_seize_the_gold_reserves
+			
+			modifier = {
+				industrial_capacity_factory = 4
+			}
+		}
+
+		LUX_John_Doe = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+
+
+			modifier = {
+				research_speed_factor = 2
+			}
+		}
+
+		LUX_HEV_Suits = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = spa_la_division_azul
+
+
+			modifier = {
+				army_attack_factor = 3
+				army_defence_factor = 3
+			}
+		}
+
+		LUX_Gaster_Blaster_Casters = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = combined_bomber_offensive
+
+
+			modifier = {
+				air_defence_factor = 3
+				air_attack_factor = 3
+			}
+		}
+
+		LUX_Simplified_Navy = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_sea_focused_navy
+
+
+			modifier = {
+				naval_damage_factor = 3
+				naval_defense_factor = 3
+			}
+		}
+	}
+}

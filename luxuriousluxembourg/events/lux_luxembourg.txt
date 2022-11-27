@@ -1,0 +1,222 @@
+﻿###########################
+# Luxembourg Events
+###########################
+
+add_namespace = lux_luxembourg
+
+# USA civil war
+country_event = {
+	id = lux_luxembourg.1
+	title = lux_luxembourg.1.t
+	desc = lux_luxembourg.1.desc
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = lux_luxembourg.1.a
+		if = {
+			limit = { ROOT = { has_government = democratic } }
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = democratic
+				size = 0.6
+			}
+		}
+		else_if = {
+			limit = { ROOT = { has_government = neutrality } }
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = neutrality
+				size = 0.6
+			}
+		}
+		else = {
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.6
+			}
+		}
+		hidden_effect = {
+			ROOT = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.07
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.13
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.7
+				}
+				set_stability = 0.75
+				set_war_support = 0.9
+				add_political_power = 450
+				add_opinion_modifier = {
+					target = LUX
+					modifier = LUX_saviour_of_america
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 20000
+					producer = ROOT
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 3000
+					producer = ROOT
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 1500
+					producer = ROOT
+				}
+			}
+			division_template = {
+				name = "Capitol Stormer Brigade"
+				priority = 2
+				division_names_group = USA_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+		   		 	infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					is_core_of = ROOT
+					ROOT = { has_full_control_of_state = PREV } 
+				}
+				create_unit = {
+					division = "name = \"1st. Grand Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2nd. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"3rd. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"4th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					is_core_of = ROOT
+					ROOT = { has_full_control_of_state = PREV } 
+				}
+				create_unit = {
+					division = "name = \"5th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"6th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"7th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"8th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"9th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					is_core_of = ROOT
+					ROOT = { has_full_control_of_state = PREV } 
+				}
+				create_unit = {
+					division = "name = \"10th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"11th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"12th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"13th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"14th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = { 
+					is_core_of = ROOT
+					ROOT = { has_full_control_of_state = PREV } 
+				}
+				create_unit = {
+					division = "name = \"15th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"16th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"17th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"18th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"19th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { 
+					is_core_of = ROOT
+					ROOT = { has_full_control_of_state = PREV } 
+				}
+				create_unit = {
+					division = "name = \"20th. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"21st. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"22nd. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"23rd. Capitol Stormer Brigade\" division_template = \"Capitol Stormer Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.1"
+					owner = ROOT
+				}
+			}
+		}
+	}
+
+}

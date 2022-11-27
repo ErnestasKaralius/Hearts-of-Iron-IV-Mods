@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_LUX_Bobux"
+		texturefile = "gfx/interface/ideas/spr_seize_the_gold_reserves.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUX_John_Doe"
+		texturefile = "gfx/interface/ideas/generic_research_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUX_HEV_Suits"
+		texturefile = "gfx/interface/ideas/spa_la_division_azul.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUX_Simplified_Navy"
+		texturefile = "gfx/interface/ideas/idea_generic_sea_focused_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LUX_Gaster_Blaster_Casters"
+		texturefile = "gfx/interface/ideas/combined_bomber_offensive.dds"
+	}
+}

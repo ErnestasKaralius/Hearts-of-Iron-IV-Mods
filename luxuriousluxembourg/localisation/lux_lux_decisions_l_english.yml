@@ -1,0 +1,18 @@
+﻿l_english:
+ LUX_purchase_equipment:0 "Purchase Military Equipment"
+ LUX_purchase_equipment_desc:0 "Our ever-growing army needs more and more equipment. To expand our army at a rapid rate, we have to purchase equipment from other countries and use it to train more soldiers who will fight for us."
+ 
+ LUX_purchase_guns:0 "Purchase Infantry Weapons"
+ LUX_purchase_guns_desc:0 "Purchasing Infantry Weapons will provide our soliders with weapons which they can use to kill enemies."
+
+ LUX_purchase_support:0 "Purchase Support Equipment"
+ LUX_purchase_support_desc:0 "Purchasing Support Equipment will provide our soldiers with assistance in combat."
+
+ LUX_purchase_artillery:0 "Purchase Artillery"
+ LUX_purchase_artillery_desc:0 "Purchasing Artillery will provide our soldiers with extra firepower."
+
+ LUX_purchase_motorized:0 "Purchase Motorised Equipment"
+ LUX_purchase_motorized_desc:0 "Purchasing Motorised Equipment will provide our soldiers with more efficient transport vehicles."
+
+ LUX_purchase_mechanized:0 "Purchase Mechanised Equipment"
+ LUX_purchase_motorized_desc:0 "Purchasing Mechanised Equipment will provide our soldiers with fast and tough transport vehicles."

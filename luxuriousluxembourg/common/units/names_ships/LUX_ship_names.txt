@@ -1,0 +1,119 @@
+﻿##### Luxembourg NAME LISTS #####
+LUX_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { LUX }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = ""
+	fallback_name = "Zerstéierer %d"					
+
+	unique = {
+		"Zerstéierer A-1" "Zerstéierer A-2" "Zerstéierer A-3" "Zerstéierer A-4" "Zerstéierer A-5" "Zerstéierer B-1" "Zerstéierer B-2" "Zerstéierer B-3" "Zerstéierer B-4" "Zerstéierer B-5" "Zerstéierer C-1" "Zerstéierer C-2" "Zerstéierer C-3" "Zerstéierer C-4" "Zerstéierer C-5" "Zerstéierer D-1" "Zerstéierer D-2" "Zerstéierer D-3" "Zerstéierer D-4" "Zerstéierer D-5" "Zerstéierer E-1" "Zerstéierer E-2" "Zerstéierer E-3" "Zerstéierer E-4" "Zerstéierer E-5" "Zerstéierer F-1" "Zerstéierer F-2" "Zerstéierer F-3" "Zerstéierer F-4" "Zerstéierer F-5"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+LUX_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { LUX }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = ""
+	fallback_name = "Liicht Kräizer %d"
+
+	unique = {
+		"Dol" "Uewerdonwen" "Koler"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+LUX_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { LUX }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = ""
+	fallback_name = "Schwéier Kräizer %d"
+
+	unique = {
+		"Ierseng" "Giewel" "Mäerkels"
+	}
+}
+
+
+### BATTLESHIP NAMES ###
+LUX_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { LUX }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = ""
+	fallback_name = "Schluechtschëff %d"		
+
+	unique = {
+		"Stackem" "Wëlwerwolz"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+LUX_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { LUX }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = ""
+	fallback_name = "Schluecht Kräizer %d"		
+
+	unique = {
+		"Pënsch" "Rued" "Béiwen"
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+LUX_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { LUX }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = ""
+	fallback_name = "Fligerdréier %d"	
+
+	unique = {
+		"Lëtzebuerg"
+	}
+}
+
+### SUBMARINES ###
+LUX_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { LUX }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = ""
+	fallback_name = "Unterseeboot %d"
+	
+	unique = {
+		"LS-1" "LS-2" "LS-3" "LS-4" "LS-5" "LS-6" "LS-7" "LS-8" "LS-9" "LS-10" "LS-11" "LS-12" "LS-13" "LS-14" "LS-15" "LS-16" "LS-17" "LS-18" "LS-19" "LS-20" "LS-21" "LS-22" "LS-23" "LS-24" "LS-25" "LS-26" "LS-27" "LS-28" "LS-29" "LS-30" "LS-31" "LS-32" "LS-33" "LS-34" "LS-35" "LS-36" "LS-37" "LS-38" "LS-39" "LS-40"
+	}
+}

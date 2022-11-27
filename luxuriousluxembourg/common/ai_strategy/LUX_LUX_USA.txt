@@ -1,0 +1,29 @@
+
+simp_to_luxembourg = {
+	enable = {
+		tag = USA
+		country_exists = LUX
+		LUX = { has_completed_focus = LUX_storm_the_capitol }
+	}
+	abort = {
+		NOT = { country_exists = LUX }
+		LUX = {
+			OR = {
+				has_war_with = USA
+				is_justifying_wargoal_against = USA
+				has_wargoal_against = USA
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "LUX"			
+		value = 700
+	}
+	ai_strategy = {
+		type = alliance
+		id = "LUX"			
+		value = 700
+	}	
+}
