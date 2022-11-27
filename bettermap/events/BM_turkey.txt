@@ -1,0 +1,154 @@
+﻿###########################
+# Turkey Events
+###########################
+
+add_namespace = bm_turkey
+
+# Hatay referendum			##### CONTROLLER OF 799 #####
+country_event = {
+	id = bm_turkey.1
+	title = bm_turkey.1.t
+	desc = bm_turkey.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = { # We accept
+		name = bm_turkey.1.a
+		ai_chance = {
+			base = 85
+			modifier = {
+				factor = 0
+				TUR = {
+					OR = { 
+						has_wargoal_against = ROOT
+						is_justifying_wargoal_against = ROOT
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 6
+				TUR = { is_in_faction_with = ROOT }
+			}
+			modifier = {
+				add = 10
+				TUR = { is_puppet_of = ROOT }
+			}
+			modifier = {
+				add = 4
+				ROOT = { has_opinion = { target = TUR value > 90 } }
+			}
+			modifier = {
+				add = 2
+				ROOT = { has_opinion = { target = TUR value > 60 } }
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+		set_global_flag = TUR_referendum_success
+		TUR = { country_event = { hours = 6 id = bm_turkey.3 }}
+	}
+	option = { # We don't accept
+		name = bm_turkey.1.b
+		ai_chance = { 
+			base = 10
+			modifier = {
+				add = 7
+				TUR = {
+					OR = {
+						has_war = yes
+						has_civil_war = yes
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				TUR = { surrender_progress > 0.6 }
+			}
+			modifier = {
+				add = 10
+				TUR = { surrender_progress > 0.9 }
+			}
+			modifier = {
+				add = 5
+				ROOT = { has_opinion = { target = TUR value < -70 } }
+			}
+			modifier = {
+				add = 4
+				TUR = { has_added_tension_amount > 0.05 }
+			}
+		}
+		set_global_flag = TUR_referendum_fail
+		TUR = { country_event = { hours = 6 id = bm_turkey.2 }}
+		custom_effect_tooltip = TUR_hatay_rejected_tt
+		hidden_effect = {
+			799 = {
+				add_compliance = -35
+				add_resistance = 10
+				damage_building = { type = infrastructure damage = 0.7 }
+			}	
+		}
+	}
+}
+
+# Hatay was not given			##### TURKEY #####
+country_event = {
+	id = bm_turkey.2
+	title = bm_turkey.2.t
+	desc = bm_turkey.2.d
+	picture = GFX_report_event_generic_rally2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bm_turkey.2.a # Idiots
+		ai_chance = { 
+			base = 50
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = TUR_hatay_referendum_rejected
+		}
+		add_war_support = 0.05
+	}
+	option = {
+		name = bm_turkey.2.b # War, if nation which owns Hatay is weaker than Turkey
+		ai_chance = { 
+			base = 40
+			modifier = {
+				factor = 100
+				strength_ratio = { tag = FROM ratio > 1.5 }
+			}
+		}
+		add_opinion_modifier = {
+			target = FROM
+			modifier = TUR_hatay_referendum_rejected
+		}
+		create_wargoal = {
+			type = take_state_focus
+			target = FROM
+			generator = { 799 }
+		}
+		add_war_support = 0.05
+	}
+
+}
+
+# Hatay was given			##### TURKEY #####
+country_event = {
+	id = bm_turkey.3
+	title = bm_turkey.3.t
+	desc = bm_turkey.3.d
+	picture = GFX_report_event_generic_rally2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bm_turkey.3.a
+		transfer_state = 799
+	}
+}

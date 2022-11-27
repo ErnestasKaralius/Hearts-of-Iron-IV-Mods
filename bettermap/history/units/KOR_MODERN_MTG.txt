@@ -1,0 +1,40 @@
+﻿
+units = {
+	fleet = {
+		name = "Daehan-Minguk Haegun"			
+		naval_base = 4056
+		task_force = {
+			name = "Daehan-Minguk Haegun"
+			location = 4056
+			ship = { name = "Dosan Ahn Changho" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Dosan Ahn Changho Class" }}}
+			ship = { name = "Ahn Mu" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Dosan Ahn Changho Class" }}}
+			ship = { name = "Yi Dong-Nyeong" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Dosan Ahn Changho Class" }}}
+			ship = { name = "Lee Bong-Chang" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Dosan Ahn Changho Class" }}}
+			ship = { name = "Shin Dol-Seok" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Sohn Wonyil Class" }}}
+			ship = { name = "Lee Beom-Seok" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Sohn Wonyil Class" }}}
+			ship = { name = "Hong Beom-Do" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Sohn Wonyil Class" }}}
+			ship = { name = "Yu Gwan-Sun" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Sohn Wonyil Class" }}}
+			ship = { name = "Yun Bong-Gil" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "Sohn Wonyil Class" }}}
+			ship = { name = "Choi Young" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sun-Sin Class" }}}
+			ship = { name = "Kang Gam-chan" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sun-Sin Class" }}}
+			ship = { name = "Wang Geon" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sun-Sin Class" }}}
+			ship = { name = "Dae Joyeong" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sun-Sin Class" }}}
+			ship = { name = "Munmu the Great" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sun-Sin Class" }}}
+			ship = { name = "Sejong the Great" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sun-Sin Class" }}}
+			ship = { name = "Yulgok Yi I" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "Chungmugong Yi Sun-Sin Class" }}}
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "KOR"
+			version_name = "Chungmugong Yi Sun-Sin Class"
+		}
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+}

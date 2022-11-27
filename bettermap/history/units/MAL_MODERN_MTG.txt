@@ -1,0 +1,13 @@
+﻿
+units = {
+	fleet = {
+		name = "Tentera Laut Diraja Malaysia"			
+		naval_base = 10297
+		task_force = {
+			name = "Tentera Laut Diraja Malaysia"
+			location = 10297
+			ship = { name = "KD Tunku Abdul Rahman" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAL version_name = "Scorpène Class" }}}
+			ship = { name = "KD Tun Abdul Razak" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = MAL version_name = "Scorpène Class" }}}
+		}
+	}
+}

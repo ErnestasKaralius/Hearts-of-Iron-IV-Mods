@@ -1,0 +1,38 @@
+﻿
+units = {
+	fleet = {
+		name = "Daehan-Minguk Haegun"			
+		naval_base = 4056
+		task_force = {
+			name = "Daehan-Minguk Haegun"
+			location = 4056
+			ship = { name = "Dosan Ahn Changho" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Ahn Mu" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Yi Dong-Nyeong" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Lee Bong-Chang" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Shin Dol-Seok" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Lee Beom-Seok" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Hong Beom-Do" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Yu Gwan-Sun" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Yun Bong-Gil" definition = submarine equipment = { submarine_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Choi Young" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Kang Gam-chan" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Wang Geon" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Dae Joyeong" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Munmu the Great" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Sejong the Great" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR }}}
+			ship = { name = "Yulgok Yi I" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = KOR }}}
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = destroyer_2
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.75
+		amount = 1
+	}
+}

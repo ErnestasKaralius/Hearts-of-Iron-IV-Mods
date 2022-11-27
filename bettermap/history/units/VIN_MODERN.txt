@@ -1,0 +1,155 @@
+﻿
+division_template = {
+	name = "Su đoàn Bộ Binh"
+
+	division_names_group = VIN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Tog Piyoda Askarlar Diviziyasi"
+
+	division_names_group = VIN_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Otliq Askarlar Diviziyasi"
+
+	division_names_group = VIN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1459
+		division_template = "Piyoda Askarlar Diviziyasi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1459
+		division_template = "Piyoda Askarlar Diviziyasi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1614
+		division_template = "Piyoda Askarlar Diviziyasi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12722
+		division_template = "Tog Piyoda Askarlar Diviziyasi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7507
+		division_template = "Otliq Askarlar Diviziyasi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12471
+		division_template = "Otliq Askarlar Diviziyasi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12474
+		division_template = "Otliq Askarlar Diviziyasi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12161
+		division_template = "Otliq Askarlar Diviziyasi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+	}
+	division = {
+		division_name = { 
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1532
+		division_template = "Otliq Askarlar Diviziyasi"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+	}
+}
+air_wings = {
+	405 = { 
+		fighter_equipment_0 = {
+			owner = "VIN" 
+			amount = 31
+		}
+		name = "1. Qiruvchi Qanoti"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "VIN"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 100
+	}
+}

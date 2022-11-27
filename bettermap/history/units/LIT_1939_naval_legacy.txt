@@ -1,0 +1,14 @@
+﻿units = {
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Lietuvos Karinės Jūrų Pajėgos"
+		naval_base = 6314 # Palanga		
+		task_force = {
+			name = "Lietuvos Karinės Jūrų Pajėgos"
+			location = 6314 
+			ship = { name = "LKL Prezidentas Smetona" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = LIT } } }
+		}
+	}
+}
+

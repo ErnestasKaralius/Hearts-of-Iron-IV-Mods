@@ -1,0 +1,160 @@
+﻿
+units = {
+	fleet = {
+		name = "Zhōngguó Rénmín Jiěfàngjūn Haijūn"			
+		naval_base = 7014
+		task_force = {
+			name = "Zhōngguó Rénmín Jiěfàngjūn Haijūn"
+			location = 7014
+			ship = { 
+				name = "Liaoning" definition = carrier equipment = { carrier_1 = { amount = 1 owner = PRC }}
+				air_wings = { 
+					cv_nav_bomber_equipment_1 = { 
+						owner = "PRC" 
+						amount = 45 
+					}
+					cv_fighter_equipment_0 = { 
+						owner = "PRC" 
+						amount = 15 
+					}
+				}
+			}
+			ship = { 
+				name = "Shandong" definition = carrier equipment = { carrier_1 = { amount = 1 owner = PRC }}
+				air_wings = { 
+					cv_nav_bomber_equipment_1 = { 
+						owner = "PRC" 
+						amount = 5
+					}
+					cv_fighter_equipment_0 = { 
+						owner = "PRC" 
+						amount = 55 
+					}
+				}
+			}
+			ship = { name = "Kunming" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changsha" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Hefei" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Yinchuan" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Xining" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Xiamen" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Urumqi" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Nanjing" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Taiyuan" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Hohhot" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Guiyang" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Chengdu" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Zibo" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Qiqihar" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Tangshan" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Suzhou" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Huainan" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Nanning" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Lanzhou" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Haikou" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Chanchun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Zhengzhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Jinan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Xi'an" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Shenyang" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Shijiazhuang" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Guangzhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Wuhan" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Hangzhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Fuzhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Taizhou" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Ningbo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Shenzhen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Harbin" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Qingdao" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 1" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 2" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 3" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 4" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 5" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 6" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 7" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 8" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 9" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 10" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 11" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 12" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 13" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 14" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 15" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 16" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 17" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 18" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 19" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 20" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 21" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 22" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 23" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 24" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 25" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 26" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 27" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 28" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 29" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 30" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 31" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 32" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 33" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 34" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 35" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 36" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 37" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 38" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 39" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 40" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 41" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 42" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 43" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 44" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 45" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 46" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 47" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 48" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 49" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 50" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 51" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 52" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 53" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 54" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 55" definition = submarine equipment = { submarine_2 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 56" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 57" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 58" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 59" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 60" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 61" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 62" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 63" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 64" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 65" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 66" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 67" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+			ship = { name = "Changzheng 68" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PRC }}}
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = carrier_1
+			creator = "PRC" 
+		}
+		requested_factories = 5
+		progress = 0.10
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = submarine_2
+			creator = "PRC" 
+		}
+		requested_factories = 3
+		progress = 0.40
+		amount = 2
+	}
+}

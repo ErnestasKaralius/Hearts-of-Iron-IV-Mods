@@ -1,0 +1,68 @@
+﻿
+################################
+####### Peru-Ecuador War #######
+################################
+
+add_namespace = peru_ecuador_war
+
+# Peru Wins
+country_event = {
+	id = peru_ecuador_war.1
+	title = peru_ecuador_war.1.t
+	desc = peru_ecuador_war.1.d
+	picture = GFX_report_event_spr_nationalist_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = peru_ecuador_war.1.a
+		transfer_state = 490
+	}
+}
+
+# Peru Loses
+country_event = {
+	id = peru_ecuador_war.2
+	title = peru_ecuador_war.2.t
+	desc = peru_ecuador_war.2.d
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = peru_ecuador_war.2.a
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+
+# Ecuador Wins
+country_event = {
+	id = peru_ecuador_war.3
+	title = peru_ecuador_war.3.t
+	desc = peru_ecuador_war.3.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = peru_ecuador_war.3.a
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+
+# Ecuador Loses
+country_event = {
+	id = peru_ecuador_war.4
+	title = peru_ecuador_war.4.t
+	desc = peru_ecuador_war.4.d
+	picture = GFX_report_event_canada_treaty
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = peru_ecuador_war.4.a
+		add_stability = -0.1
+	}
+}

@@ -1,0 +1,93 @@
+﻿division_template = {
+	name = "Pešia Divízia"
+
+	division_names_group = SLO_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Horská Divízia"
+
+	division_names_group = SLO_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6604
+		division_template = "Pešia Divízia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9537
+		division_template = "Pešia Divízia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9692
+		division_template = "Pešia Divízia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11539
+		division_template = "Horská Divízia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+
+	}
+}
+air_wings = {
+	70 = {
+		fighter_equipment_0 = {
+			owner = "SLO" 
+			amount = 12
+		}
+		name = "1. Stíhacie Krídlo"
+		CAS_equipment_1 = {
+			owner = "SLO" 
+			amount = 4
+		}
+		name = "1. Bojové Krídlo"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SLO"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 100
+	}
+}

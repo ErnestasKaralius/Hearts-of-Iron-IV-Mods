@@ -1,0 +1,12 @@
+﻿
+units = {
+	fleet = {
+		name = "Sakartvelos Samkhedro-Sazghvao Dzalebi"			
+		naval_base = 3653
+		task_force = {
+			name = "Sakartvelos Samkhedro-Sazghvao Dzalebi"
+			location = 3653
+			ship = { name = "Giorgi Toreli" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = GEO }}}
+		}
+	}
+}

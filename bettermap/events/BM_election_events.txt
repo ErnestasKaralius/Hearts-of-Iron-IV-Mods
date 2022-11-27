@@ -1,0 +1,1245 @@
+﻿
+add_namespace = bm_elections
+
+#########################
+#######  Finland  #######
+#########################
+
+# Kyösti Kallio becomes leader
+country_event = {
+	id = bm_elections.1
+	title = bm_elections.1.t
+	desc = bm_elections.1.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = FIN
+		has_government = democratic
+		date > 1937.1.1
+		date < 1938.1.1
+	}
+
+	option = {
+		name = bm_elections.1.a
+		promote_character = FIN_kyosti_kallio
+		set_party_name = {
+			ideology = democratic
+			long_name = FIN_maalaisliitto_long
+			name = FIN_maalaisliitto
+		}
+	}
+}
+
+# Risto Heikki Ryti becomes leader
+country_event = {
+	id = bm_elections.2
+	title = bm_elections.2.t
+	desc = bm_elections.2.desc
+	picture = GFX_report_event_usa_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FIN
+		has_government = democratic
+		date > 1940.12.01
+		date < 1941.12.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.2.a
+		promote_character = FIN_risto_heikki_ryti
+		set_party_name = {
+			ideology = democratic
+			long_name = FIN_kansallinen_edistyspuolue_long
+			name = FIN_kansallinen_edistyspuolue
+		}
+	}
+}
+
+# Carl Gustaf Emil Mannerheim becomes leader
+country_event = {
+	id = bm_elections.3
+	title = bm_elections.3.t
+	desc = bm_elections.3.desc
+	picture = GFX_report_event_gre_cabinet_meeting
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FIN
+		has_government = democratic
+		GER = { has_war_with = SOV }
+		date > 1944.08.01
+		date < 1945.08.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.3.a
+		promote_character = FIN_carl_mannerheim
+		set_party_name = {
+			ideology = democratic
+			long_name = FIN_interim_head_of_state
+			name = FIN_interim_head_of_state
+		}
+	}
+}
+
+# Juho Kusti Paasikivi becomes leader
+country_event = {
+	id = bm_elections.4
+	title = bm_elections.4.t
+	desc = bm_elections.4.desc
+	picture = GFX_report_event_gre_allied_diplomacy
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FIN
+		date > 1946.03.01
+		date < 1947.03.01
+		has_country_leader = { character = FIN_carl_mannerheim ruling_only = yes }
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.4.a
+		promote_character = FIN_juho_kusti_paasikivi
+		set_party_name = {
+			ideology = democratic
+			long_name = FIN_democratic_party_long
+			name = FIN_democratic_party
+		}
+	}
+}
+
+# Juho Kusti Paasikivi becomes leader
+country_event = {
+	id = bm_elections.5
+	title = bm_elections.5.t
+	desc = bm_elections.5.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = FIN
+		has_government = democratic
+		date > 1949.1.1
+		date < 1950.1.1
+		NOT = { has_country_leader = { character = FIN_carl_mannerheim ruling_only = yes }}
+	}
+
+	option = {
+		name = bm_elections.5.a
+		promote_character = FIN_juho_kusti_paasikivi
+		set_party_name = {
+			ideology = democratic
+			long_name = FIN_democratic_party_long
+			name = FIN_democratic_party
+		}
+	}
+}
+
+#########################
+#######  Denmark  #######
+#########################
+
+# Vilhelm Buhl becomes leader
+country_event = {
+	id = bm_elections.6
+	title = bm_elections.6.t
+	desc = bm_elections.6.desc
+	picture = GFX_report_event_usa_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DEN
+		has_government = democratic
+		date > 1942.04.28
+		date < 1943.04.28
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.6.a
+		promote_character = DEN_vilhelm_buhl
+	}
+}
+
+# Erik Scavenius becomes leader
+country_event = {
+	id = bm_elections.7
+	title = bm_elections.7.t
+	desc = bm_elections.7.desc
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DEN
+		has_government = democratic
+		has_war_with = GER
+		has_capitulated = yes
+		date > 1942.11.01
+		date < 1943.11.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.7.a
+		promote_character = DEN_erik_scavenius
+	}
+}
+
+#########################
+#######  Sweden  ########
+#########################
+
+# Tage Erlander becomes leader
+country_event = {
+	id = bm_elections.8
+	title = bm_elections.8.t
+	desc = bm_elections.8.desc
+	picture = GFX_report_event_usa_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SWE
+		has_government = democratic
+		date > 1946.09.28
+		date < 1947.09.28
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.8.a
+		promote_character = SWE_tage_erlander
+	}
+}
+
+#########################
+#######  Norway  ########
+#########################
+
+# Einar Gerhardsen becomes leader
+country_event = {
+	id = bm_elections.9
+	title = bm_elections.9.t
+	desc = bm_elections.9.desc
+	picture = GFX_report_event_finnish_letter
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOR
+		has_government = democratic
+		date > 1945.06.25
+		date < 1946.06.25
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.9.a
+		promote_character = NOR_einar_gerhardsen
+	}
+}
+
+#########################
+#######  Belgium  #######
+#########################
+
+# Paul-Émile Janson becomes leader
+country_event = {
+	id = bm_elections.10
+	title = bm_elections.10.t
+	desc = bm_elections.10.desc
+	picture = GFX_report_event_gathering_protest
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BEL
+		has_government = democratic
+		date > 1937.11.23
+		date < 1938.05.15
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.10.a
+		promote_character = BEL_paul_emile_janson
+		set_party_name = {
+			ideology = democratic
+			long_name = BEL_liberal_party
+			name = BEL_liberal_party
+		}
+	}
+}
+
+# Paul-Henri Spaak becomes leader
+country_event = {
+	id = bm_elections.11
+	title = bm_elections.11.t
+	desc = bm_elections.11.desc
+	picture = GFX_report_event_gathering_protest
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BEL
+		has_government = democratic
+		date > 1938.05.15
+		date < 1939.02.22
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.11.a
+		promote_character = BEL_paul-henri_spaak
+		set_party_name = {
+			ideology = democratic
+			long_name = BEL_labour_party_long
+			name = BEL_labour_party
+		}
+	}
+}
+
+# Hubert Pierlot becomes leader
+country_event = {
+	id = bm_elections.12
+	title = bm_elections.12.t
+	desc = bm_elections.12.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BEL
+		has_government = democratic
+		date > 1939.1.1
+		date < 1940.1.1
+	}
+
+	option = {
+		name = bm_elections.12.a
+		promote_character = BEL_hubert_pierlot
+		set_party_name = {
+			ideology = democratic
+			long_name = BEL_democratic_party_long
+			name = BEL_democratic_party
+		}
+	}
+}
+
+# Achille Van Acker becomes leader
+country_event = {
+	id = bm_elections.13
+	title = bm_elections.13.t
+	desc = bm_elections.13.desc
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BEL
+		has_government = democratic
+		date > 1945.1.1
+		date < 1946.1.1
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.13.a
+		promote_character = BEL_achille_van_acker
+		set_party_name = {
+			ideology = democratic
+			long_name = BEL_socialist_party_long
+			name = BEL_socialist_party
+		}
+	}
+}
+
+######################
+####  Luxembourg  ####
+######################
+
+# Pierre Dupong becomes leader
+country_event = {
+	id = bm_elections.14
+	title = bm_elections.14.t
+	desc = bm_elections.14.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = LUX
+		has_government = democratic
+		date > 1937.1.1
+		date < 1938.1.1
+	}
+
+	option = {
+		name = bm_elections.14.a
+		promote_character = LUX_pierre_dupong
+	}
+}
+
+# Joseph Bech becomes leader
+country_event = {
+	id = bm_elections.15
+	title = bm_elections.15.t
+	desc = bm_elections.15.desc
+	picture = GFX_report_event_poland_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = LUX
+		has_government = democratic
+		date > 1953.12.20
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.15.a
+		promote_character = LUX_joseph_bech
+	}
+}
+
+##################
+####  France  ####
+##################
+
+# Édouard Daladier becomes leader
+country_event = {
+	id = bm_elections.16
+	title = bm_elections.16.t
+	desc = bm_elections.16.desc
+	picture = GFX_report_event_election_vote
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		has_government = democratic
+		has_completed_focus = FRA_form_the_popular_front
+		date > 1938.04.10
+		date < 1939.04.10
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.16.a
+		promote_character = FRA_edouard_daladier
+	}
+}
+
+########################
+####  South Africa  ####
+########################
+
+# Jan Smuts becomes leader
+country_event = {
+	id = bm_elections.17
+	title = bm_elections.17.t
+	desc = bm_elections.17.desc
+	picture = GFX_report_event_german_politician_speech
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAF
+		has_government = democratic
+		has_war = yes
+		has_country_leader = { character = SAF_j_b_m_hertzog ruling_only = yes }
+	}
+
+	mean_time_to_happen = { days = 31 }
+
+	option = {
+		name = bm_elections.17.a
+		promote_character = SAF_jan_smuts
+	}
+}
+
+#####################
+####  Australia  ####
+#####################
+
+# Robert Menzies becomes leader
+country_event = {
+	id = bm_elections.18
+	title = bm_elections.18.t
+	desc = bm_elections.18.desc
+	picture = GFX_report_event_poland_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		has_government = democratic
+		date > 1939.01.01
+		date < 1940.01.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.18.a
+		promote_character = AST_robert_g_menzies
+	}
+}
+
+# John Curtin becomes leader
+country_event = {
+	id = bm_elections.19
+	title = bm_elections.19.t
+	desc = bm_elections.19.desc
+	picture = GFX_report_event_generic_sign_treaty1
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		has_government = democratic
+		date > 1941.08.29
+		date < 1942.08.29
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.19.a
+		promote_character = AST_john_curtin
+		set_party_name = {
+			ideology = democratic
+			long_name = AST_labor_party_long
+			name = AST_labor_party
+		}
+	}
+}
+
+# Ben Chifley becomes leader
+country_event = {
+	id = bm_elections.20
+	title = bm_elections.20.t
+	desc = bm_elections.20.desc
+	picture = GFX_report_event_poland_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AST
+		has_government = democratic
+		date > 1945.07.13
+		date < 1946.07.13
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.20.a
+		promote_character = AST_ben_chifley
+	}
+}
+
+# Robert Menzies becomes leader
+country_event = {
+	id = bm_elections.21
+	title = bm_elections.21.t
+	desc = bm_elections.21.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = AST
+		has_government = democratic
+		date > 1949.01.01
+		date < 1950.01.01
+	}
+
+	option = {
+		name = bm_elections.21.a
+		promote_character = AST_robert_g_menzies
+		set_party_name = {
+			ideology = democratic
+			long_name = AST_liberal_party_long
+			name = AST_liberal_party
+		}
+	}
+}
+
+###################
+####  Uruguay  ####
+###################
+
+# Alfredo Baldomir Ferrari becomes leader
+country_event = {
+	id = bm_elections.22
+	title = bm_elections.22.t
+	desc = bm_elections.22.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = URG
+		has_government = democratic
+		date > 1938.01.01
+		date < 1939.01.01
+	}
+
+	option = {
+		name = bm_elections.22.a
+		promote_character = URG_alfredo_baldomir_ferrari
+	}
+}
+
+####################
+####  Paraguay  ####
+####################
+
+# Febrerista Revolution
+country_event = {
+	id = bm_elections.23
+	title = bm_elections.23.t
+	desc = bm_elections.23.desc
+	picture = GFX_report_event_peasant_revolt
+
+	is_triggered_only = yes
+
+	option = {
+		name = bm_elections.23.a
+		promote_character = PAR_rafael_franco
+		set_party_name = {
+			ideology = democratic
+			long_name = PAR_febrerista_party_long
+			name = PAR_febrerista_party
+		}
+	}
+}
+
+# José Félix Estigarribia becomes leader
+country_event = {
+	id = bm_elections.24
+	title = bm_elections.24.t
+	desc = bm_elections.24.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = PAR
+		has_government = democratic
+		date > 1940.01.01
+		date < 1940.09.01
+	}
+
+	option = {
+		name = bm_elections.24.a
+		promote_character = PAR_jose_felix_estigarribia
+		set_party_name = {
+			ideology = democratic
+			long_name = PAR_democratic_party_long
+			name = PAR_democratic_party
+		}
+	}
+}
+
+# Higinio Morínigo becomes leader
+country_event = {
+	id = bm_elections.25
+	title = bm_elections.25.t
+	desc = bm_elections.25.desc
+	picture = GFX_report_event_airplane_crash
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PAR
+		has_government = democratic
+		date > 1940.09.01
+		date < 1941.09.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.25.a
+		set_politics = {
+			ruling_party = neutrality
+		}
+		promote_character = PAR_higinio_morinigo
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.2
+		}
+	}
+}
+
+######################
+####  Costa Rica  ####
+######################
+
+# León Cortés Castro becomes leader
+country_event = {
+	id = bm_elections.26
+	title = bm_elections.26.t
+	desc = bm_elections.26.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = COS
+		has_government = democratic
+		date > 1936.01.01
+		date < 1937.01.01
+	}
+
+	option = {
+		name = bm_elections.26.a
+		promote_character = COS_leon_cortes_castro
+	}
+}
+
+# Rafael Calderón Guardia becomes leader
+country_event = {
+	id = bm_elections.27
+	title = bm_elections.27.t
+	desc = bm_elections.27.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = COS
+		has_government = democratic
+		date > 1940.01.01
+		date < 1941.01.01
+	}
+
+	option = {
+		name = bm_elections.27.a
+		promote_character = COS_rafael_calderon_guardia
+	}
+}
+
+#####################
+####  Argentina  ####
+#####################
+
+# Roberto Marcelino Ortiz becomes leader
+country_event = {
+	id = bm_elections.28
+	title = bm_elections.28.t
+	desc = bm_elections.28.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = ARG
+		has_government = neutrality
+		date > 1937.01.01
+		date < 1938.01.01
+	}
+
+	option = {
+		name = bm_elections.28.a
+		promote_character = ARG_roberto_maria_ortiz
+	}
+}
+
+####################
+####  Mongolia  ####
+####################
+
+# Khorloogiin Choibalsan becomes leader
+country_event = {
+	id = bm_elections.29
+	title = bm_elections.29.t
+	desc = bm_elections.29.desc
+	picture = GFX_report_event_SOV_mongolia_cavalry
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MON
+		has_government = communism
+		date > 1939.03.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.29.a
+		promote_character = MON_khorloogiin_choibalsan
+	}
+}
+
+#################
+####  Chile  ####
+#################
+
+# Pedro Aguirre Cerda becomes leader
+country_event = {
+	id = bm_elections.30
+	title = bm_elections.30.t
+	desc = bm_elections.30.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CHL
+		has_government = democratic
+		date > 1938.01.01
+		date < 1939.01.01
+	}
+
+	option = {
+		name = bm_elections.30.a
+		promote_character = CHL_pedro_aguirre_cerda
+		set_party_name = {
+			ideology = democratic
+			long_name = CHL_radical_party_long
+			name = CHL_radical_party
+		}
+		hidden_effect = {
+			set_politics = { 
+				ruling_party = democratic
+				last_election = "1938.10.01"
+				elections_allowed = yes
+				election_frequency = 48
+			}
+		}
+	}
+}
+
+# Juan Antonio Ríos becomes leader
+country_event = {
+	id = bm_elections.31
+	title = bm_elections.31.t
+	desc = bm_elections.31.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = CHL
+		has_government = democratic
+		date > 1942.01.01
+		date < 1943.01.01
+	}
+
+	option = {
+		name = bm_elections.31.a
+		promote_character = CHL_juan_antonio_rios
+	}
+}
+
+###################
+####  Bolivia  ####
+###################
+
+# David Toro becomes leader
+country_event = {
+	id = bm_elections.32
+	title = bm_elections.32.t
+	desc = bm_elections.32.desc
+	picture = GFX_report_event_fascist_militia
+
+	is_triggered_only = yes
+
+	option = {
+		name = bm_elections.32.a
+		retire_country_leader = yes
+		set_politics = { ruling_party = neutrality }
+		hidden_effect = {
+			set_party_name = {
+				ideology = democratic
+				long_name = BOL_revolutionary_movement_party_long
+				name = BOL_revolutionary_movement_party
+			}
+		}
+	}
+}
+
+# Germán Busch becomes leader
+country_event = {
+	id = bm_elections.33
+	title = bm_elections.33.t
+	desc = bm_elections.33.desc
+	picture = GFX_report_event_fascist_militia
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOL
+		has_government = neutrality
+		date > 1937.07.01
+		date < 1938.08.01
+	}
+
+	option = {
+		name = bm_elections.33.a
+		promote_character = BOL_german_busch_beccera
+	}
+}
+
+# Carlos Quintanilla becomes leader
+country_event = {
+	id = bm_elections.34
+	title = bm_elections.34.t
+	desc = bm_elections.34.desc
+	picture = GFX_report_event_poland_funeral
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOL
+		has_government = neutrality
+		date > 1939.08.01
+		date < 1940.08.01
+		has_country_leader = { character = BOL_german_busch_beccera ruling_only = yes }
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.34.a
+		promote_character = BOL_carlos_quintanilla
+	}
+}
+
+# Enrique Peñaranda becomes leader
+country_event = {
+	id = bm_elections.35
+	title = bm_elections.35.t
+	desc = bm_elections.35.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = BOL
+		has_government = neutrality
+		date > 1940.01.01
+		date < 1941.01.01
+	}
+
+	option = {
+		name = bm_elections.35.a
+		set_politics = { ruling_party = democratic }
+		promote_character = BOL_enrique_penaranda
+		set_party_name = {
+			ideology = democratic
+			long_name = BOL_concordancia_long
+			name = BOL_concordancia
+		}
+	}
+}
+
+################
+####  Peru  ####
+################
+
+# Manuel Prado Ugarteche becomes leader
+country_event = {
+	id = bm_elections.36
+	title = bm_elections.36.t
+	desc = bm_elections.36.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = PRU
+		has_government = neutrality
+		date > 1939.01.01
+		date < 1940.01.01
+	}
+
+	option = {
+		name = bm_elections.36.a
+		set_politics = { ruling_party = democratic }
+		add_popularity = { ideology = democratic popularity = 0.1 }
+	}
+}
+
+####################
+####  Colombia  ####
+####################
+
+# Eduardo Santos Montejo becomes leader
+country_event = {
+	id = bm_elections.37
+	title = bm_elections.37.t
+	desc = bm_elections.37.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = COL
+		has_government = democratic
+		date > 1938.01.01
+		date < 1939.01.01
+	}
+
+	option = {
+		name = bm_elections.37.a
+		promote_character = COL_eduardo_santos
+	}
+}
+
+# Eduardo Santos Montejo becomes leader
+country_event = {
+	id = bm_elections.38
+	title = bm_elections.38.t
+	desc = bm_elections.38.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = COL
+		has_government = democratic
+		date > 1942.01.01
+		date < 1943.01.01
+	}
+
+	option = {
+		name = bm_elections.38.a
+		promote_character = COL_alfonso_lópez_pumarejo
+	}
+}
+
+##################
+####  Panama  ####
+##################
+
+# Juan Demóstenes Arosemena becomes leader
+country_event = {
+	id = bm_elections.39
+	title = bm_elections.39.t
+	desc = bm_elections.39.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = PAN
+		has_government = democratic
+		date > 1936.01.01
+		date < 1937.01.01
+	}
+
+	option = {
+		name = bm_elections.39.a
+		promote_character = PAN_juan_demostenes_arosemena
+		set_party_name = {
+			ideology = democratic
+			long_name = PAN_national_liberal_party_long
+			name = PAN_national_liberal_party
+		}
+	}
+}
+
+################
+####  Cuba  ####
+################
+
+# Federico Laredo Brú becomes leader
+country_event = {
+	id = bm_elections.40
+	title = bm_elections.40.t
+	desc = bm_elections.40.desc
+	picture = GFX_report_event_tur_political_rally
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CUB
+		has_government = democratic
+		date > 1936.12.20
+		date < 1937.12.20
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.40.a
+		promote_character = CUB_federico_laredo_bru
+	}
+}
+
+###################
+####  Ecuador  ####
+###################
+
+# Alberto Enríquez Gallo becomes leader
+country_event = {
+	id = bm_elections.41
+	title = bm_elections.41.t
+	desc = bm_elections.41.desc
+	picture = GFX_report_event_fascist_militia
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ECU
+		has_government = democratic
+		date > 1937.10.10
+		date < 1938.10.10
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.41.a
+		promote_character = ECU_alberto_enriquez_gallo
+		set_party_name = {
+			ideology = democratic
+			long_name = ECU_radical_liberal_party_long
+			name = ECU_radical_liberal_party
+		}
+	}
+}
+
+# Aurelio Mosquera becomes leader
+country_event = {
+	id = bm_elections.42
+	title = bm_elections.42.t
+	desc = bm_elections.42.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = CUB
+		has_government = democratic
+		date > 1938.12.01
+		date < 1939.12.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.42.a
+		promote_character = ECU_aurelio_mosquera
+	}
+}
+
+#####################
+####  Venezuela  ####
+#####################
+
+# Isaías Medina Angarita becomes leader
+country_event = {
+	id = bm_elections.43
+	title = bm_elections.43.t
+	desc = bm_elections.43.desc
+	picture = GFX_report_event_tur_ataturk_inonu_parliament
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = VEN
+		has_government = neutrality
+		date > 1941.1.1
+		date < 1942.1.1
+	}
+
+	option = {
+		name = bm_elections.43.a
+		promote_character = VEN_isaias_medina_angarita
+		set_party_name = {
+			ideology = democratic
+			long_name = VEN_venezuelan_democratic_party_long
+			name = VEN_venezuelan_democratic_party_party
+		}
+	}
+}
+
+#####################
+####  Nicaragua  ####
+#####################
+
+# Anastasio Somoza García becomes leader
+country_event = {
+	id = bm_elections.44
+	title = bm_elections.44.t
+	desc = bm_elections.44.desc
+	picture = GFX_report_event_fascist_militia
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NIC
+		has_government = democratic
+		date > 1936.06.01
+		date < 1937.09.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.44.a
+		set_politics = { 
+			ruling_party = neutrality
+			last_election = "1936.12.8"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+}
+
+################
+####  Iraq  ####
+################
+
+# Faisal II becomes leader
+country_event = {
+	id = bm_elections.45
+	title = bm_elections.45.t
+	desc = bm_elections.45.desc
+	picture = GFX_report_event_airplane_crash
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = IRQ
+		has_government = neutrality
+		date > 1939.04.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	option = {
+		name = bm_elections.45.a
+		promote_character = IRQ_faisal_ii
+	}
+}

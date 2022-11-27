@@ -1,0 +1,55 @@
+﻿
+division_template = {
+	name = "Sanjiao Jun"
+
+	division_names_group = CHI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "1 Bubing Shi"
+		location = 7186
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "2 Bubing Shi"
+		location = 7186
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "3 Bubing Shi"
+		location = 12068
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+}
+air_wings = {
+	524 = { 
+		fighter_equipment_0 = { 
+			owner = "CHI" 
+			amount = 45 
+		}
+		name = "1. Zhandouji Dadui"
+		fighter_equipment_0 = { 
+			owner = "CHI" 
+			amount = 27 
+		}
+		name = "2. Zhandouji Dadui"
+	}
+}

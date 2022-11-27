@@ -1,0 +1,2291 @@
+﻿
+#################################
+####### Better Map Events #######
+#################################
+
+add_namespace = bm_event
+
+# Luxembourg PD party to CSV change
+country_event = {
+	id = bm_event.1
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		tag = LUX
+		date > 1937.11.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	immediate = {
+		set_party_name = { 
+			ideology = democratic 
+			long_name = LUX_christian_social_party_long 
+			name = LUX_christian_social_party
+		}
+	}
+}
+
+# Germany Zentrum to CDU change
+country_event = {
+	id = bm_event.2
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		tag = GER
+		date > 1945.05.01
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	immediate = {
+		set_party_name = { 
+			ideology = democratic 
+			long_name = GER_christian_union_long 
+			name = GER_christian_union
+		}
+	}
+}
+
+# Poland KPP to PPR change
+country_event = {
+	id = bm_event.3
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		tag = POL
+		date > 1942.01.03
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	immediate = {
+		set_party_name = { 
+			ideology = communism 
+			long_name = POL_polish_workers_party_long 
+			name = POL_polish_workers_party
+		}
+	}
+}
+
+# Modern World
+country_event = {
+	id = bm_event.4
+	title = bm_event.4.t
+	desc = bm_event.4.desc
+	picture = GFX_report_event_finnish_letter
+
+	is_triggered_only = yes
+	
+	option = {
+		name = bm_event.4.a
+		ENG = {
+			set_autonomy = { target = CAN autonomy_state = autonomy_free }
+			set_autonomy = { target = SAF autonomy_state = autonomy_free }
+			set_autonomy = { target = RAJ autonomy_state = autonomy_free }
+			set_autonomy = { target = MAL autonomy_state = autonomy_free }
+			set_autonomy = { target = AST autonomy_state = autonomy_free }
+			set_autonomy = { target = NZL autonomy_state = autonomy_free }
+			delete_unit = { state = 447 }
+			delete_unit = { state = 446 }
+			delete_unit = { state = 453 }
+			delete_unit = { state = 551 }
+			delete_unit = { state = 547 }
+			delete_unit = { state = 546 }
+			delete_unit = { state = 558 }
+			delete_unit = { state = 274 }
+			delete_unit = { state = 454 }
+			delete_unit = { state = 659 }
+			delete_unit = { state = 422 }
+			delete_unit = { state = 326 }
+			delete_unit = { state = 336 }
+			delete_unit = { state = 116 }
+			delete_unit = { state = 841 }
+			release = BLZ 
+			release = BAH 
+			release = GYA 
+			release = JAM 
+			release = TRI 
+			release = BAS 
+			release = CAN 
+			release = EGY 
+			release = SUD 
+			release = UGA 
+			release = TZN 
+			release = ZAM 
+			release = MLW 
+			release = KEN 
+			release = ZIM 
+			release = BOT 
+			release = NGA 
+			release = GHA 
+			release = SIE 
+			release = GAM 
+			release = MAD 
+			release = SAF 
+			release = MUS 
+			release = SYC
+			release = FIJ
+			release = MLD
+			release = MAL
+			release = SRL
+			release = QAT
+			release = KUW
+			release = UAE
+			release = ISR
+			release = JOR
+			release = SML
+			release = MLT
+			release = CYP
+			release = PRC
+			remove_from_faction = MAL
+			remove_from_faction = SAF
+			remove_from_faction = RAJ
+		}
+		CAN = { 
+			abandon_colony_tag = yes 
+			transfer_state = 332 
+			transfer_state = 331 
+		}
+		SAF = {
+			retire_country_leader = yes
+			release = NMB
+			release = SWZ
+			release = LSO
+		}
+		AST = { 
+			release = PNG 
+			release = SOL 
+			transfer_state = 711 
+			transfer_state = 712
+		}
+		NZL = { release = SAM }
+		RAJ = {
+			abandon_colony_tag = yes
+			retire_country_leader = yes
+			release = BRM
+			release = BAN
+			release = PAK
+			release = YEM
+			transfer_state = 733
+			delete_unit = { state = 440 }
+			delete_unit = { state = 442 }
+			delete_unit = { state = 445 }
+			remove_ideas = RAJ_marginalized_muslim_community
+			remove_ideas = RAJ_princely_states
+			set_political_party = { ideology = democratic popularity = 70 }
+			set_political_party = { ideology = fascism popularity = 26 }
+			set_political_party = { ideology = communism popularity = 12 }
+			set_political_party = { ideology = neutrality popularity = 2 }
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1935.11.14"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		MAL = {
+			abandon_colony_tag = yes
+			retire_country_leader = yes
+			release = SGP
+			release = BRN
+		}
+		711 = { add_core_of = AST }
+		712 = { add_core_of = AST }
+		733 = { add_core_of = RAJ }
+		FRA = {
+			delete_unit = { state = 272 }
+			delete_unit = { state = 539 }
+			delete_unit = { state = 543 }
+			delete_unit = { state = 461 }
+			delete_unit = { state = 458 }
+			delete_unit = { state = 459 }
+			delete_unit = { state = 553 }
+			delete_unit = { state = 741 }
+			delete_unit = { state = 286 }
+			delete_unit = { state = 671 }
+			release = MOR
+			release = ALG
+			release = TUN
+			release = DJI
+			release = MAD
+			release = GAB
+			release = RCG
+			release = CMR
+			release = CAR
+			release = CHA
+			release = DAH
+			release = TOG
+			release = IVO
+			release = VOL
+			release = MLI
+			release = GNA
+			release = SEN
+			release = NGR
+			release = MRT
+			release = GDL 
+			release = TAH
+			release = VIN
+			release = CAM
+			release = LAO
+			release = LEB
+			release = SYR
+			release = RAJ
+			release = COM
+			release = PRC
+		}
+		TUR = {  transfer_state = 799 }
+		ITA = { 
+			delete_unit = { state = 559 }
+			delete_unit = { state = 550 }
+			delete_unit = { state = 736 }
+			delete_unit = { state = 448 }
+			delete_unit = { state = 451 }
+			release = LBA 
+			release = ERI
+			release = SOM
+			release = GRE
+			release = CRO
+			release = SLV
+			white_peace = { tag = ETH }
+			remove_state_claim = 44 
+			remove_state_claim = 805 
+			remove_state_claim = 825
+		}
+		537 = { add_core_of = SOV }
+		JAP = {
+			remove_state_claim = 655
+			delete_unit = { state = 684 }
+			delete_unit = { state = 633 }
+			delete_unit = { state = 647 }
+			delete_unit = { state = 646 }
+			delete_unit = { state = 648 }
+			delete_unit = { state = 645 }
+			delete_unit = { state = 527 }
+			delete_unit = { state = 525 }
+			delete_unit = { state = 524 }
+			delete_unit = { state = 745 }
+			delete_unit = { state = 716 }
+			delete_unit = { state = 328 }
+			delete_unit = { state = 717 }
+			delete_unit = { state = 715 }
+			delete_unit = { state = 714 }
+			delete_unit = { state = 761 }
+			delete_unit = { state = 610 }
+			delete_unit = { state = 609 }
+			delete_unit = { state = 537 }
+			release = GUM
+			release = FSM
+			release = KOR
+			release = SOV
+		}
+		NKR = {
+			add_state_core = 527 
+			add_state_core = 674 
+			add_state_core = 525 
+			add_state_core = 855 
+			transfer_state = 527 
+			transfer_state = 855 
+			add_ideas = closed_economy
+			add_ideas = extensive_conscription
+			add_ideas = war_economy
+		}
+		KOR = {
+			set_technology = { 
+				tech_support = 1
+				infantry_weapons1 = 1 
+				tech_engineers = 1 
+				tech_recon = 1 
+				basic_light_tank = 1 
+				CAS1 = 1 
+				fighter1 = 1 
+				fuel_silos = 1 
+				gw_artillery = 1 
+				early_fighter = 1 
+				early_bomber = 1 
+				motorised_infantry = 1
+				gwtank = 1
+			}
+			set_political_party = { ideology = democratic popularity = 87 }
+			add_ideas = limited_conscription
+			add_ideas = free_trade
+			add_research_slot = 1
+		}
+		USA = {
+			set_autonomy = { target = PHI autonomy_state = autonomy_free }
+			delete_unit = { state = 327 }
+			delete_unit = { state = 685 }
+			release = PAN
+			give_guarantee = KOR
+			give_guarantee = CHI
+		}
+		POR = {
+			delete_unit = { state = 540 }
+			delete_unit = { state = 544 }
+			release = MZB
+			release = ANG
+			release = GNB
+			release = STP
+			release = TLS
+			release = RAJ
+			release = PRC
+		}
+		SPR = {
+			delete_unit = { state = 290 }
+			release = WES
+			release = EQG
+			release = MRT
+			release = MOR
+		}
+		HOL = { 
+			set_autonomy = { target = INS autonomy_state = autonomy_free }
+			release = SUR
+		}
+		INS = {
+			abandon_colony_tag = yes
+			retire_country_leader = yes
+		}
+		BEL = {
+			delete_unit = { state = 295 }
+			release = RWA
+			release = BRD
+			release = COG
+		}
+		595 = {
+			add_building_construction = {
+				type = air_base
+				level = 3
+				instant_build = yes
+			}
+		}
+		757 = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		618 = {
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		SIK = { 
+			set_cosmetic_tag = SIK_modern
+			set_political_party = {
+				ideology = neutrality
+				popularity = 56
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.01.01"
+				election_frequency = 48
+				elections_allowed = no
+			}
+		}
+		606 = {
+			add_resource = {
+				type = steel
+				amount = 14
+			}
+		}
+		605 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+		622 = {
+			add_resource = {
+				type = steel
+				amount = 7
+			}
+		}
+		716 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+		601 = {
+			add_resource = {
+				type = oil
+				amount = 6
+			}
+			add_resource = {
+				type = rubber
+				amount = 3
+			}
+		}
+		328 = {
+			add_resource = {
+				type = aluminium
+				amount = 20
+			}
+		}
+		every_state = {
+			limit = { 
+				is_owned_by = RAJ
+				NOT = { state = 441 state = 434 }
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		424 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		439 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		423 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		438 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}	
+		SIK = { every_unit_leader = { set_nationality = PRC }}
+		XSM = { every_unit_leader = { set_nationality = PRC }}
+		SHX = { every_unit_leader = { set_nationality = PRC }}
+		YUN = { every_unit_leader = { set_nationality = CHI }}
+		PRC = {
+			give_guarantee = NKR
+			set_political_party = { ideology = democratic popularity = 27 }
+			add_ideas = volunteer_only
+			add_ideas = export_focus
+			add_ideas = low_economic_mobilisation
+			remove_ideas = PRC_power_struggles
+			remove_ideas = PRC_the_long_march_1
+			remove_ideas = PRC_low_popular_support_3
+			complete_national_focus = PRC_proclaim_the_peoples_republic
+			complete_national_focus = PRC_socialist_market_economy
+			annex_country = { target = CHI transfer_troops = yes }
+			annex_country = { target = SIK transfer_troops = yes }
+			annex_country = { target = MAN transfer_troops = yes }
+			annex_country = { target = MEN transfer_troops = yes }
+			annex_country = { target = SHX transfer_troops = yes }
+			annex_country = { target = XSM transfer_troops = yes }
+			annex_country = { target = GXC transfer_troops = yes }
+			annex_country = { target = YUN transfer_troops = yes }
+			annex_country = { target = TIB transfer_troops = no }
+			set_capital = { state = 608 }
+			transfer_state = 609
+			transfer_state = 745
+			set_technology = {
+				infantry_weapons1 = 1
+				tech_support = 1
+				tech_engineers = 1
+				gw_artillery = 1
+				gwtank = 1
+				basic_light_tank = 1
+				early_fighter = 1
+				fighter1 = 1
+				early_bomber = 1
+				fuel_silos = 1
+				motorised_infantry = 1
+				tech_mountaineers = 1
+				cv_early_fighter = 1
+				cv_naval_bomber1 = 1
+				naval_bomber1 = 1
+				CAS1 = 1
+			}
+			load_oob = PRC_MODERN
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = {
+					basic_naval_mines = 1
+					submarine_mine_laying = 1
+					early_ship_hull_light = 1
+					basic_ship_hull_light = 1
+					early_ship_hull_submarine = 1
+					basic_ship_hull_submarine = 1
+					early_ship_hull_cruiser = 1
+					basic_ship_hull_cruiser = 1
+					early_ship_hull_heavy = 1
+					early_ship_hull_carrier = 1
+					basic_ship_hull_carrier = 1
+					basic_battery = 1
+					basic_light_battery = 1
+					basic_medium_battery = 1
+					basic_heavy_battery = 1
+					basic_torpedo = 1
+					sonar = 1
+					basic_depth_charges = 1
+					basic_secondary_battery = 1
+					improved_secondary_battery = 1
+					basic_cruiser_armor_scheme = 1
+					basic_heavy_armor_scheme = 1
+					mtg_transport = 1
+					improved_airplane_launcher = 1
+				}
+				create_equipment_variant = {
+					name = "Kuznetsov Class"
+					type = ship_hull_carrier_1
+					name_group = CHI_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_2
+						fixed_ship_secondaries_slot = ship_secondaries_2
+						front_1_custom_slot = ship_deck_space
+					}
+				}
+				create_equipment_variant = {
+					name = "Luyang III Class"
+					type = ship_hull_light_2
+					name_group = CHI_DD_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_2
+						fixed_ship_anti_air_slot = empty
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_1
+						mid_1_custom_slot = ship_torpedo_1
+						rear_1_custom_slot = ship_depth_charge_1
+					}
+				}
+				create_equipment_variant = {
+					name = "Guangzhou Class"				
+					type = ship_hull_light_1
+					name_group = CHI_DD_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_1
+						fixed_ship_anti_air_slot = empty
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = light_ship_engine_1
+						fixed_ship_torpedo_slot = empty
+						mid_1_custom_slot = ship_mine_sweeper_1
+					}
+				}
+				create_equipment_variant = {
+					name = "Xia Class"
+					type = ship_hull_submarine_1
+					name_group = CHI_SS_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						fixed_ship_engine_slot = sub_ship_engine_1
+						rear_1_custom_slot = ship_mine_layer_sub
+					}
+				}
+				create_equipment_variant = {
+					name = "Jin Class"				
+					type = ship_hull_submarine_2
+					name_group = CHI_SS_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_2
+						fixed_ship_engine_slot = sub_ship_engine_2
+						rear_1_custom_slot = ship_torpedo_sub_2
+					}
+				}
+				load_oob = PRC_MODERN_MTG
+			}
+			else = {
+				set_technology = {
+					early_submarine = 1
+					basic_submarine = 1
+					early_destroyer = 1
+					basic_destroyer = 1
+					early_light_cruiser = 1
+					basic_light_cruiser = 1
+					early_heavy_cruiser = 1
+					early_battleship = 1
+					early_battlecruiser = 1
+					early_carrier = 1
+					basic_carrier = 1
+					transport = 1
+				}
+				load_oob = PRC_MODERN_LEGACY
+			}
+			delete_unit_template_and_units = { division_template = "Armored-Division" }
+			delete_unit_template_and_units = { division_template = "Mountaineer-Division" }
+			delete_unit_template_and_units = { division_template = "Motorized-Division" }
+			delete_unit_template_and_units = { division_template = "Qibing Jun" }
+			delete_unit_template_and_units = { division_template = "Qibing Shi" }
+			delete_unit_template_and_units = { division_template = "Qu Jun" }
+			delete_unit_template_and_units = { division_template = "Bubing Shi" }
+		}
+		VIN = {
+			set_political_party = { ideology = communism popularity = 73 }
+			set_politics = {ruling_party = communism elections_allowed = no }
+		}
+		LAO = {
+			set_political_party = { ideology = communism popularity = 51 }
+			set_politics = { ruling_party = communism elections_allowed = no }
+		}
+		CUB = {
+			set_political_party = { ideology = communism popularity = 89 }
+			set_politics = { ruling_party = communism elections_allowed = no }
+		}
+		PRU = {
+			set_political_party = { ideology = democratic popularity = 69 }
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1931.10.11"
+				election_frequency = 96
+				elections_allowed = yes
+			}
+		}
+		DOM = {
+			set_political_party = { ideology = democratic popularity = 82 }
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1934.5.16"
+				election_frequency = 96
+				elections_allowed = yes
+			}
+		}
+		ANG = {
+			set_political_party = { ideology = communism popularity = 61 }
+			set_politics = { ruling_party = communism elections_allowed = no }
+		}
+		CHI = {
+			set_technology = {
+				infantry_weapons1 = 1
+				tech_support = 1
+			}
+			set_political_party = {
+				ideology = democratic
+				popularity = 93
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+			transfer_state = 524
+			set_cosmetic_tag = CHI_taiwan
+			remove_ideas = CHI_hyper_inflation_1
+			remove_ideas = CHI_nine_power_treaty
+			remove_ideas = CHI_army_corruption_1
+			remove_ideas = CHI_ineffective_bureaucracy
+		}
+		INS = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				create_equipment_variant = {
+					name = "Nagapasa Class"
+					type = ship_hull_submarine_1
+					name_group = INS_SS_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						fixed_ship_engine_slot = sub_ship_engine_1
+					}
+				}
+				load_oob = INS_MODERN_MTG
+			}
+			else = { load_oob = INS_MODERN_LEGACY }
+		}
+		every_state = {
+			limit = {
+				is_core_of = PRC
+				NOT = { state = 524 state = 822 }
+			}
+			remove_core_of = CHI
+		}
+		MAL = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				create_equipment_variant = {
+					name = "Scorpène Class"
+					type = ship_hull_submarine_1
+					name_group = MAL_SS_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						fixed_ship_engine_slot = sub_ship_engine_1
+					}
+				}
+				load_oob = MAL_MODERN_MTG
+			}
+			else = { load_oob = MAL_MODERN_LEGACY }
+		}
+		VIN = {
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				create_equipment_variant = {
+					name = "Kilo Class"
+					type = ship_hull_submarine_1
+					name_group = VIN_SS_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_torpedo_slot = ship_torpedo_sub_1
+						fixed_ship_engine_slot = sub_ship_engine_1
+					}
+				}
+				load_oob = VIN_MODERN_MTG
+			}
+			else = { load_oob = VIN_MODERN_LEGACY }
+		}
+		SIA = {
+			set_technology = { cv_early_fighter = 1 }
+			if = {
+				limit = { has_dlc = "Man the Guns" }
+				set_technology = { early_ship_hull_carrier = 1 basic_light_battery = 1 basic_secondary_battery = 1 }
+				create_equipment_variant = {
+					name = "Príncipe de Asturias Class"
+					type = ship_hull_carrier_1
+					name_group = SIA_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_radar_slot = empty
+						fixed_ship_engine_slot = carrier_ship_engine_1
+						fixed_ship_secondaries_slot = ship_secondaries_1
+					}
+				}
+				load_oob = SIA_MODERN_MTG
+			}
+			else = {
+				set_technology = { early_carrier = 1 }
+				load_oob = SIA_MODERN_LEGACY 
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = PRC
+				NOT = { state = 524 state = 822 }
+			}
+			remove_core_of = CHI
+		}
+		326 = { remove_core_of = PRC }
+		524 = { remove_core_of = PRC add_claim_by = PRC }
+		736 = { remove_core_of = YUG }
+		163 = { remove_core_of = YUG }
+		858 = { remove_core_of = YUG }
+		853 = { remove_core_of = CRO }
+		854 = { remove_core_of = SER }
+		854 = { add_core_of = CRO }
+		YUG = {
+			release = SLV
+			release = BOS
+			release = MAC
+			release = KOS
+			every_unit_leader = { set_nationality = SER }
+			if = {
+				limit = { YUG = { exists = yes }}
+				transfer_navy = { target = CRO }
+			}
+			release = CRO
+			release = MNT
+			release = SER
+		}
+		CRO = {
+			set_political_party = {
+				ideology = democratic
+				popularity = 50
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		SOV = {
+			release = UKR
+			release = BLR
+			release = ABK
+			release = GEO
+			release = AZR
+			release = ARM
+			release = UZB
+			release = TAJ
+			release = KYR
+			release = TMS
+			release = KAZ
+			delete_unit = { state = 588 }
+			delete_unit = { state = 589 }
+			delete_unit = { state = 732 }
+			delete_unit = { state = 405 }
+			delete_unit = { state = 742 }
+			delete_unit = { state = 230 }
+			delete_unit = { state = 846 }
+			delete_unit = { state = 231 }
+			delete_unit = { state = 227 }
+			delete_unit = { state = 221 }
+			delete_unit = { state = 226 }
+			delete_unit = { state = 202 }
+			delete_unit = { state = 192 }
+			delete_unit = { state = 198 }
+			delete_unit = { state = 199 }
+			delete_unit = { state = 201 }
+			delete_unit = { state = 194 }
+			delete_unit = { state = 241 }
+			delete_unit = { state = 204 }
+			delete_unit = { state = 206 }
+			delete_unit = { state = 207 }
+			delete_unit = { state = 834 }
+			annex_country = { target = TAN transfer_troops = yes }
+			remove_from_faction = MON
+            set_cosmetic_tag = SOV_russia
+            set_global_flag = SOV_became_russia
+            give_guarantee = BLR
+            give_guarantee = ABK
+		}
+		ABK = { give_military_access = SOV }
+		ARM = { give_military_access = SOV }
+		BLR = { give_military_access = SOV }
+		KAZ = { set_capital = { state = 590 }}
+		TMS = {
+			set_political_party = {
+				ideology = neutrality
+				popularity = 78
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+		VOL = {
+			set_political_party = {
+				ideology = democratic
+				popularity = 53
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+		MON = {
+			add_war_support = -0.45
+			set_political_party = {
+				ideology = democratic
+				popularity = 86
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		GNB = {
+			set_political_party = {
+				ideology = neutrality
+				popularity = 66
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}
+		ELS = {
+			set_political_party = {
+				ideology = democratic
+				popularity = 76
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1935.1.15"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		GEO = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			set_political_party = {
+				ideology = democratic
+				popularity = 74
+			}
+		}
+		146 = { add_core_of = SOV }
+		147 = { add_core_of = SOV }
+		722 = { add_core_of = SOV }
+		824 = { add_core_of = SOV }
+		763 = { add_core_of = SOV }
+		FIN = { 
+			delete_unit = { state = 146 }
+			delete_unit = { state = 147 }
+			release = SOV 
+		}
+		EST = { release = SOV }
+		555 = { add_core_of = SOV }
+		UKR = {
+			set_political_party = {
+				ideology = democratic
+				popularity = 68
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1933.2.26"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		BLR = {
+			set_political_party = {
+				ideology = neutrality
+				popularity = 31
+			}
+			set_political_party = {
+				ideology = democratic
+				popularity = 48
+			}
+			set_political_party = {
+				ideology = communism
+				popularity = 8
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1935.7.13"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		80 = { add_core_of = UKR }
+		73 = { add_core_of = UKR }
+		BUL = { remove_state_claim = 837 remove_state_claim = 184 remove_state_claim = 77 remove_state_claim = 106 remove_state_claim = 803 remove_state_claim = 731 }
+		77 = { add_core_of = BUL }
+		ROM = { 
+			release = MOL 
+			release = UKR 
+			release = BUL 
+			diplomatic_relation = {
+				country = TUR
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = GRE
+				relation = guarantee
+				active = no
+			}
+			diplomatic_relation = {
+				country = CZE
+				relation = guarantee
+				active = no
+			}
+		}
+		CZE = {
+			diplomatic_relation = {
+				country = ROM
+				relation = guarantee
+				active = no
+			}
+		}
+		ITA = {
+			diplomatic_relation = {
+				country = ALB
+				relation = guarantee
+				active = no
+			}
+		}
+		MOL = { release = UKR }
+		POL = {
+			delete_unit = { state = 784 }
+			delete_unit = { state = 96 }
+			delete_unit = { state = 94 }
+			delete_unit = { state = 93 }
+			delete_unit = { state = 91 }
+			release = UKR 
+			release = BLR 
+			release = LIT 
+		}
+		LIT = { 
+			set_capital = { state = 784 }
+			remove_state_claim = 856
+			remove_state_claim = 857
+		}
+		CZE = {
+			add_stability = 0.2
+			remove_ideas = CZE_divided_nation
+			delete_unit = { state = 70 }
+			delete_unit = { state = 71 }
+			release = SLO
+		}
+		HUN = { remove_state_claim = 664 remove_state_claim = 73 }
+		SLO = { 
+			release = UKR 
+			set_political_party = {
+				ideology = democratic
+				popularity = 67
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1933.3.5"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		GRE = { remove_state_claim = 805 }
+		846 = { add_core_of = AZR }
+		AZR = { 
+			transfer_state = 846
+			add_opinion_modifier = { target = TUR modifier = TUR_turkic_brothers }
+		}
+		TUR = { 
+			add_opinion_modifier = { target = AZR modifier = TUR_turkic_brothers }
+			diplomatic_relation = {
+				country = AZR
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+		5 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		699 = { add_core_of = MOR }
+		137 = { add_core_of = UKR }
+		834 = { remove_core_of = MOL }
+		228 = { remove_core_of = UKR add_core_of = SOV add_claim_by = UKR start_resistance = SOV set_resistance = 80 }
+		227 = { remove_core_of = UKR add_core_of = SOV add_claim_by = UKR start_resistance = SOV set_resistance = 80 }
+		866 = { add_core_of = SSD }
+		SUD = { release = SSD }
+		GER = {
+			delete_unit = { state = 763 }
+			delete_unit = { state = 5 }
+			delete_unit = { state = 67 }
+			delete_unit = { state = 66 }
+			delete_unit = { state = 63 }
+			delete_unit = { state = 68 }
+			release = POL 
+			release = SOV 
+		}
+		ISR = {
+			set_technology = { infantry_weapons1 = 1 tech_support = 1 }
+			add_ideas = limited_conscription
+			add_ideas = free_trade
+			add_ideas = low_economic_mobilisation
+		}
+		DEN = { release = ICE }
+		PRU = { transfer_state = 490 }
+		AZR = { 
+			set_political_party = {
+				ideology = neutrality
+				popularity = 67
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		SER = { 
+			set_political_party = {
+				ideology = democratic
+				popularity = 73
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.1.1"
+				election_frequency = 36
+				elections_allowed = yes
+			}
+		}
+		SYR = { 
+			set_political_party = {
+				ideology = neutrality
+				popularity = 39
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		IRQ = { 
+			set_political_party = {
+				ideology = democratic
+				popularity = 63
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		VEN = {
+			set_political_party = {
+				ideology = democratic
+				popularity = 80
+			}
+			set_political_party = {
+				ideology = neutrality
+				popularity = 34
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		TUN = { 
+			set_political_party = {
+				ideology = democratic
+				popularity = 71
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		AUS = { 
+			set_political_party = {
+				ideology = democratic
+				popularity = 91
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1930.11.9"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		QAT = { 
+			set_political_party = {
+				ideology = neutrality
+				popularity = 91
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.01.01"
+				election_frequency = 48
+				elections_allowed = no
+			}
+		}
+		GHA = { 
+			set_political_party = {
+				ideology = democratic
+				popularity = 67
+			}
+			set_politics = {
+				ruling_party = democratic
+				last_election = "1936.01.01"
+				election_frequency = 48
+				elections_allowed = yes
+			}
+		}
+		VOL = { 
+			set_political_party = {
+				ideology = neutrality
+				popularity = 77
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.01.01"
+				election_frequency = 48
+				elections_allowed = no
+			}
+		}
+		BRD = { 
+			set_political_party = {
+				ideology = neutrality
+				popularity = 81
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.01.01"
+				election_frequency = 48
+				elections_allowed = no
+			}
+		}
+		ERI = { 
+			set_political_party = {
+				ideology = neutrality
+				popularity = 91
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.01.01"
+				election_frequency = 48
+				elections_allowed = no
+			}
+		}
+		INS = { 
+			set_political_party = {
+				ideology = neutrality
+				popularity = 66
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.01.01"
+				election_frequency = 48
+				elections_allowed = no
+			}
+		}
+		AFG = { 
+			set_political_party = {
+				ideology = fascism
+				popularity = 37
+			}
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1936.01.01"
+				election_frequency = 48
+				elections_allowed = no
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { has_global_flag = modern_world_army_done }
+			}
+			every_country = {
+				limit = {
+					capital_scope = { is_on_continent = africa } 
+					NOT = { tag = SAF tag = EGY tag = LBA tag = TUN tag = ALG tag = MOR }
+				}
+				add_ideas = underdeveloped_nation
+			}
+			every_country = {
+				limit = {
+					capital_scope = { is_on_continent = africa } 
+					NOT = { tag = LIB tag = SAF tag = ETH }
+				}
+				load_oob = AFRICA_MODERN
+			}
+			every_country = {
+				limit = {
+					capital_scope = { is_on_continent = africa } 
+					NOT = { tag = SAF }
+				}
+				add_war_support = -0.4
+				add_stability = -0.25
+			}
+			BOS = {
+				delete_unit_template_and_units = { division_template = "Pešadijska Divizija" }
+				delete_unit_template_and_units = { division_template = "Konjička Divizija" }
+				delete_unit_template_and_units = { division_template = "Tenkovski Bataljon" }
+				load_oob = BOS_MODERN
+				delete_unit_template_and_units = { division_template = "Gorska Pešadija" }
+				add_manpower = -15000
+			}
+			590 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			732 = { add_extra_state_shared_building_slots = 1 }
+			742 = { add_extra_state_shared_building_slots = 1 }
+			586 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			855 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 13244
+					instant_build = yes
+				}
+			}
+			525 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 7125
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 7
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			109 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			524 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 7186
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 12068
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 10
+					province = 7186
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			527 = {
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					province = 4052
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11958
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4004
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9981
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			835 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			SLV = { 
+				load_oob = SLV_MODERN 
+				add_manpower = -14000 
+			}
+			CRO = { 
+				set_technology = { gw_artillery = 1 gwtank = 1 early_fighter = 1 }
+				load_oob = CRO_MODERN 
+				add_manpower = -25000 
+			}
+			MNT = {
+				delete_unit_template_and_units = { division_template = "Pešadijska Divizija" }
+				delete_unit_template_and_units = { division_template = "Konjička Divizija" }
+				delete_unit_template_and_units = { division_template = "Tenkovski Bataljon" }
+				load_oob = MNT_MODERN
+				delete_unit_template_and_units = { division_template = "Gorska Pešadija" }
+				add_manpower = -4000
+			}
+			KOS = {
+				load_oob = KOS_MODERN
+				delete_unit_template_and_units = { division_template = "Gorska Pešadija" }
+				delete_unit_template_and_units = { division_template = "Pešadijska Divizija" }
+				delete_unit_template_and_units = { division_template = "Konjička Divizija" }
+				delete_unit_template_and_units = { division_template = "Tenkovski Bataljon" }
+				add_manpower = -4300
+			}
+			MAC = {
+				delete_unit_template_and_units = { division_template = "Pešadijska Divizija" }
+				delete_unit_template_and_units = { division_template = "Konjička Divizija" }
+				delete_unit_template_and_units = { division_template = "Tenkovski Bataljon" }
+				load_oob = MAC_MODERN
+				delete_unit_template_and_units = { division_template = "Gorska Pešadija" }
+				add_manpower = -3000
+			}
+			SER = { 
+				annex_country = {
+					target = YUG
+					transfer_troops = no
+				}
+				set_technology = { gw_artillery = 1 }
+				load_oob = SER_MODERN
+				add_manpower = -28700
+			}
+			SLO = {
+				delete_unit_template_and_units = { division_template = "Pěší Divize" }
+				delete_unit_template_and_units = { division_template = "Horská Divize" }
+				delete_unit_template_and_units = { division_template = "Jezdecká Brigáda" }
+				load_oob = SLO_MODERN
+				delete_unit_template_and_units = { division_template = "Rychlá Divize" }
+				add_manpower = -21000
+			}
+			MOL = {
+				set_technology = { early_fighter = 1 }
+				delete_unit_template_and_units = { division_template = "Divizia de Infanterie" }
+				delete_unit_template_and_units = { division_template = "Brigada de Cavalerie" }
+				delete_unit_template_and_units = { division_template = "Brigada de Munte" }
+				load_oob = MOL_MODERN
+				delete_unit_template_and_units = { division_template = "Regimentul de Blindate" }
+				add_manpower = -27000
+			}
+			ELS = { delete_unit = { state = 314 } add_manpower = -6000 }
+			GUA = { delete_unit = { state = 313 }}
+			HON = { delete_unit = { state = 312 }}
+			NIC = { delete_unit = { state = 317 }}
+			every_country = {
+				limit = { 
+					is_major = no 
+					NOT = { tag = BEL tag = SPR tag = POR tag = RAJ tag = PAK tag = BAN tag = BRM tag = AST }
+				}
+				delete_unit_template_and_units = { division_template = "Colonial Garrison" }
+				delete_unit_template_and_units = { division_template = "Tank Brigade" }
+				delete_unit_template_and_units = { division_template = "Cavalry Brigade" }
+				delete_unit_template_and_units = { division_template = "Infantry Division" }
+				delete_unit_template_and_units = { division_template = "Motorised Division" }
+
+				delete_unit_template_and_units = { division_template = "Divisione di Fanteria" }
+				delete_unit_template_and_units = { division_template = "Divisione Alpina" }
+				delete_unit_template_and_units = { division_template = "Divisione Coloniale" }
+				delete_unit_template_and_units = { division_template = "Divisione Celere" }
+				delete_unit_template_and_units = { division_template = "Reggimento di Cavalleria" }
+
+				delete_unit_template_and_units = { division_template = "Division d'Infanterie" }
+				delete_unit_template_and_units = { division_template = "Division de Cavalerie" }
+				delete_unit_template_and_units = { division_template = "Cavalerie Motorisée" }
+				delete_unit_template_and_units = { division_template = "Division Coloniale" }
+
+				delete_unit_template_and_units = { division_template = "Division d'Infanterie" }
+				delete_unit_template_and_units = { division_template = "Division Coloniale" }
+				delete_unit_template_and_units = { division_template = "Division d'Infanterie Motorisée" }
+				delete_unit_template_and_units = { division_template = "Division d'Infanterie Alpine" }
+				delete_unit_template_and_units = { division_template = "Division de Cavalerie" }
+				delete_unit_template_and_units = { division_template = "Division Légère Mécanique" }
+				delete_unit_template_and_units = { division_template = "Brigade de Chars de Combat" }
+				delete_unit_template_and_units = { division_template = "Brigade Coloniale" }
+
+				delete_unit_template_and_units = { division_template = "División de Infantería" }
+				delete_unit_template_and_units = { division_template = "División de Caballería" }
+				delete_unit_template_and_units = { division_template = "Brigada Montaña" }
+				delete_unit_template_and_units = { division_template = "Brigada de Infantería" }
+
+				delete_unit_template_and_units = { division_template = "Divisão de Infantaria" }
+				delete_unit_template_and_units = { division_template = "Força de Caçadores" }
+				delete_unit_template_and_units = { division_template = "Brigada de Cavalaria" }
+
+				delete_unit_template_and_units = { division_template = "Hohei Shidan" }
+				delete_unit_template_and_units = { division_template = "Dokuritsu Konsei Ryodan" }
+				delete_unit_template_and_units = { division_template = "Kihei Shidan" }
+				delete_unit_template_and_units = { division_template = "Jidousha Shidan" }
+				delete_unit_template_and_units = { division_template = "Rikusentai" }
+				delete_unit_template_and_units = { division_template = "Chuton-chi Shidan" }
+
+				delete_unit_template_and_units = { division_template = "Strelkovaya Diviziya" }
+				delete_unit_template_and_units = { division_template = "Gornostrelkovaya Diviziya" }
+				delete_unit_template_and_units = { division_template = "Motostrelkovaya Diviziya" }
+				delete_unit_template_and_units = { division_template = "Kavaleriyskaya Diviziya" }
+				delete_unit_template_and_units = { division_template = "NKVD Pogranichnaya Diviziya" }
+				delete_unit_template_and_units = { division_template = "Mekhanizirovaniy Korpus" }
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+			}
+			BLR = { 
+				load_oob = BLR_MODERN
+				add_war_support = -0.4
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+				add_manpower = -40000
+			}
+			UKR = { 
+				set_technology = { CAS1 = 1 } 
+				load_oob = UKR_MODERN
+				add_war_support = -0.24
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					set_technology = { basic_naval_mines = 1 }
+					create_equipment_variant = {
+						name = "Krivak III Class"				
+						type = ship_hull_light_1
+						name_group = UKR_DD_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+							mid_1_custom_slot = ship_torpedo_1
+						}
+					}
+					create_equipment_variant = {
+						name = "Yevgenya Class"				
+						type = ship_hull_light_1
+						name_group = UKR_DD_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_engine_slot = light_ship_engine_1
+							mid_1_custom_slot = ship_mine_sweeper_1
+							rear_1_custom_slot = empty
+						}
+					}
+					load_oob = UKR_MODERN_MTG
+				}
+				else = { load_oob = UKR_MODERN_LEGACY }
+				add_manpower = -105700
+			}
+			GEO = {
+				load_oob = GEO_MODERN
+				add_manpower = -24000
+				add_war_support = -0.46
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					create_equipment_variant = {
+						name = "Turya Class"				
+						type = ship_hull_light_1
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+						}
+					}
+					load_oob = GEO_MODERN_MTG
+				}
+				else = { load_oob = GEO_MODERN_LEGACY }
+			}
+			ARM = {
+				load_oob = ARM_MODERN
+				add_manpower = -15000
+				add_war_support = 0.34
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+			}
+			AZR = {
+				load_oob = AZR_MODERN
+				add_manpower = -35000
+				add_war_support = 0.21
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+			}
+			KAZ = {
+				load_oob = KAZ_MODERN
+				add_manpower = -47000
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+				add_war_support = -0.45
+			}
+			UZB = {
+				set_technology = { tech_support = 1 gw_artillery = 1 gwtank = 1 early_fighter = 1 tech_mountaineers = 1 }
+				load_oob = UZB_MODERN
+				add_manpower = -52000
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+				delete_unit_template_and_units = { division_template = "Mountaineer-Division" }
+				delete_unit_template_and_units = { division_template = "Armored-Division" }
+				add_war_support = -0.45
+			}
+			TMS = {
+				load_oob = TMS_MODERN
+				add_manpower = -15000
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+				add_war_support = -0.45
+			}
+			NKR = {
+				set_technology = { early_fighter = 1 early_bomber = 1 }
+				add_stability = -0.15
+				load_oob = NKR_MODERN
+				add_manpower = -49000
+				delete_unit_template_and_units = { division_template = "Chuton-chi Shidan" }
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					set_technology = {
+						early_ship_hull_submarine = 1
+						basic_torpedo = 1
+						mtg_transport = 1
+					}
+					create_equipment_variant = {
+						name = "Sang-O Class"				
+						type = ship_hull_submarine_1
+						name_group = NKR_SS_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							fixed_ship_engine_slot = sub_ship_engine_1
+							rear_1_custom_slot = empty
+						}
+					}
+					create_equipment_variant = {
+						name = "Romeo Class"				
+						type = ship_hull_submarine_1
+						name_group = NKR_SS_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							fixed_ship_engine_slot = sub_ship_engine_1
+							rear_1_custom_slot = ship_torpedo_sub_1
+						}
+					}
+					load_oob = NKR_MODERN_MTG
+				}
+				else = { 
+					set_technology = {
+						early_submarine = 1
+						transport = 1
+					}
+					load_oob = NKR_MODERN_LEGACY 
+				}
+			}
+			KOR = {
+				load_oob = KOR_MODERN
+				add_stability = 0.3
+				add_manpower = -51000
+				delete_unit_template_and_units = { division_template = "Chuton-chi Shidan" }
+				delete_unit_template_and_units = { division_template = "Armored-Division" }
+				delete_unit_template_and_units = { division_template = "Motorized-Division" }
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					set_technology = {
+						basic_naval_mines = 1
+						submarine_mine_laying = 1
+						early_ship_hull_light = 1
+						basic_ship_hull_light = 1
+						early_ship_hull_submarine = 1
+						basic_ship_hull_submarine = 1
+						early_ship_hull_cruiser = 1
+						basic_ship_hull_cruiser = 1
+						early_ship_hull_carrier = 1
+						basic_battery = 1
+						basic_light_battery = 1
+						basic_torpedo = 1
+						sonar = 1
+						smoke_generator = 1
+						basic_depth_charges = 1
+						basic_secondary_battery = 1
+						basic_cruiser_armor_scheme = 1
+						mtg_transport = 1
+						basic_fire_control_system = 1
+					}
+					create_equipment_variant = {
+						name = "Dosan Ahn Changho Class"				
+						type = ship_hull_submarine_2
+						name_group = KOR_SS_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							fixed_ship_engine_slot = sub_ship_engine_1
+							rear_1_custom_slot = empty
+						}
+					}
+					create_equipment_variant = {
+						name = "Sohn Wonyil Class"				
+						type = ship_hull_submarine_2
+						name_group = KOR_SS_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							fixed_ship_engine_slot = sub_ship_engine_1
+							rear_1_custom_slot = ship_torpedo_sub_1
+						}
+					}
+					create_equipment_variant = {
+						name = "Chungmugong Yi Sun-Sin Class"				
+						type = ship_hull_light_2
+						name_group = KOR_DD_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = empty
+							fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+							fixed_ship_radar_slot = ship_sonar_1
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+							mid_1_custom_slot = ship_torpedo_1
+						}
+					}
+					load_oob = KOR_MODERN_MTG
+				}
+				else = { 
+					set_technology = {
+						early_submarine = 1
+						basic_submarine = 1
+						early_destroyer = 1
+						basic_destroyer = 1
+						early_light_cruiser = 1
+						early_carrier = 1
+						transport = 1
+					}
+					load_oob = KOR_MODERN_LEGACY 
+				}
+			}
+			CHI = {
+				add_stability = 0.6
+				add_war_support = -0.5
+				set_capital = { state = 524 }
+				delete_unit_template_and_units = { division_template = "Sanjiao Jun" }
+				delete_unit_template_and_units = { division_template = "Qibing Jun" }
+				load_oob = CHI_MODERN
+				delete_unit_template_and_units = { division_template = "Juntuán" }
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					set_technology = { early_ship_hull_submarine = 1 basic_ship_hull_submarine = 1 }
+					create_equipment_variant = {
+						name = "Tench Class"				
+						type = ship_hull_submarine_2
+						name_group = CHI_SS_HISTORICAL
+						parent_version = 0
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							fixed_ship_engine_slot = sub_ship_engine_1
+							rear_1_custom_slot = ship_torpedo_sub_1
+						}
+					}
+					load_oob = CHI_MODERN_MTG
+				}
+				else = {
+					set_technology = { early_submarine = 1 basic_submarine = 1 }
+					load_oob = CHI_MODERN_LEGACY 
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = { is_on_continent = africa } 
+					NOT = { tag = LIB tag = SAF tag = ETH tag = SYC tag = MUS tag = COM tag = STP tag = LSO tag = SWZ tag = EQG tag = GAM tag = DJI tag = WES tag = RWA tag = BRD tag = GNB tag = GNA }
+				}
+				random_owned_state = {
+					limit = { is_capital = yes }
+					create_unit = {
+						division = "name = \"1. Infantry Brigade\" division_template = \"Infantry Brigade\" start_experience_factor = 0 start_equipment_factor = 0.1" 
+						owner = PREV
+					}
+				}
+				add_manpower = -12000
+			}
+			every_country = {
+				limit = { OR = { tag = TAJ tag = KYR }}
+				set_technology = { tech_mountaineers = 1 }
+				load_oob = CENTRAL_ASIA_MODERN
+				add_manpower = -6000
+				add_war_support = -0.45
+				delete_unit_template_and_units = { division_template = "Vozdushno-Desantnaya Brigada" }
+				delete_unit_template_and_units = { division_template = "Mountaineer-Division" }
+				random_owned_state = {
+					limit = { is_capital = yes }
+					create_unit = {
+						division = "name = \"1st. Mountain Division\" division_template = \"Mountain Division\" start_experience_factor = 0 start_equipment_factor = 0.2" 
+						owner = PREV
+					}
+				}
+			}
+			set_global_flag = modern_world_army_done
+		}
+		SWZ = {
+			delete_unit_template_and_units = { division_template = "District Force" }
+			delete_unit_template_and_units = { division_template = "District Brigade" }
+			delete_unit_template_and_units = { division_template = "Armored-Division" }
+		}
+		LSO = {
+			delete_unit_template_and_units = { division_template = "District Force" }
+			delete_unit_template_and_units = { division_template = "District Brigade" }
+			delete_unit_template_and_units = { division_template = "Armored-Division" }
+		}
+		NMB = {
+			delete_unit_template_and_units = { division_template = "District Force" }
+			delete_unit_template_and_units = { division_template = "District Brigade" }
+			delete_unit_template_and_units = { division_template = "Armored-Division" }
+		}
+		if = {
+			limit = { 
+				NOT = { has_global_flag = construction_modern_day_done }
+			}
+			PRC = { add_research_slot = 2 }
+			596 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			598 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			594 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			608 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			614 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			597 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			593 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			ISR = {
+				add_stability = 0.2
+				add_war_support = 0.4
+				add_manpower = 27083
+			}
+			every_state = {
+				limit = { is_owned_by = PRC }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_state = {
+				limit = { is_owned_by = PRC NOT = { is_core_of = SIK is_core_of = TIB is_core_of = MAN is_core_of = MEN is_core_of = XSM is_core_of = SHX }}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			674 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 13246
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 13245
+					instant_build = yes
+				}
+			}
+			584 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			231 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			229 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			230 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			454 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4088
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 11970
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1015
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7176
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1086
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 7107
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 1065
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 4
+					instant_build = yes
+				}
+			}
+			402 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			585 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			201 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			203 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			89 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			192 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			204 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			207 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			105 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			802 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			106 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			78 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_global_flag = construction_modern_day_done
+		}
+		set_province_name = { id = 1591 name = "Almaty"}
+		set_province_name = { id = 4333 name = "Nur-Sultan"}
+		set_province_name = { id = 6474 name = "Donetsk"}
+		set_province_name = { id = 6727 name = "Bilhorod-Dnistrovskyi"}
+		set_province_name = { id = 3529 name = "Volgograd"}
+		set_province_name = { id = 3151 name = "Saint Petersburg"}
+		set_province_name = { id = 9206 name = "Vyborg"}
+		set_province_name = { id = 9140 name = "Pechenga"}
+		set_province_name = { id = 7597 name = "Kyzylorda"}
+		set_province_name = { id = 7477 name = "Türkmenbaşy"}
+		687 = { set_state_name = "Guyana" }
+		590 = { set_state_name = "Nur-Sultan" }
+		586 = { set_state_name = "Almaty" }
+		559 = { set_state_name = "Somalia" }
+		269 = { set_state_name = "Somaliland" }
+		268 = { set_state_name = "Djibouti" }
+		545 = { set_state_name = "Zimbabwe" }
+		541 = { set_state_name = "Namibia" }
+		542 = { set_state_name = "Botswana" }
+		778 = { set_state_name = "Burkina Faso" }
+		296 = { set_state_name = "Guinea-Bissau" }
+		290 = { set_state_name = "Tangier" }
+		742 = { set_state_name = "Tajikistan" }
+		732 = { set_state_name = "Kyrgyzstan" }
+		584 = { set_state_name = "Turkmenistan" }
+		848 = { set_state_name = "Eswatini" }
+		227 = { set_state_name = "Donetsk" }
+		195 = { set_state_name = "Saint Petersburg" }
+		217 = { set_state_name = "Volgograd" }
+		722 = { set_state_name = "Pechenga" }
+		404 = { set_state_name = "Kyzylorda" }
+		588 = { set_state_name = "Semey" }
+		set_province_name = { id = 12594 name = "Semey" }
+		583 = { set_state_name = "Kostanay" }
+		set_province_name = { id = 10312 name = "Kostanay" }
+		406 = { set_state_name = "Atyrau" }
+		set_province_name = { id = 3618 name = "Atyrau" }
+		407 = { set_state_name = "Oral" }
+		set_province_name = { id = 11537 name = "Oral" }
+		589 = { set_state_name = "Ayagoz" }
+		set_province_name = { id = 1668 name = "Ayagoz" }
+		402 = { set_state_name = "Aktobe" }
+		587 = { set_state_name = "Ust-Yurt" }
+		546 = { set_state_name = "Tanzania" }
+		set_province_name = { id = 7260 name = "Sri Jayawardenepura Kotte" }
+		set_province_name = { id = 11437 name = "Dnipro"}
+		247 = { set_state_name = "Tver" }
+		set_province_name = { id = 6245 name = "Tver" }
+		429 = { set_state_name = "Mumbai" }
+		set_province_name = { id = 1349 name = "Mumbai" }
+		228 = { set_state_name = "Luhansk" }
+		set_province_name = { id = 9461 name = "Luhansk" }
+		set_province_name = { id = 4245 name = "Kolkata" }
+		set_province_name = { id = 9975 name = "Ahmedabad" }
+		set_province_name = { id = 1330 name = "Yangon" }
+		set_province_name = { id = 7381 name = "Jakarta" }
+		set_province_name = { id = 5117 name = "Kinshasa" }
+		set_province_name = { id = 10929 name = "Harare" }
+		set_province_name = { id = 8245 name = "Maputo" }
+		set_province_name = { id = 3392 name = "Brest" }
+		73 = { set_state_name = "Zakarpattia" }
+		721 = { set_state_name = "East Timor" }
+		set_province_name = { id = 418 name = "Kharkiv" }
+		221 = { set_state_name = "Kharkiv" }
+		set_province_name = { id = 11405 name = "Zaporizhzhia" }
+		200 = { set_state_name = "Zaporizhzhia" }
+		set_province_name = { id = 4056 name = "Busan" }
+		295 = { set_state_name = "Kinshasa" }
+		718 = { set_state_name = "Kisangani" }
+		772 = { set_state_name = "Congo-Brazzaville" }
+		BRM = { set_cosmetic_tag = BRM_myanmar }
+		HAI = { set_cosmetic_tag = HAI_modern }
+		SAF = { set_cosmetic_tag = SAF_modern }
+		BAN = { set_cosmetic_tag = BAN_modern }
+		EGY = { set_cosmetic_tag = EGY_modern }
+		OMA = { set_cosmetic_tag = OMA_modern }
+		YEM = { set_cosmetic_tag = YEM_modern }
+		SPR = { set_cosmetic_tag = SPR_modern }
+		MNT = { set_cosmetic_tag = MNT_modern }
+		GRE = { set_cosmetic_tag = GRE_modern }
+		MOL = { set_cosmetic_tag = MOL_modern }
+		SER = { set_cosmetic_tag = SER_modern }
+		SYR = { set_cosmetic_tag = SYR_modern }
+		GEO = { set_cosmetic_tag = GEO_modern }
+		AZR = { set_cosmetic_tag = AZR_modern }
+		SLV = { set_cosmetic_tag = SLV_modern }
+		CRO = { set_cosmetic_tag = CRO_modern }
+		KOS = { set_cosmetic_tag = KOS_modern }
+		MAC = { set_cosmetic_tag = MAC_modern }
+		BLR = { set_cosmetic_tag = BLR_modern }
+		SOM = { set_cosmetic_tag = SOM_modern }
+		TUN = { set_cosmetic_tag = TUN_modern }
+		LBA = { set_cosmetic_tag = LBA_modern }
+		PER = { set_cosmetic_tag = PER_modern }
+		COG = { set_cosmetic_tag = COG_modern }
+		RCG = { set_cosmetic_tag = RCG_modern }
+		MRT = { set_cosmetic_tag = MRT_modern }
+		ETH = { set_cosmetic_tag = ETH_modern }
+		RWA = { set_cosmetic_tag = RWA_modern }
+		BRD = { set_cosmetic_tag = BRD_modern }
+		MZB = { set_cosmetic_tag = MZB_modern }
+		KEN = { set_cosmetic_tag = KEN_modern }
+		MAD = { set_cosmetic_tag = MAD_modern }
+		VIN = { set_cosmetic_tag = VIN_modern }
+		LAO = { set_cosmetic_tag = LAO_modern }
+		CUB = { set_cosmetic_tag = CUB_modern }
+		DOM = { set_cosmetic_tag = DOM_modern }
+		VEN = { set_cosmetic_tag = VEN_modern }
+		SUD = { set_cosmetic_tag = SUD_modern }
+		JOR = { set_cosmetic_tag = JOR_modern }
+		QAT = { set_cosmetic_tag = QAT_modern }
+		GHA = { set_cosmetic_tag = GHA_modern }
+		VOL = { set_cosmetic_tag = VOL_modern }
+		ERI = { set_cosmetic_tag = ERI_modern }
+		SIA = { set_cosmetic_tag = SIA_modern }
+		ARM = { set_cosmetic_tag = ARM_modern }
+		SWZ = { set_cosmetic_tag = SWZ_modern }
+		TAJ = { set_cosmetic_tag = TAJ_modern }
+		UZB = { set_cosmetic_tag = UZB_modern }
+		MON = { set_cosmetic_tag = MON_modern }
+		PRU = { set_cosmetic_tag = PRU_modern }
+		PAR = { set_cosmetic_tag = PAR_modern }
+		GNB = { set_cosmetic_tag = GNB_modern }
+		SML = { set_cosmetic_tag = SML_modern }
+		INS = { set_cosmetic_tag = INS_modern }
+		ANG = { set_cosmetic_tag = ANG_modern }
+		AUS = { set_cosmetic_tag = AUS_modern }
+		SLO = { set_cosmetic_tag = SLO_modern }
+		SRL = { set_cosmetic_tag = SRL_modern }
+		BOT = { set_cosmetic_tag = BOT_modern }
+		GYA = { set_cosmetic_tag = GYA_modern }
+		SUR = { set_cosmetic_tag = SUR_modern }
+		CAY = { set_cosmetic_tag = CAY_modern }
+		WES = { set_cosmetic_tag = WES_modern }
+		MOR = { set_cosmetic_tag = MOR_modern }
+		ELS = { set_cosmetic_tag = ELS_modern }
+		CYP = { set_cosmetic_tag = CYP_modern }
+		BUL = { set_cosmetic_tag = BUL_modern }
+		AFG = { set_cosmetic_tag = AFG_modern }
+		UKR = { set_cosmetic_tag = UKR_modern }
+		DAH = { set_cosmetic_tag = DAH_modern }
+	}
+	option = {
+		name = bm_event.4.b
+	}
+}

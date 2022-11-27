@@ -1,0 +1,19 @@
+﻿
+units = {
+	fleet = {
+		name = "Zhōnghuá Mínguó Hǎijūn"			
+		naval_base = 7186
+		task_force = {
+			name = "Zhōnghuá Mínguó Hǎijūn"
+			location = 7186
+			ship = { name = "Hai Shih" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CHI version_name = "Tench Class" }}}
+			ship = { name = "Hai Bao" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CHI version_name = "Tench Class" }}}
+			ship = { name = "Hai Lung" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CHI version_name = "Tench Class" }}}
+			ship = { name = "Hai Hu" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CHI version_name = "Tench Class" }}}
+			ship = { name = "Kee Lung" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Jianwei Class" }}}
+			ship = { name = "Su Ao" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Jianwei Class" }}}
+			ship = { name = "Tso Ying" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Jianwei Class" }}}
+			ship = { name = "Ma Kong" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CHI version_name = "Jianwei Class" }}}
+		}
+	}
+}

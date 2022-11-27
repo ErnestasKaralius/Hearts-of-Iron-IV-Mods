@@ -1,0 +1,14 @@
+﻿
+units = {
+	fleet = {
+		name = "Tentara Nasional Indonesia Angkatan Laut"			
+		naval_base = 7381
+		task_force = {
+			name = "Tentara Nasional Indonesia Angkatan Laut"
+			location = 7381
+			ship = { name = "KRI Nagapasa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = INS }}}
+			ship = { name = "KRI Ardadedali" definition = submarine equipment = { submarine_1 = { amount = 1 owner = INS }}}
+			ship = { name = "KRI Alugoro" definition = submarine equipment = { submarine_1 = { amount = 1 owner = INS }}}
+		}
+	}
+}

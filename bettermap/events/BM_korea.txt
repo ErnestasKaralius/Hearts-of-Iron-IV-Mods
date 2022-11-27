@@ -1,0 +1,95 @@
+﻿
+#######################
+#######  Korea  #######
+#######################
+
+add_namespace = bm_korea
+
+# Reunification of Korea
+country_event = {
+	id = bm_korea.1
+	title = bm_korea.1.t
+	desc = bm_korea.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	option = { # Accept
+		name = bm_korea.1.a
+		ai_chance = { 
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = {
+					OR = { 
+						has_wargoal_against = ROOT
+						is_justifying_wargoal_against = ROOT
+					}
+				}
+			}
+		}
+		FROM = { country_event = bm_korea.2 }
+	}
+	option = { # Refuse
+		name = bm_korea.1.b
+		FROM = { country_event = bm_korea.3 }
+	}
+}
+
+country_event = {
+	id = bm_korea.2
+	title = bm_korea.2.t
+	desc = bm_korea.2.d
+	picture = GFX_report_event_generic_rally2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bm_korea.2.a
+		set_global_flag = reunification_of_korea
+		annex_country = { target = FROM transfer_troops = yes }
+		hidden_effect = {
+			every_state = {
+				limit = { is_core_of = FROM }
+				remove_core_of = FROM
+				add_core_of = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bm_korea.3
+	title = bm_korea.3.t
+	desc = bm_korea.3.d
+	picture = GFX_report_event_generic_rally2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = bm_korea.3.a
+		set_global_flag = { flag = reunification_of_korea_rejected days = 360 value = 1 }
+	}
+}
+
+# North Korea gains cores
+country_event = {
+	id = bm_korea.4
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		KOR = { exists = no }
+		NKR = { exists = no }
+		any_country = { has_government = democratic has_war_with = JAP }
+		any_country = { has_government = communism has_war_with = JAP }
+		any_state = { is_core_of = KOR controller = { has_government = communism }}
+	}
+
+	mean_time_to_happen = { days = 2 }
+
+	immediate = {
+		NKR = { add_state_core = 527 add_state_core = 674 add_state_claim = 525 add_state_claim = 855 }
+	}
+}

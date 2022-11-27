@@ -1,0 +1,150 @@
+﻿
+air_wings = {
+	605 = { 
+		fighter_equipment_0 = {
+			owner = "PRC" 
+			amount = 102
+		}
+		name = "2. Zhandouji Dadui"
+		tac_bomber_equipment_0 =  {
+			owner = "SOV" 
+			amount = 37
+		}
+		name = "1. Huweiji Dadui"
+	}
+	608 = {
+		fighter_equipment_1 = {
+			owner = "PRC" 
+			amount = 176
+		}
+		name = "3. Zhandouji Dadui"
+		fighter_equipment_0 = {
+			owner = "PRC" 
+			amount = 65
+		}
+		name = "1. Zhandouji Dadui"
+		cas_equipment_1 = {
+			owner = "PRC" 
+			amount = 35
+		}
+		name = "1. Jinjuli Kongyuan Dadui"
+	}
+	613 = {
+		nav_bomber_equipment_1 = {
+			owner = "PRC" 
+			amount = 34
+		}
+		name = "2. Haijun Hongzhaji Dadui"
+		fighter_equipment_1 = {
+			owner = "PRC" 
+			amount = 61
+		}
+		name = "4. Zhandouji Dadui"
+	}
+	595 = {
+		nav_bomber_equipment_1 = {
+			owner = "PRC" 
+			amount = 75
+		}
+		name = "1. Haijun Hongzhaji Dadui"
+		fighter_equipment_1 = {
+			owner = "PRC" 
+			amount = 154
+		}
+		name = "5. Zhandouji Dadui"
+		fighter_equipment_0 = {
+			owner = "PRC" 
+			amount = 31
+		}
+		name = "6. Zhandouji Dadui"
+	}
+	757 = {
+		fighter_equipment_0 = {
+			owner = "PRC" 
+			amount = 26
+		}
+		name = "7. Zhandouji Dadui"
+		cas_equipment_1 = {
+			owner = "PRC" 
+			amount = 12
+		}
+		name = "2. Jinjuli Kongyuan Dadui"
+	}
+	618 = {
+		fighter_equipment_0 = {
+			owner = "PRC" 
+			amount = 14
+		}
+		name = "8. Zhandouji Dadui"
+		cas_equipment_1 = {
+			owner = "PRC" 
+			amount = 3
+		}
+		name = "3. Jinjuli Kongyuan Dadui"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PRC"
+		}
+		requested_factories = 10
+		progress = 0.30
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "PRC" 
+		}
+		requested_factories = 5
+		progress = 0.30
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "PRC" 
+		}
+		requested_factories = 3
+		progress = 0.30
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "PRC" 
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "PRC" 
+		}
+		requested_factories = 3
+		progress = 0.30
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cas_equipment_1
+			creator = "PRC" 
+		}
+		requested_factories = 3
+		progress = 0.30
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_0
+			creator = "PRC" 
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 100
+	}
+}

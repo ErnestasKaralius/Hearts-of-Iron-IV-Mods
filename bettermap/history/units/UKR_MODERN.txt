@@ -1,0 +1,358 @@
+﻿
+division_template = {
+	name = "Pikhotna Diviziya"
+
+	division_names_group = UKR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brihada Pikhoty"
+
+	division_names_group = UKR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Hirsko-Pikhotna Diviziya"
+
+	division_names_group = UKR_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Motorizovana Diviziya"
+
+	division_names_group = UKR_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Kavaleriyska Diviziya"
+
+	division_names_group = UKR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 525
+		division_template = "Motorizovana Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 488
+		division_template = "Kavaleriyska Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6557
+		division_template = "Kavaleriyska Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6557
+		division_template = "Kavaleriyska Diviziya"
+		start_experience_factor = 0
+		start_equipment_factor = 0.3
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6431
+		division_template = "Hirsko-Pikhotna Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6743
+		division_template = "Pikhotna Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9423
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3568
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3520
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 9493
+		division_template = "Pikhotna Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9566
+		division_template = "Pikhotna Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 525
+		division_template = "Pikhotna Diviziya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9531
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}			
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11461
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 472
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9571
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 6530
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 429
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 486
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {		
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11541
+		division_template = "Brihada Pikhoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+}
+air_wings = {
+	202 = { 
+		fighter_equipment_0 = {
+			owner = "UKR" 
+			amount = 17
+		}
+		name = "1. Vinishchuvalny Polk"
+		fighter_equipment_1 = {
+			owner = "UKR" 
+			amount = 5
+		}
+		name = "4. Vinishchuvalny Polk"
+		CAS_equipment_1 = {
+			owner = "UKR" 
+			amount = 6
+		}
+		name = "2. Polk Aviatsiynoyi Pidtrimky"
+	}
+	221 = { 
+		fighter_equipment_0 = {
+			owner = "UKR" 
+			amount = 28
+		}
+		name = "2. Vinishchuvalny Polk"
+		fighter_equipment_1 = {
+			owner = "UKR" 
+			amount = 11
+		}
+		name = "3. Vinishchuvalny Polk"
+	}
+	91 = { 
+		fighter_equipment_0 = {
+			owner = "UKR" 
+			amount = 8
+		}
+		name = "5. Vinishchuvalny Polk"
+	}
+	192 = { 
+		CAS_equipment_1 = {
+			owner = "UKR" 
+			amount = 17
+		}
+		name = "1. Polk Aviatsiynoyi Pidtrimky"
+	}
+	196 = {
+		nav_bomber_equipment_1 = {
+			owner = "UKR"
+			amount = 11
+		}
+		name = "1. Polk Torpedonostsiv"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "UKR"
+		}
+		requested_factories = 3
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "UKR" 
+		}
+		requested_factories = 2
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "UKR" 
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+}

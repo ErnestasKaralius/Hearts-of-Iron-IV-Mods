@@ -1,0 +1,32 @@
+﻿
+units = {
+	fleet = {
+		name = "Chosuninmingun Haegun"			
+		naval_base = 4052
+		task_force = {
+			name = "Chosuninmingun Haegun"
+			location = 4052
+			ship = { name = "Sang-O I" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O III" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O IV" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O V" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O VI" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O VII" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O VIII" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O IX" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O X" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XI" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XII" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XIII" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XIV" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XV" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XVI" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XVII" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XVIII" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Sang-O XIX" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Sang-O Class" }}}
+			ship = { name = "Romeo I" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Romeo Class" }}}
+			ship = { name = "Romeo II" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = NKR version_name = "Romeo Class" }}}
+		}
+	}
+}

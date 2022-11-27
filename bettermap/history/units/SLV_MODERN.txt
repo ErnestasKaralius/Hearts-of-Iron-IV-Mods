@@ -1,0 +1,72 @@
+﻿division_template = {
+	name = "Pehotna Divizije"
+
+	division_names_group = SLV_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Alpinistična Divizije"
+
+	division_names_group = SLV_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11595
+		division_template = "Alpinistična Divizije"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3654
+		division_template = "Pehotna Divizije"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.3
+	}
+}
+air_wings = {
+	835 = { 
+		fighter_equipment_0 = {
+			owner = "SLV" 
+			amount = 4
+		}
+		name = "1. Lovsko Krilo"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SLV"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 100
+	}
+}

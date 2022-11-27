@@ -1,0 +1,17 @@
+﻿
+units = {
+	fleet = {
+		name = "Hài Quân Nhân Dân Viêt Nam"			
+		naval_base = 1185
+		task_force = {
+			name = "Hài Quân Nhân Dân Viêt Nam"
+			location = 1185
+			ship = { name = "Hà Nôi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIN version_name = "Kilo Class" }}}
+			ship = { name = "Thành Phô Hô Chí Minh" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIN version_name = "Kilo Class" }}}
+			ship = { name = "Hài Phòng" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIN version_name = "Kilo Class" }}}
+			ship = { name = "Khánh Hoà" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIN version_name = "Kilo Class" }}}
+			ship = { name = "Đà Nång" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIN version_name = "Kilo Class" }}}
+			ship = { name = "Bà Ria-Vũng Tàu" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = VIN version_name = "Kilo Class" }}}
+		}
+	}
+}

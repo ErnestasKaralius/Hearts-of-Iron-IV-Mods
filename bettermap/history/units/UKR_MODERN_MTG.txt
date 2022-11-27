@@ -1,0 +1,26 @@
+﻿
+units = {
+	fleet = {
+		name = "Viyskovo-Morski Sily Ukrayny"			
+		naval_base = 11670
+		task_force = {
+			name = "Viyskovo-Morski Sily Ukrayny"
+			location = 11670
+			ship = { name = "M360 Henichesk" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = UKR version_name = "Yevgenya Class" }}}
+			ship = { name = "F130 Hetman Sahaydachniy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = UKR version_name = "Krivak III Class" }}}
+			ship = { name = "P153 Pryluky" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = UKR version_name = "Yevgenya Class" }}}
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_1
+			creator = "UKR" 
+			version_name = "Krivak III Class"
+		}
+		requested_factories = 2
+		progress = 0.30
+		amount = 1
+	}
+}

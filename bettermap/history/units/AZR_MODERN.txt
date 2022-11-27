@@ -1,0 +1,147 @@
+﻿
+division_template = {
+	name = "Piyada Diviziyası"
+
+	division_names_group = AZR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Piyada Briqadası"
+
+	division_names_group = AZR_INB_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Süvari Diviziyası"
+
+	division_names_group = AZR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Dağ Piyada Diviziyası"
+
+	division_names_group = AZR_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+	}
+}
+units = {
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7661
+		division_template = "Piyada Diviziyası"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7661
+		division_template = "Piyada Diviziyası"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1539
+		division_template = "Süvari Diviziyası"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1467
+		division_template = "Dağ Piyada Diviziyası"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 9715
+		division_template = "Dağ Piyada Diviziyası"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6997
+		division_template = "Piyada Briqadası"
+		start_experience_factor = 0
+		start_equipment_factor = 0.1
+	}
+}
+air_wings = {
+	843 = { 
+		fighter_equipment_1 = {
+			owner = "AZR" 
+			amount = 23
+		}
+		name = "2. Qırıcı Qanadı"
+		fighter_equipment_1 = {
+			owner = "AZR" 
+			amount = 17
+		}
+		name = "1. Qırıcı Qanadı"
+		strat_bomber_equipment_1 =  {
+			owner = "AZR" 
+			amount = 7
+		}
+		name = "1. Bombardmançı Qanadı"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "AZR"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+}

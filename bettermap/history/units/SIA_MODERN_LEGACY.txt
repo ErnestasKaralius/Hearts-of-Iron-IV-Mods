@@ -1,0 +1,15 @@
+﻿
+units = {
+	fleet = {
+		name = "Kong Thap Ruea Thai"			
+		naval_base = 7408
+		task_force = {
+			name = "Kong Thap Ruea Thai"
+			location = 7408
+			ship = { 
+				name = "HTMS Chakri Naruebet" definition = carrier equipment = { carrier_1 = { amount = 1 owner = SIA }}
+				air_wings = { cv_fighter_equipment_0 = { owner = "SIA" amount = 17 }}
+			}
+		}
+	}
+}

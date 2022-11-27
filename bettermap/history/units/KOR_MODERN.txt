@@ -1,0 +1,188 @@
+﻿
+division_template = {
+	name = "Bobyeong Sadan"
+
+	division_names_group = KOR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Judunji Sadan"
+
+	division_names_group = KOR_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Taengkeu Sadan"
+
+	division_names_group = KOR_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }			
+		motorized = { x = 2 y = 0 }		
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Moteosa Sadan"
+
+	division_names_group = KOR_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }		
+		motorized = { x = 1 y = 1 }			
+		motorized = { x = 2 y = 0 }			
+	}
+}
+units = {
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7125
+		division_template = "Taengkeu Sadan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7125
+		division_template = "Moteosa Sadan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13245
+		division_template = "Bobyeong Sadan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 13246
+		division_template = "Bobyeong Sadan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7125
+		division_template = "Bobyeong Sadan"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4056
+		division_template = "Judunji Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7175
+		division_template = "Judunji Sadan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+}
+air_wings = {
+	525 = { 
+		fighter_equipment_1 = {
+			owner = "KOR" 
+			amount = 56
+		}
+		name = "1. Jeontugi Nalgae"
+		fighter_equipment_1 = {
+			owner = "KOR" 
+			amount = 35
+		}
+		name = "2. Jeontugi Nalgae"
+		CAS_equipment_1 = {
+			owner = "KOR" 
+			amount = 28
+		}
+		name = "1. Jiwon Nalgae"
+		tac_bomber_equipment_0 = {
+			owner = "KOR" 
+			amount = 12
+		}
+		name = "1. Poggyeoggi Nalgae"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "KOR"
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "KOR" 
+		}
+		requested_factories = 1
+		progress = 0.30
+		efficiency = 50
+	}
+}

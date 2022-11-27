@@ -1,0 +1,15 @@
+Better Map uses GFX files from the following mods:
+* P-AllinOne-C - Total Reskin Ironman Only: https://steamcommunity.com/sharedfiles/filedetails/?id=1038985197
+* Coloured Theater Alert Icons: https://steamcommunity.com/sharedfiles/filedetails/?id=1673873039
+* More Division Icons: https://steamcommunity.com/sharedfiles/filedetails/?id=699735138
+* Alternative Air Base Icons: https://steamcommunity.com/sharedfiles/filedetails/?id=1690638578
+* Alternative Naval Base Icons: https://steamcommunity.com/sharedfiles/filedetails/?id=1971294297
+* Uncensored Event Pictures: https://steamcommunity.com/sharedfiles/filedetails/?id=1681092839
+* Uncensored Focus Tree Icons: https://steamcommunity.com/sharedfiles/filedetails/?id=1676942018
+* Finnish Equipment Icons: https://steamcommunity.com/sharedfiles/filedetails/?id=1436962383
+* Finnish Portraits: https://steamcommunity.com/sharedfiles/filedetails/?id=1919850246
+* Vanilla Style Portraits by Herman: https://steamcommunity.com/sharedfiles/filedetails/?id=2260551852
+* Additional Portraits: https://steamcommunity.com/sharedfiles/filedetails/?id=1763488674
+* Sensible Portraits [Revamp]: https://steamcommunity.com/sharedfiles/filedetails/?id=2452231589
+* Community Portrait Pack: https://steamcommunity.com/sharedfiles/filedetails/?id=2715284475
+* The Road to 56: https://steamcommunity.com/sharedfiles/filedetails/?id=820260968
