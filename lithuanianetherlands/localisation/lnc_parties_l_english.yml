@@ -1,0 +1,17 @@
+﻿l_english:
+ LNC_democratic_party:0 "DPLN"
+ LNC_democratic_party_long:0 "Democratic Party of Lithuania-Netherlands"
+ LNC_christian_socialist_party:0 "CSP"
+ LNC_christian_socialist_party_long:0 "Christian Socialist Party"
+ LNC_communism_party:0 "PFF"
+ LNC_communism_party_long:0 "Party For the Future"
+ LNC_beneluxian_baltic_marxist_party:0 "BBMP"
+ LNC_beneluxian_baltic_marxist_party_long:0 "Beneluxian-Baltic Marxist Party"
+ LNC_neutrality_party:0 "RPK"
+ LNC_neutrality_party_long:0 "Royalistische Partei der Königin"
+ LNC_fascism_party:0 "NAIP"
+ LNC_fascism_party_long:0 "National Anti-Immigration Party"
+
+ ##### Unoism #####
+ LNC_unoism_party:0 "NUF"
+ LNC_unoism_party_long:0 "National Unoist Front"
