@@ -1,0 +1,170 @@
+defined_text = {
+	name = GetFirePersonName
+	text = {
+		trigger = { has_idea = grantas }
+		localization_key = fire_from_the_job_grantas
+	}
+	text = {
+		trigger = { has_idea = niels }
+		localization_key = fire_from_the_job_niels
+	}
+	text = {
+		trigger = { has_idea = ernest }
+		localization_key = fire_from_the_job_ernest
+	}
+	text = {
+		localization_key = " "
+	}
+}
+
+defined_text = {
+	name = GetEmbezzlementPersonName
+	text = {
+		trigger = { has_idea = grantas }
+		localization_key = uno_consultant.2_grantas.d
+	}
+	text = {
+		trigger = { has_idea = niels }
+		localization_key = uno_consultant.2_niels.d
+	}
+	text = {
+		trigger = { has_idea = ernest }
+		localization_key = uno_consultant.2_ernest.d
+	}
+	text = {
+		localization_key = " "
+	}
+}
+defined_text = {
+	name = GetGovernmentSpeechPersonName
+	text = {
+		trigger = { has_idea = grantas }
+		localization_key = uno_consultant.3_grantas.d
+	}
+	text = {
+		trigger = { has_idea = niels }
+		localization_key = uno_consultant.3_niels.d
+	}
+	text = {
+		trigger = { has_idea = ernest }
+		localization_key = uno_consultant.3_ernest.d
+	}
+	text = {
+		localization_key = " "
+	}
+}
+defined_text = {
+	name = GetAntiWarPersonName
+	text = {
+		trigger = { has_idea = grantas }
+		localization_key = uno_consultant.4_grantas.d
+	}
+	text = {
+		trigger = { has_idea = niels }
+		localization_key = uno_consultant.4_niels.d
+	}
+	text = {
+		trigger = { has_idea = ernest }
+		localization_key = uno_consultant.4_ernest.d
+	}
+	text = {
+		localization_key = " "
+	}
+}
+defined_text = {
+	name = GetPerpetratorPersonName
+	text = {
+		trigger = { has_idea = grantas }
+		localization_key = uno_consultant.5_grantas.d
+	}
+	text = {
+		trigger = { has_idea = niels }
+		localization_key = uno_consultant.5_niels.d
+	}
+	text = {
+		trigger = { has_idea = ernest }
+		localization_key = uno_consultant.5_ernest.d
+	}
+	text = {
+		localization_key = " "
+	}
+}
+defined_text = {
+	name = GetPopularityPersonName
+	text = {
+		trigger = { has_idea = grantas }
+		localization_key = uno_consultant.6_grantas.d
+	}
+	text = {
+		trigger = { has_idea = niels }
+		localization_key = uno_consultant.6_niels.d
+	}
+	text = {
+		trigger = { has_idea = ernest }
+		localization_key = uno_consultant.6_ernest.d
+	}
+	text = {
+		localization_key = " "
+	}
+}
+
+defined_text = {
+	name = GetUncoordinatedPersonName
+	text = {
+		trigger = { has_idea = grantas }
+		localization_key = uno_consultant.7_grantas.d
+	}
+	text = {
+		trigger = { has_idea = niels }
+		localization_key = uno_consultant.7_niels.d
+	}
+	text = {
+		trigger = { has_idea = ernest }
+		localization_key = uno_consultant.7_ernest.d
+	}
+	text = {
+		localization_key = " "
+	}
+}
+
+defined_text = {
+	name = GetRebeccaDeathTitleName
+	text = {
+		trigger = { has_intelligence_agency = yes }
+		localization_key = unoism.15_legacy.t
+	}
+	text = {
+		localization_key = unoism.15_normal.t
+	}
+}
+defined_text = {
+	name = GetRebeccaDeathDescName
+	text = {
+		trigger = { has_intelligence_agency = yes }
+		localization_key = unoism.15_legacy.d
+	}
+	text = {
+		localization_key = unoism.15_normal.d
+	}
+}
+defined_text = {
+	name = GetRebeccaDeathOptionName
+	text = {
+		trigger = { has_intelligence_agency = yes }
+		localization_key = unoism.15_legacy.a
+	}
+	text = {
+		localization_key = unoism.15_normal.a
+	}
+}
+
+defined_text = {
+	name = GetGypsystanDescName
+	text = {
+		trigger = { GYP = { exists = yes }}
+		localization_key = create_gypsystan_exists_desc
+	}
+	text = {
+		localization_key = create_gypsystan_not_exists_desc
+	}
+}

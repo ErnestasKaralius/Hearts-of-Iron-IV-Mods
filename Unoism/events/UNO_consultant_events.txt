@@ -1,0 +1,247 @@
+###########################
+# Consultant Events
+###########################
+
+add_namespace = uno_consultant
+
+country_event = {
+	id = uno_consultant.1
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		set_country_flag = { flag = consultant_event_incoming days = 360 value = 1 }
+		random_list = {
+			15 = { country_event = { id = uno_consultant.2 days = 360 }} # Embezzlement Scandal
+			15 = { country_event = { id = uno_consultant.3 days = 360 }} # Anti-Government Speech
+			15 = { country_event = { id = uno_consultant.4 days = 360 }} # Anti-War Sentiment On the Rise
+			15 = { country_event = { id = uno_consultant.5 days = 360 }} # Industry damaged 
+			15 = { country_event = { id = uno_consultant.6 days = 360 }} # Decreasing Popularity of Unoism
+			15 = { country_event = { id = uno_consultant.7 days = 360 }} # Uncoordinated Government
+		}
+	}
+}
+
+country_event = {
+	id = uno_consultant.2
+	title = uno_consultant.2.t
+	desc = uno_consultant.2.d
+	picture = GFX_report_event_bul_officers_burgas
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_idea = grantas
+			has_idea = niels
+			has_idea = ernest
+		}
+	}
+
+	option = {
+		name = uno_consultant.2.a
+		add_timed_idea = { idea = consultant_embezzlement days = 30 }
+		hidden_effect = { country_event = uno_consultant.1 }
+	}
+}
+
+country_event = {
+	id = uno_consultant.3
+	title = uno_consultant.3.t
+	desc = uno_consultant.3.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_idea = grantas
+			has_idea = niels
+			has_idea = ernest
+		}
+	}
+
+	option = {
+		name = uno_consultant.3.a
+		set_temp_variable = {
+			var = uno_stability_lower_var
+			value = stability
+		}
+		multiply_temp_variable = {
+			var = uno_stability_lower_var
+			value = -0.1
+		}				
+		add_stability = uno_stability_lower_var
+		hidden_effect = { country_event = uno_consultant.1 }
+	}
+}
+
+country_event = {
+	id = uno_consultant.4
+	title = uno_consultant.4.t
+	desc = uno_consultant.4.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_idea = grantas
+			has_idea = niels
+			has_idea = ernest
+		}
+	}
+
+	option = {
+		name = uno_consultant.4.a
+		set_temp_variable = {
+			var = uno_war_support_lower_var
+			value = has_war_support
+		}
+		multiply_temp_variable = { 
+			var = uno_war_support_lower_var 
+			value = -0.1
+		}		
+		add_war_support = uno_war_support_lower_var
+		hidden_effect = { country_event = uno_consultant.1 }
+	}
+}
+
+country_event = {
+	id = uno_consultant.5
+	title = uno_consultant.5.t
+	desc = uno_consultant.5.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_idea = grantas
+			has_idea = niels
+			has_idea = ernest
+		}
+	}
+
+	option = {
+		name = uno_consultant.5.a
+		# Military Factories
+		if = {
+			limit = { 
+				OR = { 
+					num_of_military_factories > 2 
+					num_of_civilian_factories > 2 
+				}
+			}
+			if = {
+				limit = { num_of_military_factories > 2 num_of_military_factories < 10 }
+				random_state = {
+					limit = { is_controlled_by = ROOT arms_factory > 0 }
+					damage_building = { type = arms_factory damage = 0.2 }
+				}
+			}
+			else_if = {
+				limit = { num_of_military_factories > 9 num_of_military_factories < 20 }
+				random_state = {
+					limit = { is_controlled_by = ROOT arms_factory > 0 }
+					damage_building = { type = arms_factory damage = 0.4 }
+				}
+			}
+			else = {
+				random_state = {
+					limit = { is_controlled_by = ROOT arms_factory > 1 }
+					damage_building = { type = arms_factory damage = 0.4 }
+					damage_building = { type = arms_factory damage = 0.4 }
+				}
+			}
+			# Civilian Factories
+			if = {
+				limit = { num_of_civilian_factories > 2 num_of_civilian_factories < 10 }
+				random_state = {
+					limit = { is_controlled_by = ROOT industrial_complex > 0 }
+					damage_building = { type = industrial_complex damage = 0.2 }
+				}
+			}
+			else_if = {
+				limit = { num_of_civilian_factories > 10 num_of_civilian_factories < 20 }
+				random_state = {
+					limit = { is_controlled_by = ROOT industrial_complex > 0 }
+					damage_building = { type = industrial_complex damage = 0.4 }
+				}
+			}
+			else = {
+				random_state = {
+					limit = { is_controlled_by = ROOT industrial_complex > 1 }
+					damage_building = { type = industrial_complex damage = 0.4 }
+					damage_building = { type = industrial_complex damage = 0.4 }
+				}
+			}
+		}
+		else = {
+			random_state = { 
+				limit = { is_controlled_by = ROOT }
+				damage_building = { type = infrastructure damage = 1 }
+			}
+		}
+		hidden_effect = { country_event = uno_consultant.1 }
+	}
+}
+
+country_event = {
+	id = uno_consultant.6
+	title = uno_consultant.6.t
+	desc = uno_consultant.6.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_idea = grantas
+			has_idea = niels
+			has_idea = ernest
+		}
+	}
+
+	option = {
+		name = uno_consultant.6.a
+		set_temp_variable = {
+			var = uno_lower_unoism_ideology_var
+			value = party_popularity@unoism
+		}
+		multiply_temp_variable = {
+			var = uno_lower_unoism_ideology_var
+			value = -0.2
+		}
+		add_popularity = {
+			ideology = unoism
+			popularity = uno_lower_unoism_ideology_var
+		}
+		hidden_effect = { country_event = uno_consultant.1 }
+	}
+}
+
+country_event = {
+	id = uno_consultant.7
+	title = uno_consultant.7.t
+	desc = uno_consultant.7.d
+	picture = GFX_report_event_ast_parliament_house
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_idea = grantas
+			has_idea = niels
+			has_idea = ernest
+		}
+	}
+
+	option = {
+		name = uno_consultant.7.a
+		add_political_power = -100
+		hidden_effect = { country_event = uno_consultant.1 }
+	}
+}

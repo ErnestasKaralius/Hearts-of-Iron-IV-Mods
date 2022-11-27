@@ -1,0 +1,20 @@
+﻿
+GYP = {
+	male = {
+		names = { 
+			Airant Adonay Bartley Credi Corpincho Camlo Daweli Dinki Dimiti Django Lash Leander
+			Llewellyn Manfri Menowin Nehemiah Silvanus Vano Hanzi Kashi Khulai Leshi Merripen
+			Meriful Nitshel Oki Obi Patrin Vandilo Ziroli Zipflo Zinzan
+		}
+	}
+	female = { 
+		names = { Esmeralda Clementina Kezia Mahala Margaret Naomie Rhoda Vadoma Tillie } 
+	}
+	surnames = {
+		Akehurst Allen Amers Ardey Atkins Atwell Birt Borrows Boxley Brazills Burdon Bushnell
+		Challen Collett Cox Cowley Curtis Deakin Dingley Doward Dungate Eason Emmett Ewen
+		Farley Finney Flack Fossett Frances
+
+	}
+	callsigns = { }
+}

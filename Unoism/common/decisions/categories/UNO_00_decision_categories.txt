@@ -1,0 +1,38 @@
+
+unoism_on_the_rise = {
+	icon = spr_the_seeds_of_revolution
+
+	allowed = { }
+}
+
+unoist_decisions = {
+	icon = generic_unoism
+
+	allowed = { }
+
+	visible = {
+		has_government = unoism
+	}
+}
+
+unograd_decisions = {
+	icon = generic_unoism
+
+	allowed = { }
+
+	visible = {
+		has_government = unoism
+		NOT = { has_country_flag = unograd_releasable }
+	}
+}
+
+hire_consultants_decisions = {
+	icon = generic_unoism
+
+	allowed = { }
+
+	visible = {
+		has_government = unoism
+	}
+}
+

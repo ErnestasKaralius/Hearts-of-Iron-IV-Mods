@@ -1,0 +1,79 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_unoist_partisans_recruiting"
+		texturefile = "gfx/interface/ideas/idea_mex_revolutionary_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_unoist_influence"
+		texturefile = "gfx/interface/ideas/idea_por_iberian_workers_united.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_unoist_conscription"
+		texturefile = "gfx/interface/ideas/idea_eng_imperial_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_focus_on_civilian_industry"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_focus_on_military_industry"
+		texturefile = "gfx/interface/ideas/idea_man_five_year_plan_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_focus_on_civ_and_mil_industry"
+		texturefile = "gfx/interface/ideas/idea_generic_local_self_management.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_investments_in_unograd_1"
+		texturefile = "gfx/interface/ideas/idea_tur_balkan_central_bank_wealthy_greece.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_investments_in_unograd_2"
+		texturefile = "gfx/interface/ideas/idea_tur_balkan_central_bank_wealthy_greece.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_investments_in_unograd_3"
+		texturefile = "gfx/interface/ideas/idea_tur_balkan_central_bank_wealthy_greece.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_the_breeding_programme"
+		texturefile = "gfx/interface/ideas/idea_generic_political_support.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_james_uno_pope"
+		texturefile = "gfx/interface/ideas/idea_james_pope.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_queen_karina"
+		texturefile = "gfx/interface/ideas/idea_queen_karina.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_grantas"
+		texturefile = "gfx/interface/ideas/idea_grantas.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_niels"
+		texturefile = "gfx/interface/ideas/idea_niels.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ernest"
+		texturefile = "gfx/interface/ideas/idea_ernest.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_brigita"
+		texturefile = "gfx/leaders/Europe/Portrait_General_Brigita.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_unograd_council"
+		texturefile = "gfx/leaders/Europe/Portrait_Unograd_Council.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_rebecca"
+		texturefile = "gfx/leaders/Europe/Portrait_Operative_Rebecca.dds.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_consultant_embezzlement"
+		texturefile = "gfx/interface/ideas/idea_rom_carol_emptied_accounts.dds"
+	}
+	
+}

@@ -1,0 +1,71 @@
+leader_traits = {
+
+	unoist_reformer = {
+		random = no
+		sprite = 13
+		unoism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	anti_unoist = {
+		random = no
+		unoism_acceptance = -50
+		unoism_drift = -0.01
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	unoist_sympathies = {
+		random = no		
+		unoism_acceptance = 70
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	uno_pope = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.2
+		justify_war_goal_time = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	first_uno_queen = {
+		random = no
+		stability_weekly = 0.05
+		political_advisor_cost_factor = -0.5
+		trade_laws_cost_factor = -0.5
+		mobilization_laws_cost_factor = -0.5
+		economy_cost_factor = -0.5
+		high_command_cost_factor = -0.5
+		air_chief_cost_factor = -0.5
+		army_chief_cost_factor = -0.5
+		navy_chief_cost_factor = -0.5
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	council_of_the_people = {
+		random = no
+		army_core_defence_factor = 0.2
+		master_ideology_drift = 0.15
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

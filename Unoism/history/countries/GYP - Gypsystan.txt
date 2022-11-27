@@ -1,0 +1,134 @@
+capital = 46 #Bucharest
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	tech_support = 1
+}
+
+if = {
+	limit = { 
+		has_dlc = "By Blood Alone" 
+	}
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+	else = {
+		set_technology = {
+			gwtank = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+	}
+	else = {
+		set_technology = {
+			early_submarine = 1
+			early_destroyer = 1
+		}
+	}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.01.01"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 85
+	communism = 5
+	fascism = 10
+}
+
+recruit_character = GYP_pot
+recruit_character = GYP_awt
+recruit_character = GYP_communist_guy
+recruit_character = GYP_ncm
+recruit_character = GYP_acgs
+recruit_character = GYP_nccr
+recruit_character = GYP_fascist_guy
+recruit_character = GYP_ar
+recruit_character = GYP_stc
+recruit_character = GYP_aco2
+recruit_character = GYP_aa2
+recruit_character = GYP_ncs
+recruit_character = GYP_nt
+recruit_character = GYP_acas
+recruit_character = GYP_acd2
+recruit_character = GYP_democratic_guy
+recruit_character = GYP_mt
+recruit_character = GYP_ai2
+recruit_character = GYP_coi
+recruit_character = GYP_acr
+
+set_convoys = 5
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}

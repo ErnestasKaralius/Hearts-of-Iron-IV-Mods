@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_unoism_group"
+		texturefile = "gfx/interface/ideologies/unoism_group.dds"
+	}
+	
+}

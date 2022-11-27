@@ -1,0 +1,53 @@
+on_actions = {
+	on_state_control_changed = {
+		# Stalingrad
+		effect = {
+			if = {
+				limit = { FROM.FROM = { state = 217 } }
+				country_event = { id = uno_rename.21700 }
+				country_event = { id = uno_rename.21701 }
+			}
+		}
+	}
+	on_government_change = {
+		effect = {
+			if = {
+				limit = { has_idea = unoist_partisans_recruiting }
+				remove_ideas = unoist_partisans_recruiting
+			}
+			if = {
+				limit = { has_idea = unoism_defeated }
+				remove_ideas = unoism_defeated
+			}
+		}
+	}
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = { has_country_flag = unograd_releasable }
+				clr_country_flag = unograd_releasable
+				set_cosmetic_tag = unograd_free
+				set_party_name = { 
+					ideology = neutrality 
+					long_name = unograd_provisional_party
+					name = unograd_provisional_party 
+				}
+				set_party_name = { 
+					ideology = fascism 
+					long_name = unograd_una_party_long 
+					name = unograd_una_party
+				}
+				set_party_name = { 
+					ideology = democratic 
+					long_name = unograd_da_party 
+					name = unograd_da_party 
+				}
+				set_party_name = { 
+					ideology = communism 
+					long_name = unograd_fcpu_party_long 
+					name = unograd_fcpu_party 
+				}
+			}
+		}
+	}
+}

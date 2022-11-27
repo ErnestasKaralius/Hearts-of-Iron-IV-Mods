@@ -1,0 +1,407 @@
+characters={
+	GYP_pot={
+		advisor={
+			slot = political_advisor
+			idea_token = GYP_pot
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	GYP_awt={
+		advisor={
+			slot = theorist
+			idea_token = GYP_awt
+			ledger  = air 
+				allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	GYP_communist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GYP_communist_guy
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	GYP_ncm={
+		advisor={
+			slot = navy_chief
+			idea_token = GYP_ncm
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	GYP_acgs={
+		advisor={
+			slot = air_chief
+			idea_token = GYP_acgs
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	GYP_nccr={
+		advisor={
+			slot = navy_chief
+			idea_token = GYP_nccr
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					navy_chief_commerce_raiding_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	GYP_fascist_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GYP_fascist_guy
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	GYP_ar={
+		advisor={
+			slot = high_command
+			idea_token = GYP_ar
+			ledger  = army 
+				allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	GYP_stc={
+		advisor={
+			slot = political_advisor
+			idea_token = GYP_stc
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	GYP_aco2={
+		advisor={
+			slot = army_chief
+			idea_token = GYP_aco2
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	GYP_aa2={
+		advisor={
+			slot = high_command
+			idea_token = GYP_aa2
+			ledger  = army 
+				allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	GYP_ncs={
+		advisor={
+			slot = high_command
+			idea_token = GYP_ncs
+			ledger  = navy 
+				allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	GYP_nt={
+		advisor={
+			slot = theorist
+			idea_token = GYP_nt
+			ledger  = navy 
+				allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	GYP_acas={
+		advisor={
+			slot = high_command
+			idea_token = GYP_acas
+			ledger  = air 
+				allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					air_close_air_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	GYP_acd2={
+		advisor={
+			slot = army_chief
+			idea_token = GYP_acd2
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	GYP_democratic_guy={
+		advisor={
+			slot = political_advisor
+			idea_token = GYP_democratic_guy
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					democratic_reformer 
+				}
+				do_effect  = {
+					not  = {
+						has_government  = democratic 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	GYP_mt={
+		advisor={
+			slot = theorist
+			idea_token = GYP_mt
+			ledger  = army 
+				allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_6"
+			}
+		}
+	}
+	GYP_ai2={
+		advisor={
+			slot = high_command
+			idea_token = GYP_ai2
+			ledger  = army 
+				allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	GYP_coi={
+		advisor={
+			slot = political_advisor
+			idea_token = GYP_coi
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	GYP_acr={
+		advisor={
+			slot = air_chief
+			idea_token = GYP_acr
+			allowed  = {
+					original_tag  = GYP
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+}

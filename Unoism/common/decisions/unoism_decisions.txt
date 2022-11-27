@@ -1,0 +1,1365 @@
+political_actions = {
+
+	create_gypsystan = {
+
+		priority = 1000
+
+		icon = generic_nationalism
+
+		available = {
+			has_full_control_of_state = 46
+			has_full_control_of_state = 81
+			has_full_control_of_state = 84
+		}
+
+		visible = {
+			has_country_flag = gypsystan_considering
+			NOT = { 
+				OR = {
+					GYP = { is_puppet_of = ROOT }
+					any_country = { is_puppet_of = ROOT has_country_flag = another_gypsystan_released }
+				}
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 0
+		
+		complete_effect = {
+			if = {
+				limit = {
+					GYP = { exists = no }
+				}
+				custom_effect_tooltip = gypsystan_puppet_tt
+				hidden_effect = {
+					46 = { add_core_of = GYP }
+					81 = { add_core_of = GYP }
+					84 = { add_core_of = GYP }
+					release = GYP
+					ROOT = { puppet = GYP }
+				}
+			}
+			else = {
+				custom_effect_tooltip = gypsystan_puppet_tt
+				hidden_effect = {
+					create_dynamic_country = {
+						original_tag = GYP
+						46 = { add_core_of = PREV }
+						81 = { add_core_of = PREV }
+						84 = { add_core_of = PREV }
+						transfer_state = 46
+						transfer_state = 81
+						transfer_state = 84
+						PREV = { puppet = PREV }
+						set_country_flag = another_gypsystan_released
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				tag = ROM
+			}
+		}
+	}
+
+	uno_rename_stalingrad = {
+
+		available = {
+			controls_state = 217
+		}	
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		priority = 100
+
+		visible = {
+			has_government = unoism
+			controls_state = 217
+			217 = { NOT = { has_state_flag = renamed_state_stalingrad }}
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			217 = {
+				set_state_name = "Unograd"
+				set_state_flag = renamed_state_stalingrad
+			}
+			set_province_name = { id = 3529 name = "Unograd"}
+		}
+	}
+
+	uno_expand_unograd = {
+
+		available = {
+			has_full_control_of_state = 217
+		}	
+
+		ai_will_do = {
+			base = 50
+			modifier = {
+				add = 10
+				threat > 0.3
+			}
+			modifier = {
+				add = 10
+				threat > 0.6
+			}
+		}
+
+		priority = 99
+
+		visible = {
+			has_country_flag = is_unograd
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+
+		complete_effect = {
+			add_state_core = 829
+			add_state_core = 265
+			add_state_core = 245
+			add_state_core = 238
+			add_state_core = 237
+			add_state_core = 236
+			add_state_core = 218
+		}
+	}
+
+	uno_protect_unograd_city = {
+
+		available = {
+			has_full_control_of_state = 217
+		}	
+
+		ai_will_do = {
+			base = 75
+			modifier = {
+				add = 15
+				threat > 0.7
+			}
+			modifier = {
+				factor = 100
+				any_other_country = {
+					OR = {
+						has_war_with = ROOT
+						is_justifying_wargoal_against = ROOT
+						has_wargoal_against = ROOT
+					}
+				}
+			}
+		}
+
+		priority = 98
+
+		visible = {
+			has_country_flag = is_unograd
+			NOT = { has_global_flag = unograd_fortified }
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		complete_effect = {
+			217 = {
+				add_building_construction = {
+					type = bunker
+					level = 9
+					province = 3529
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 9504
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 6527
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 498
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 11474
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 6
+					province = 3555
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 217 }
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			hidden_effect = { set_global_flag = unograd_fortified }
+		}
+	}
+
+	uno_protect_outskirts = {
+
+		available = {
+			has_full_control_of_state = 217
+		}	
+
+		ai_will_do = {
+			base = 75
+			modifier = {
+				factor = 100
+				any_other_country = {
+					OR = {
+						has_war_with = ROOT
+						is_justifying_wargoal_against = ROOT
+						has_wargoal_against = ROOT
+					}
+				}
+			}
+		}
+
+		priority = 97
+
+		visible = {
+			has_country_flag = is_unograd
+			has_global_flag = unograd_fortified
+			NOT = { has_global_flag = unograd_outskirts_fortified }
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		complete_effect = {
+			217 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9459
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6503
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 6541
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 3503
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 9530
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 217 }
+				limit = {
+					free_building_slots = {
+						building = anti_air_building
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = { set_global_flag = unograd_outskirts_fortified }
+		}
+	}
+}
+
+unoist_decisions = {
+
+	raise_uno_guards = {
+
+		icon = generic_army_support
+
+		available = {
+			ROOT = { has_capitulated = no }
+			has_idea = unoist_conscription
+			any_state = { is_fully_controlled_by = ROOT }
+		}
+
+		visible = {
+			NOT = { has_country_flag = uno_guards_raised }
+		}
+		
+		fire_only_once = yes
+		
+		cost = 80
+		
+		complete_effect = {
+			if = {
+				limit = {
+					has_tech = tech_engineers
+					has_tech = tech_recon
+					has_tech = gw_artillery
+				}
+				division_template = {
+					name = "Uno Guard Division"
+					priority = 2
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+	    	   		 	infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+
+	    	   		 	infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = tech_engineers
+					has_tech = tech_recon
+					NOT = { has_tech = gw_artillery }
+				}
+				division_template = {
+					name = "Uno Guard Division"
+					priority = 2
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+	    	   		 	infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+
+	    	   		 	infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = gw_artillery
+					NOT = {
+						has_tech = tech_engineers
+						has_tech = tech_recon
+					}
+				}
+				division_template = {
+					name = "Uno Guard Division"
+					priority = 2
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+			
+	    	   		 	infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+			
+	    	   		 	infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+
+	    	   		 	infantry = { x = 3 y = 0 }
+						infantry = { x = 3 y = 1 }
+						infantry = { x = 3 y = 2 }
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+					}
+				}
+				else = {
+					division_template = {
+						name = "Uno Guard Division"
+						priority = 2
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+				
+		    	   		 	infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+				
+		    	   		 	infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+
+		    	   		 	infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							infantry = { x = 3 y = 2 }
+						}
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"1st. Uno Guard Division\" division_template = \"Uno Guard Division\" start_experience_factor = 0.95" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"2nd. Uno Guard Division\" division_template = \"Uno Guard Division\" start_experience_factor = 0.95" 
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"3rd. Uno Guard Division\" division_template = \"Uno Guard Division\" start_experience_factor = 0.95" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"4th. Uno Guard Division\" division_template = \"Uno Guard Division\" start_experience_factor = 0.95" 
+					owner = ROOT
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"5th. Uno Guard Division\" division_template = \"Uno Guard Division\" start_experience_factor = 0.95" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"6th. Uno Guard Division\" division_template = \"Uno Guard Division\" start_experience_factor = 0.95" 
+					owner = ROOT
+				}
+			}
+		}
+	
+		ai_will_do = {
+			base = 20
+			modifier = {
+				add = 30
+				threat > 0.5
+			}
+			modifier = {
+				factor = 100
+				any_other_country = {
+					OR = {
+						has_war_with = ROOT
+						is_justifying_wargoal_against = ROOT
+						has_wargoal_against = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	begin_rapid_industrialisation = {
+
+		icon = generic_industry
+
+		available = {
+			ROOT = { has_capitulated = no }
+		}
+
+		fire_only_once = yes
+		
+		cost = 100
+		
+		complete_effect = {
+			country_event = unoism.11
+			add_stability = 0.1
+		}
+		
+		ai_will_do = {
+			base = 80
+		}
+	}
+
+	expand_unoist_armed_forces = {
+
+		icon = ger_military_buildup
+
+		cost = 70
+
+		fire_only_once = yes
+
+		fixed_random_seed = no
+		complete_effect = {
+			add_ideas = unoist_conscription
+			if = {
+				limit = { 
+					has_dlc = "La Resistance"
+					NOT = { original_tag = GYP } 
+				}
+			}
+			ROOT = { 
+				hidden_effect = { 
+					random_list = {
+						20 = { country_event = { id = unoism.14 days = 30 }}
+						20 = { country_event = { id = unoism.14 days = 90 }}
+						20 = { country_event = { id = unoism.14 days = 180 }}
+						20 = { country_event = { id = unoism.14 days = 360 }}
+						20 = { country_event = { id = unoism.14 days = 540 }}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 75
+			modifier = {
+				factor = 100
+				has_manpower < 10000
+			}
+		}
+	}
+
+	draw_uno_card = {
+
+		icon = uno_card
+
+		cost = 30
+
+		fire_only_once = no
+
+		fixed_random_seed = no
+		complete_effect = {
+			custom_effect_tooltip = UNO_card_random_tt
+			ROOT = { hidden_effect = { country_event = unoism.13 }}
+		}
+		ai_will_do = {
+			base = 15
+		}
+	}
+
+	influence_unoism_in_minor_countries = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			ROOT = { has_capitulated = no }
+			custom_trigger_tooltip = { 
+				tooltip = UNO_influence_unoism_cooldown_tt
+				NOT = { has_country_flag = did_unoism_influence }
+			}
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							exists = yes
+							has_capitulated = no
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = { tag = ROOT }
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			FROM.OWNER = {
+				is_major = no
+				FROM = { is_capital = yes }
+				has_capitulated = no
+				NOT = {
+					has_government = unoism
+					has_idea = unoist_influence
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 60
+
+		on_map_mode = map_only
+
+		complete_effect = {
+			set_country_flag = { flag = did_unoism_influence days = 30 value = 1 }
+			FROM.OWNER = {
+				add_timed_idea = {
+					idea = unoist_influence
+					days = 150
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader_with_trait = unoist_sympathies
+							has_country_leader_with_trait = anti_unoist
+						}
+					}
+					hidden_effect = { country_event = unoism.6 }
+				}
+			}
+			custom_effect_tooltip = UNO_influence_unoism_tt
+		}
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				add = 10
+				any_neighbor_country = {
+					NOT = { has_government = unoism }
+				}
+			}
+		}
+	}
+
+	influence_unoism_in_major_countries = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			ROOT = { has_capitulated = no }
+			custom_trigger_tooltip = { 
+				tooltip = UNO_influence_unoism_cooldown_tt
+				NOT = { has_country_flag = did_unoism_influence }
+			}
+		}
+
+		state_target = yes
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						has_variable = historical_capital_for_country
+						var:historical_capital_for_country = {
+							exists = yes
+							has_capitulated = no
+							NOT = { tag = ROOT }
+						}
+					}
+					AND = {
+						is_capital = yes
+						CONTROLLER = {
+							NOT = { tag = ROOT }
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			FROM.OWNER = {
+				is_major = yes
+				FROM = { is_capital = yes }
+				has_capitulated = no
+				NOT = {
+					has_government = unoism
+					has_idea = unoist_influence
+				}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 120
+
+		on_map_mode = map_only
+
+		complete_effect = {
+			set_country_flag = { flag = did_unoism_influence days = 30 value = 1 }
+			FROM.OWNER = {
+				add_timed_idea = {
+					idea = unoist_influence
+					days = 150
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_leader_with_trait = unoist_sympathies
+							has_country_leader_with_trait = anti_unoist
+						}
+					}
+					hidden_effect = { country_event = unoism.6 }
+				}
+			}
+			custom_effect_tooltip = UNO_influence_unoism_tt
+		}
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				add = 10
+				any_neighbor_country = {
+					NOT = { has_government = unoism }
+				}
+			}
+		}
+	}
+}
+
+unograd_decisions = {
+
+	take_back_unoist_holy_land = {
+
+		icon = generic_tank
+
+		available = {
+			is_subject = no
+			has_capitulated = no
+			NOT = { controls_state = 217 }
+			217 = {
+				CONTROLLER = { 
+					NOT = { has_war_with = ROOT is_puppet_of = ROOT }
+				}
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		complete_effect = {
+			if = {
+				limit = {
+					217 = { CONTROLLER = { is_puppet = no }}
+				}
+				217 = {
+					CONTROLLER = { country_event = { id = unoism.7 hours = 12 }}
+				}
+			}
+			else = {
+				217 = {
+					CONTROLLER = { OVERLORD = { country_event = { id = unoism.7 hours = 12 }}}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 60
+			modifier = {
+				add = 15
+				threat > 0.65
+			}
+			modifier = {
+				factor = 0
+				217 = {
+					CONTROLLER = { OR = { is_in_faction_with = ROOT is_justifying_wargoal_against = ROOT has_wargoal_against = ROOT }}
+				}
+			}
+			modifier = {
+				factor = 0
+				217 = {
+					CONTROLLER = { ROOT = { OR = { has_wargoal_against = PREV is_justifying_wargoal_against = PREV }}}
+				}
+			}
+		}
+	}
+
+	establish_unograd_protectorate = {
+
+		icon = eng_install_government
+
+		available = {
+			has_full_control_of_state = 217
+			num_of_controlled_states > 1
+			custom_trigger_tooltip = { 
+				tooltip = UNO_establish_unograd_puppet_tt
+				NOT = { any_country = { has_country_flag = unograd_releasable is_puppet_of = ROOT }}
+			}
+		}
+		
+		fire_only_once = no
+		
+		cost = 100
+		
+		complete_effect = {
+			custom_effect_tooltip = UNO_establish_protectorate_tt
+			hidden_effect = {
+				if = {
+					limit = { tag = SOV NOT = { has_global_flag = sov_established_unograd }}
+					set_global_flag = sov_established_unograd
+					country_event = unoism.16
+				}
+				217 = { remove_core_of = ROOT }
+				217 = { remove_claim_by = ROOT }
+				create_dynamic_country = {
+					original_tag = ROOT
+					set_cosmetic_tag = unograd
+					every_state = {
+						limit = { is_core_of = ROOT }
+						remove_core_of = PREV
+					}
+					transfer_state = 217
+					217 = { add_core_of = PREV }
+					PREV = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					add_stability = 0.3
+					add_war_support = 0.2
+					add_ideas = limited_conscription
+					add_ideas = low_economic_mobilisation
+					add_popularity = { ideology = unoism popularity = 10 }
+					set_party_name = { 
+						ideology = neutrality 
+						long_name = neutrality 
+						name = neutrality 
+					}
+					set_party_name = { 
+						ideology = fascism 
+						long_name = fascism 
+						name = fascism
+					}
+					set_party_name = { 
+						ideology = democratic 
+						long_name = democratic 
+						name = democratic 
+					}
+					set_party_name = { 
+						ideology = communism 
+						long_name = communism 
+						name = communism 
+					}
+					set_party_name = { 
+						ideology = unoism
+						long_name = unograd_council_party_long
+						name = unograd_council_party
+					}
+					create_country_leader = {
+						name = "The Unograd Council"
+						desc = "POLITICS_UNOGRAD_COUNCIL_DESC"
+						picture = "GFX_portrait_unograd_council"
+						expire = "1965.1.1"
+						ideology = true_unoism
+						traits = {
+							council_of_the_people
+						}
+					}
+					create_field_marshal = {
+						name = "Brigita"
+						gfx = "GFX_portrait_brigita"
+						traits = { skilled_staffer offensive_doctrine brilliant_strategist infantry_leader aggressive_assaulter adaptable }
+						skill = 5
+						attack_skill = 5
+						defense_skill = 4
+						planning_skill = 3
+						logistics_skill = 3
+					}
+					set_technology = { gw_artillery = 1 }
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 5000
+						producer = ROOT
+					}
+					if = {
+						limit = { has_tech = tech_engineers }
+						division_template = {
+							name = "Unograd Defense Force"
+							priority = 1
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+					
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+
+								infantry = { x = 2 y = 0 }
+								artillery_brigade = { x = 2 y = 1 }
+								artillery_brigade = { x = 2 y = 2 }
+							}
+							support = {
+								engineer = { x = 0 y = 0 }
+							}
+						}
+						else = {
+							division_template = {
+								name = "Unograd Defense Force"
+								priority = 1
+								regiments = {
+									infantry = { x = 0 y = 0 }
+									infantry = { x = 0 y = 1 }
+									infantry = { x = 0 y = 2 }
+						
+									infantry = { x = 1 y = 0 }
+									infantry = { x = 1 y = 1 }
+									infantry = { x = 1 y = 2 }
+
+									infantry = { x = 2 y = 0 }
+									artillery_brigade = { x = 2 y = 1 }
+									artillery_brigade = { x = 2 y = 2 }
+								}
+							}
+						}
+					}
+					random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Unograd Defense Force\" division_template = \"Unograd Defense Force\" start_experience_factor = 0.9" 
+							owner = PREV
+						}
+					}
+					set_country_flag = unograd_releasable
+					set_country_flag = is_unograd
+				}
+			}
+		}
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 0
+				has_country_flag = is_unograd
+			}
+		}
+	}
+
+	invest_in_unograd = {
+
+		icon = hol_attract_foreign_investors
+
+		available = {
+			ROOT = { has_capitulated = no }
+			custom_trigger_tooltip = { 
+				tooltip = UNO_invest_in_unograd_puppet_tt
+				any_country = { is_puppet_of = ROOT has_country_flag = unograd_releasable has_capitulated = no }
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 130
+
+		cancel_trigger = {
+			OR = {
+				ROOT = { has_capitulated = yes }
+				custom_trigger_tooltip = { 
+					tooltip = UNO_invest_in_unograd_cancel_puppet_tt
+					NOT = { any_country = { has_country_flag = unograd_releasable is_puppet_of = ROOT OR = { has_capitulated = no }}}
+				}
+			}
+		}
+		
+		cost = 80
+		
+		remove_effect = {
+			if = {
+				limit = { 
+					NOT = { has_idea = investments_in_unograd_1 has_idea = investments_in_unograd_2 has_idea = investments_in_unograd_3 }
+				}
+				add_timed_idea = { idea = investments_in_unograd_1 days = 360 }
+			}
+			else_if = {
+				limit = { has_idea = investments_in_unograd_1 }
+				custom_effect_tooltip = UNO_invest_in_unograd_buff_tt
+				hidden_effect = {
+					remove_ideas = investments_in_unograd_1
+					add_timed_idea = { idea = investments_in_unograd_2 days = 360 }
+				}
+			}
+			else_if = {
+				limit = { has_idea = investments_in_unograd_2 }
+				custom_effect_tooltip = UNO_invest_in_unograd_buff_tt
+				hidden_effect = {
+					remove_ideas = investments_in_unograd_2
+					add_timed_idea = { idea = investments_in_unograd_3 days = 360 }
+				}
+			}
+			else = {
+				hidden_effect = { remove_ideas = investments_in_unograd_3 }
+				add_timed_idea = { idea = investments_in_unograd_3 days = 360 } 
+			}
+			custom_effect_tooltip = invest_in_unograd_tt
+			hidden_effect = {
+				random_country = {
+					limit = { has_country_flag = unograd_releasable is_puppet_of = ROOT }
+					add_autonomy_ratio = {
+						value = -0.1
+					}
+					if = {
+						limit = {
+							all_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 1
+									include_locked = yes
+								}
+							}
+						}
+						random_owned_controlled_state = {
+							prioritize = { 217 }
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 2
+								instant_build = yes
+							}
+						}
+					}
+					else = { add_offsite_building = { type = industrial_complex level = 2 }}
+					if = {
+						limit = {
+							all_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+							}
+						}
+						random_owned_controlled_state = {
+							prioritize = { 217 }
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					else = { add_offsite_building = { type = arms_factory level = 1 }}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 45
+		}
+	}
+
+	introduce_the_breeding_programme = {
+
+		icon = generic_military
+
+		available = {
+			ROOT = { has_capitulated = no }
+			custom_trigger_tooltip = { 
+				tooltip = UNO_invest_in_unograd_puppet_tt
+				any_country = { is_puppet_of = ROOT has_country_flag = unograd_releasable has_capitulated = NO NOT = { has_country_flag = breeding_programme_introduced }}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 80
+		
+		complete_effect = {
+			custom_effect_tooltip = breeding_programme_tt
+			hidden_effect = {
+				random_country = {
+					limit = { has_country_flag = unograd_releasable is_puppet_of = ROOT }
+					set_country_flag = breeding_programme_introduced
+					add_ideas = the_breeding_programme
+				}
+			}
+		}
+		
+		ai_will_do = {
+			base = 40
+		}
+	}
+
+	increase_military_size = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			ROOT = { has_capitulated = no }
+			custom_trigger_tooltip = { 
+				tooltip = UNO_military_size_puppet_tt
+				any_country = { is_puppet_of = ROOT has_country_flag = unograd_releasable has_capitulated = no num_of_controlled_states > 0 NOT = { has_country_flag = army_size_increased }}
+			}
+		}
+
+		fire_only_once = no
+
+		cost = 50
+		
+		complete_effect = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
+			custom_effect_tooltip = increase_military_size_tt
+			hidden_effect = {
+				random_country = {
+					limit = { has_country_flag = unograd_releasable is_puppet_of = ROOT }
+					set_country_flag = army_size_increased
+					division_template = {
+						name = "Unogradian Militia"
+						priority = 1
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							artillery_brigade = { x = 0 y = 2 }
+				
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							artillery_brigade = { x = 1 y = 2 }
+						}
+					}
+					random_owned_controlled_state = {
+						prioritize = { 217 }
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Unogradian Militia\" division_template = \"Unogradian Militia\" start_experience_factor = 0.8" 
+							owner = PREV
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+}
+
+hire_consultants_decisions = {
+
+	hire_grantas = {
+		icon = eng_trade_unions_support
+
+		cost = 200
+
+		available = {
+			NOT = {
+				has_idea = niels
+				has_idea = ernest
+			}	
+		}	
+
+		ai_will_do = {
+			factor = 70
+			modifier = {
+				factor = 30
+				has_intelligence_agency = no
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { has_dlc = "La Resistance" }
+					has_country_flag = unograd_releasable
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_idea = grantas }
+		}
+
+		fire_only_once = no
+		fixed_random_seed = no
+
+		complete_effect = {
+			add_ideas = grantas
+			if = {
+				limit = {
+					NOT = { has_country_flag = consultant_event_incoming }
+				}
+				ROOT = { hidden_effect = { country_event = uno_consultant.1 }}
+			}
+		}
+	}
+
+	hire_niels = {
+		icon = eng_trade_unions_support
+
+		cost = 200
+
+		available = {
+			NOT = {
+				has_idea = grantas
+				has_idea = ernest
+			}
+		}	
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		visible = {
+			NOT = { has_idea = niels }
+		}
+
+		fire_only_once = no
+		fixed_random_seed = no
+
+		complete_effect = {
+			add_ideas = niels
+			if = {
+				limit = {
+					NOT = { has_country_flag = consultant_event_incoming }
+				}
+				ROOT = { hidden_effect = { country_event = uno_consultant.1 }}
+			}
+		}
+	}
+
+	hire_ernest = {
+		icon = eng_trade_unions_support
+
+		cost = 200
+
+		available = {
+			NOT = {
+				has_idea = grantas
+				has_idea = niels
+			}
+		}	
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		visible = {
+			has_government = unoism
+			NOT = { has_idea = ernest }
+		}
+
+		fire_only_once = no
+		fixed_random_seed = no
+
+		complete_effect = {
+			add_ideas = ernest
+			if = {
+				limit = {
+					NOT = { has_country_flag = consultant_event_incoming }
+				}
+				ROOT = { hidden_effect = { country_event = uno_consultant.1 }}
+			}
+		}
+	}
+	fire_from_the_job = {
+		icon = generic_break_treaty
+
+		cost = 100
+
+		available = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		priority = 100
+
+		visible = {
+			OR = {
+				has_idea = grantas
+				has_idea = niels
+				has_idea = ernest
+			}
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			if = { 
+				limit = { has_idea = grantas }
+				remove_ideas = grantas
+			}
+			else_if = {
+				limit = { has_idea = niels }
+				remove_ideas = niels
+			}
+			else = { remove_ideas = ernest }
+		}
+	}
+
+}

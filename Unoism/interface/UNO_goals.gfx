@@ -1,0 +1,7 @@
+spriteTypes = {	
+	spriteType = {
+		name = "Unoism"
+		texturefile = "gfx/interface/goals/ideologies/unoism.tga"
+	}
+	
+}

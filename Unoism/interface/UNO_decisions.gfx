@@ -1,0 +1,11 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_decision_category_generic_unoism"
+		texturefile = "gfx/interface/decisions/decision_category_generic_unoism.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_draw_uno_card"
+		texturefile = "gfx/interface/decisions/decision_uno_card.dds"
+	}
+
+}

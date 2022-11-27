@@ -1,0 +1,54 @@
+
+add_namespace = uno_rename
+
+# Unoist country - rename Stalingrad
+country_event = {
+	id = uno_rename.21701
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		has_government = unoism
+		217 = {
+			is_controlled_by = ROOT
+			NOT = { has_state_flag = renamed_state_stalingrad }
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			217 = {
+				set_state_name = "Unograd"
+				set_state_flag = renamed_state_stalingrad
+			}
+			set_province_name = { id = 3529 name = "Unograd"}
+		}
+	}
+}
+
+# Non-Unoist country - rename Unograd
+country_event = {
+	id = uno_rename.21700
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		NOT = { has_government = unoism }
+		217 = {
+			is_controlled_by = ROOT
+			has_state_flag = renamed_state_stalingrad
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			217 = {
+				reset_state_name = yes
+				clr_state_flag = renamed_state_stalingrad
+			}
+			reset_province_name = 3529
+		}
+	}
+}

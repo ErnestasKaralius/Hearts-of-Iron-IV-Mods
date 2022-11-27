@@ -1,0 +1,56 @@
+
+UNO_LOYALISTS_01 = {
+	name = "Unoist Loyalists"
+
+	can_use = { has_government = unoism }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Unoist Loyalists"
+
+	ordered ={
+		1 = { "%d. Unoist Loyalists" }
+		2 = { "%d. Unoist Loyalists" }
+		3 = { "%d. Unoist Loyalists" }
+		4 = { "%d. Unoist Loyalists" }
+		5 = { "%d. Unoist Loyalists" }
+		6 = { "%d. Unoist Loyalists" }
+		7 = { "%d. Unoist Loyalists" }
+		8 = { "%d. Unoist Loyalists" }
+		9 = { "%d. Unoist Loyalists" }
+		10 = { "%d. Unoist Loyalists" }
+		11 = { "%d. Unoist Loyalists" }
+		12 = { "%d. Unoist Loyalists" }
+		13 = { "%d. Unoist Loyalists" }
+		14 = { "%d. Unoist Loyalists" }
+		15 = { "%d. Unoist Loyalists" }
+		16 = { "%d. Unoist Loyalists" }
+		17 = { "%d. Unoist Loyalists" }
+		18 = { "%d. Unoist Loyalists" }
+		19 = { "%d. Unoist Loyalists" }
+		20 = { "%d. Unoist Loyalists" }		
+	}
+}
+
+UNO_DISSIDENTS_01 = {
+	name = "Dissident Division"
+
+	can_use = { has_country_flag = is_unograd has_government = unoism }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Dissident Division"
+
+	ordered ={
+		1 = { "%d. Dissident Division" }
+		2 = { "%d. Dissident Division" }
+		3 = { "%d. Dissident Division" }
+		4 = { "%d. Dissident Division" }
+		5 = { "%d. Dissident Division" }
+		6 = { "%d. Dissident Division" }
+		7 = { "%d. Dissident Division" }
+		8 = { "%d. Dissident Division" }
+		9 = { "%d. Dissident Division" }
+		10 = { "%d. Dissident Division" }	
+	}
+}

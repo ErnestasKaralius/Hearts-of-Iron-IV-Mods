@@ -1,0 +1,1187 @@
+###########################
+# Unoism Events
+###########################
+add_namespace = unoism
+
+country_event = {
+	id = unoism.1
+	title = unoism.1.t
+	desc = unoism.1.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.1.c
+		set_politics = {
+			ruling_party = unoism
+			elections_allowed = no
+		}
+		add_stability = -0.05
+	}
+}
+
+# Unoism on the Rise
+country_event = {
+	id = unoism.2
+	title = unoism.2.t
+	desc = unoism.2.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+		NOT = { has_government = unoism }
+		unoism > 0.6
+		NOT = { unoism > 0.7 }
+	}
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	# We need a referendum
+	option = {
+		name = unoism.2.a
+		add_political_power = -100
+		set_politics = {
+			ruling_party = unoism
+			elections_allowed = no
+		}
+	}
+
+	# Not right now
+	option = {
+		name = unoism.2.b
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = impending_civil_war_tt
+	}
+}
+
+# Class Conflicts Divide [Root.GetName]
+country_event = {
+	id = unoism.3
+	title = unoism.3.t
+	desc = unoism.3.d
+	picture = GFX_report_event_gathering_protest
+	
+	trigger = {
+		has_idea_with_trait = unoist_reformer
+		NOT = { has_government = unoism }
+		unoism > 0.2
+		NOT = { unoism > 0.59 }
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			OR = {
+				NOT = { tag = RAJ }
+				AND = {
+					tag = RAJ
+					is_puppet = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			not = { tag = USA }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 360
+		modifier = {
+			factor = 0.5
+			has_country_flag = unoism_popular_movement
+		}
+	}
+	
+	option = {
+		name = unoism.3.a
+		add_popularity = {
+			ideology = unoism
+			popularity = 0.05
+		}
+		add_stability = -0.05
+	}
+}
+
+# Soldiers Desert to Unoist Partisans
+country_event = {
+	id = unoism.4
+	title = unoism.4.t
+	desc = unoism.4.d
+	picture = GFX_report_event_desertion_poster
+	
+	trigger = {
+		has_idea_with_trait = unoist_reformer
+		NOT = { has_government = unoism }
+		unoism > 0.3
+		NOT = { unoism > 0.59 }
+		NOT = { has_idea = unoist_partisans_recruiting }
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			OR = {
+				NOT = { tag = RAJ }
+				AND = {
+					tag = RAJ
+					is_puppet = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "Man the Guns"
+			}
+			not = { tag = USA }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 360
+		modifier = {
+			factor = 0.5
+			has_country_flag = unoism_popular_movement
+		}
+	}
+	
+	option = {
+		name = unoism.4.a
+		add_popularity = {
+			ideology = unoism
+			popularity = 0.05
+		}
+		add_ideas = unoist_partisans_recruiting
+	}
+}
+
+# Unoist Civil War
+country_event = {
+	id = unoism.5
+	title = unoism.5.t
+	desc = unoism.5.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+		unoism > 0.7
+		num_of_controlled_states > 1
+		NOT = { has_government = unoism }
+		has_civil_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = unoism.5.a
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = {
+			ideology = unoism
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = unoism.5.b
+		ai_chance = {
+			factor = 0
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			start_civil_war = {
+				ruling_party = unoism
+				ideology = democratic
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			start_civil_war = {
+				ruling_party = unoism
+				ideology = fascism
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			start_civil_war = {
+				ruling_party = unoism
+				ideology = neutrality
+				size = 0.5
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			start_civil_war = {
+				ruling_party = unoism
+				ideology = communism
+				size = 0.5
+			}
+		}
+	}
+
+	# Referendum
+	option = {
+		name = unoism.5.c
+		trigger = {
+			is_ai = yes
+		}
+		add_political_power = -100
+		set_politics = {
+			ruling_party = unoism
+			elections_allowed = no
+		}
+	}
+}
+
+country_event = {
+	id = unoism.6
+	title = unoism.6.t
+	desc = unoism.6.d
+	picture = GFX_report_event_generic_rally_3
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.6.a
+		ai_chance = { 
+			base = 40
+			modifier = {
+				factor = 100
+				any_other_country = {
+					has_government = unoism
+					OR = {
+						is_in_faction_with = ROOT
+						is_puppet_of = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				has_idea = james_uno_pope
+			}
+			modifier = {
+				add = 10
+				unoism > 0.2
+			}
+		}
+		add_country_leader_trait = unoist_sympathies
+	}
+
+	option = {
+		name = unoism.6.b
+		ai_chance = { 
+			base = 60
+			modifier = {
+				factor = 100
+				any_other_country = {
+					has_government = unoism
+					OR = {
+						has_war_with = ROOT
+						is_justifying_wargoal_against = ROOT
+						has_wargoal_against = ROOT
+					}
+				}
+			}
+			modifier = {
+				add = 30
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+			modifier = {
+				add = 20
+				is_major = yes
+			}
+		}
+		add_country_leader_trait = anti_unoist
+	}
+}
+
+country_event = {
+	id = unoism.7
+	title = unoism.7.t
+	desc = unoism.7.d
+	picture = GFX_report_event_bose_meeting
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.7.a
+		ai_chance = { 
+			base = 30
+			modifier = {
+				add = 50
+				FROM = { is_in_faction_with = ROOT }
+			}
+			modifier = {
+				add = 30
+				ROOT = { has_opinion = { target = FROM value > 80 }}
+			}
+			modifier = {
+				add = 10
+				ROOT = { has_opinion = { target = FROM value > 40 }}
+			}
+			modifier = {
+				add = 10
+				ROOT = { has_opinion = { target = FROM value > 20 }}
+			}
+			modifier = {
+				add = 50
+				strength_ratio = { tag = FROM ratio < 1.5 }
+			}
+		}
+		FROM = { country_event = unoism.8 }
+	}
+
+	option = {
+		name = unoism.7.b
+		ai_chance = { 
+			base = 60
+			modifier = {
+				factor = 100
+				FROM = {
+					OR = { 
+						has_wargoal_against = ROOT
+						is_justifying_wargoal_against = ROOT
+						has_war_with = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				FROM = { has_civil_war = yes }
+			}
+			modifier = {
+				add = 30
+				FROM = { surrender_progress > 0.6 }
+			}
+			modifier = {
+				add = 20
+				strength_ratio = { tag = FROM ratio > 1.5 }
+			}
+		}
+		FROM = { country_event = unoism.9 }
+	}
+}
+
+country_event = {
+	id = unoism.8
+	title = unoism.8.t
+	desc = unoism.8.d
+	picture = GFX_report_event_german_politician_speech
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.8.a
+		transfer_state = 217
+		add_state_core = 217
+	}
+}
+
+country_event = {
+	id = unoism.9
+	title = unoism.9.t
+	desc = unoism.9.d
+	picture = GFX_report_event_defensive_preparations
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.9.a
+		ai_chance = { 
+			base = 70
+			modifier = {
+				add = 20
+				strength_ratio = { tag = FROM ratio > 1 }
+			}
+		}
+		create_wargoal = {
+			type = take_state_focus
+			target = FROM
+			expire = 130
+			generator = { 217 }
+		}
+		if = {
+			limit = {
+				217 = { NOT = { is_claimed_by = ROOT }}
+			}
+			add_state_claim = 217
+		}
+	}
+
+	option = {
+		name = unoism.9.b
+		ai_chance = { 
+			base = 10
+			modifier = {
+				factor = 100
+				strength_ratio = { tag = FROM ratio < 1 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_wargoal_against = FROM
+					is_justifying_wargoal_against = FROM
+				}
+			}
+		}
+		add_ai_strategy = {
+			type = antagonize
+			id = FROM
+			value = 200
+		}
+		if = {
+			limit = {
+				217 = { NOT = { is_claimed_by = ROOT }}
+			}
+			add_state_claim = 217
+		}
+		set_temp_variable = {
+			var = uno_scared_lower_var
+			value = stability
+		}
+		multiply_temp_variable = {
+			var = uno_scared_lower_var
+			value = -0.07
+		}				
+		add_stability = uno_scared_lower_var
+	}
+}
+
+country_event = {
+	id = unoism.11
+	title = unoism.11.t
+	desc = unoism.11.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.11.a
+		ai_chance = { 
+			base = 35
+		}
+		add_ideas = focus_on_civilian_industry
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	option = {
+		name = unoism.11.b
+		ai_chance = { 
+			base = 35
+		}
+		add_ideas = focus_on_military_industry
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+	option = {
+		name = unoism.11.c
+		ai_chance = { 
+			base = 30
+		}
+		add_ideas = focus_on_civ_and_mil_industry
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = unoism.12
+	title = unoism.12.t
+	desc = unoism.12.d
+	picture = GFX_report_event_spr_spanish_civil_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.12.a
+		kill_country_leader = yes
+		hidden_effect = { add_country_leader_trait = anti_unoist }
+	}
+}
+
+country_event = {
+	id = unoism.13
+	title = unoism.13.t
+	desc = unoism.13.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.13.a
+		custom_effect_tooltip = UNO_card_drawn_tt
+		hidden_effect = {
+			random_list = {
+				1 = {
+					add_timed_idea = { idea = communist_partisans_recruiting days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = political_turmoil days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GER_ostwall_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GER_autarky_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_scientist_defect days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = ENG_colonial_elite days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = home_of_revolution days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = FRA_inefficient_economy_1 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CHI_ineffective_bureaucracy days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CHI_war_of_resistance days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = german_advisors days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = FRA_flying_artillery days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = FRA_firepower days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = FRA_anti_fascist_immigrants days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = FRA_womens_suffrage days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = ENG_steady_as_she_goes_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = ENG_a_change_in_course_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = for_the_emperor_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = JAP_superior_will days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = USA_privatization days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = new_deal days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = wilkies_new_deal days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = bureau_of_ships_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CHI_elite_mountaineers days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CHI_construction_battalions days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CAN_the_plan days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = AST_citizen_military_forces days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = AST_support_indonesian_uprising days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = NZL_social_security_act days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HOL_weak_government days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HOL_expand_the_colonial_army days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HOL_naval_heritage days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HOL_liberation days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HUN_hungarian_monarchy days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CZE_beacon_of_liberty days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CZE_divided_nation days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = YUG_idea_slovene_nationalism days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = YUG_idea_macedonian_opposition days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = fascism_banned days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = MTG_naval_treaty_adherent days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = POL_internationalism_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HUN_interventionism days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HUN_charles_v days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HUN_license_foreign days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = HUN_assault_gun_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = sisu days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CHI_hyper_inflation_2 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = CHI_ineffective_bureaucracy_warlord days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = USA_us_air_force days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = USA_homeland_defense days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = USA_full_desegregation days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = USA_labour_management_relations_act days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = strategic_bombing_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = home_of_the_free days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GER_bulwark_against_bolshevism days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = JAP_german_rocketry days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = MAN_underground_gun_shops days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = MAN_bolster_nationalism days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SAF_emergency_workers days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SAF_ossewabrandwag_2 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = NZL_the_manpower_act days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = NZL_waitangi_tribunal days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = NZL_in_the_darkness days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = YUG_idea_expanded_mining_industry days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = YUG_idea_tank_conversions days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = race_for_the_bomb_outclassed days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = why_we_fight_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = deterrence days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = volunteer_corps_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = foreign_expeditions_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = indoctrination_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = liberty_ethos_focus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = military_parade days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = nation_building days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_economic_fluctuations days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_security_batallions days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_battle_for_the_bosporus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_political_instability_republican_2 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_eon_fascist days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_megali_idea_triumphant days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_sophistry_and_science_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_military_dictatorship days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_defender_of_the_balkans days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_guardians_of_the_balkans days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_nationalist_propaganda days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_the_fate_of_the_balkans days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_bulgarian_shipping_chamber days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_supremacy_on_the_bosporus days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_international_pilot_training_program days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_national_industry_04 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_second_national_catastrophe_02 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = TUR_etatism days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = TUR_populism days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = TUR_objectors_flocking_to_military_service days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = TUR_the_battle_for_our_nations_survival days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = TUR_disorganised_armed_forces_28 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = TUR_turkish_interventionism days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_agrarian_society days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = GRE_debt_to_the_ifc days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BUL_imro_03 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BALTIC_international_brigades days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BALTIC_economic_union_1 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BALTIC_paramilitaries_aligning days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = BALTIC_recent_skirmish days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = LIT_baltic_defence_army days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = LAT_saeima_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = LAT_neopaganism_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = LIT_agrarian_society days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = LIT_invested_in_farms_1 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = LIT_seimas_idea_1 days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = LIT_patriotic_socialism_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = EST_corporate_chambers_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = EST_vapsid_youth_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_understaffed_bureaucracy days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_second_five_year_plan_fake_1936_ns days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_ground_based_training days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_the_peoples_revolution_idea days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_politicized_military_keep days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_trotskyist_revolutionary_agitation_weakened days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_support_from_farmers  days = 360 }
+				}
+				1 = {
+					add_timed_idea = { idea = SOV_stakhanovite_movement days = 360 }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { 
+								has_idea = PRC_soviet_tribute_3 SOV = { OR = { exists = no has_war_with = ROOT is_justifying_wargoal_against = ROOT has_wargoal_against = ROOT }}
+							}
+						}
+						add_timed_idea = { idea = PRC_soviet_tribute_3 days = 360 }
+					}
+					else = {
+						add_timed_idea = { idea = MAN_exiled_imperial_family days = 360 }
+					}
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_war_with = GER has_idea = GRE_schachtplan }
+						}
+						add_timed_idea = { idea = GRE_schachtplan days = 360 }
+					}
+					else = {
+						add_timed_idea = { idea = MEX_church_power_2 days = 360 }
+					}
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { 
+								has_idea = neutrality_idea any_other_country = { OR = { has_war_with = ROOT is_justifying_wargoal_against = ROOT has_wargoal_against = ROOT }}
+							}
+						}
+						add_timed_idea = { idea = neutrality_idea days = 360 }
+					}
+					else = {
+						add_timed_idea = { idea = POR_estado_novo_2 days = 360 }
+					}
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { 
+								has_political_power < 20 has_idea = HOL_curtail_colonial_autonomy_overlord 
+							}
+						}
+						add_timed_idea = { idea = HOL_curtail_colonial_autonomy_overlord days = 360 }
+					}
+					else = {
+						add_timed_idea = { idea = MAN_mukden_military_academy days = 360 }
+					}		
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { 
+								has_idea = HUN_treaty_of_triannon any_other_country = { OR = { has_war_with = ROOT is_justifying_wargoal_against = ROOT has_wargoal_against = ROOT }}
+							}
+						}
+						add_timed_idea = { idea = HUN_treaty_of_triannon days = 360
+						}
+					}
+					else = {
+						add_timed_idea = { idea = MEX_cedillo_tension days = 360 }
+					}
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = SPR_collectivized_society }
+						}
+						add_ideas = SPR_collectivized_society
+					}
+					else = { add_ideas = war_economy }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = undisturbed_isolation }
+						}
+						add_ideas = undisturbed_isolation
+					}
+					else = { add_ideas = civilian_economy }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = war_economy }
+						}
+						add_ideas = war_economy
+					}
+					else = { add_ideas = tot_economic_mobilisation }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = volunteer_only }
+						}
+						add_ideas = volunteer_only
+					}
+					else = { add_ideas = limited_conscription }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = tot_economic_mobilisation }
+						}
+						add_ideas = tot_economic_mobilisation
+					}
+					else = { add_ideas = war_economy }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = closed_economy }
+						}
+						add_ideas = closed_economy
+					}
+					else = { add_ideas = limited_exports }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = all_adults_serve }
+						}
+						add_ideas = all_adults_serve
+					}
+					else = { add_ideas = service_by_requirement }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = scraping_the_barrel }
+						}
+						add_ideas = scraping_the_barrel
+					}
+					else = { add_ideas = extensive_conscription }
+				}
+				1 = {
+					if = {
+						limit = {
+							NOT = { has_idea = civilian_economy }
+						}
+						add_ideas = civilian_economy
+					}
+					else = { add_ideas = partial_economic_mobilisation }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = unoism.14
+	title = unoism.14.t
+	desc = unoism.14.d
+	picture = GFX_report_event_rebecca_operative
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_government = unoism
+	}
+
+	option = {
+		name = unoism.14.a
+		create_operative_leader = {
+			name = "Rebecca"
+			picture = "GFX_portrait_rebecca"
+			traits = { operative_seducer operative_linguist operative_double_agent }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			female = yes
+			nationalities = { GYP HOL ROOT }
+		}
+		hidden_effect = {
+			random_list = {
+				30 = { country_event = { id = unoism.15 days = 180 }}
+				30 = { country_event = { id = unoism.15 days = 360 }}
+				30 = { country_event = { id = unoism.15 days = 540 }}
+			}
+		}
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				OR = {
+					has_war_with = GYP
+					is_justifying_wargoal_against = GYP
+					has_wargoal_against = GYP
+				}
+			}
+		}
+	}
+	option = {
+		name = unoism.14.b
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+country_event = {
+	id = unoism.15
+	title = unoism.15.t
+	desc = unoism.15.d
+	picture = GFX_report_event_rebecca_operative
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_government = unoism
+	}
+
+	option = {
+		name = unoism.15.a
+		unlock_decision_tooltip = create_gypsystan
+		set_country_flag = gypsystan_considering
+	}
+}
+
+country_event = {
+	id = unoism.16
+	title = unoism.16.t
+	desc = unoism.16.d
+	picture = GFX_report_event_bul_muraviev_protest
+
+	is_triggered_only = yes
+
+	option = {
+		name = unoism.16.a
+		add_stability = -0.1
+		add_war_support = -0.05
+	}
+}

@@ -1,0 +1,450 @@
+ideas = {
+
+	##################################
+	####### OLD ADVISER SYSTEM #######
+	##################################
+
+#	political_advisor = {
+#		generic_unoist_reformer = {
+#
+#			allowed = {
+#				NOT = { has_available_idea_with_traits = { idea = unoist_reformer limit = 1 }}
+#			}
+#
+#			removal_cost = -1
+#
+#			traits = { unoist_reformer }
+#
+#			do_effect = {
+#				NOT = { has_government = unoism }
+#			}
+#			
+#			ai_will_do = {
+#				factor = 1
+#			}
+#		}
+#
+#		james_uno_pope = {
+#
+#			picture = james_pope
+#
+#			cost = 150
+#
+#			available = {
+#				if = {
+#					limit = { has_dlc = "Man the Guns" }	
+#					NOT = { has_autonomy_state = autonomy_supervised_state }
+#				}
+#			}
+#
+#			traits = { uno_pope unoist_reformer }
+#
+#			ai_will_do = {
+#				base = 0.5
+#				modifier = {
+#					add = 0.5
+#					threat > 0.15
+#				}
+#				modifier = {
+#					add = -1
+#					has_country_leader_with_trait = anti_unoist
+#				}
+#				modifier = {
+#					add = -0.5
+#					is_major = yes
+#				}
+#				modifier = {
+#					add = 0.5
+#					has_idea = unoist_influence
+#				}
+#				modifier = {
+#					add = -5
+#					any_other_country = {
+#						has_government = unoism
+#						OR = {
+#							has_war_with = ROOT
+#							is_justifying_wargoal_against = ROOT
+#							has_wargoal_against = ROOT
+#						}
+#					}
+#				}
+#			}
+#		}
+#
+#		queen_karina = {
+#
+#			picture = queen_karina
+#
+#			cost = 100
+#
+#			available = {
+#				has_government = unoism
+#				hidden_trigger = { NOT = { has_country_flag = unograd_releasable }}
+#				OR = {
+#					controls_state = 217
+#					custom_trigger_tooltip = { 
+#						tooltip = UNO_queen_karina_puppet_tt
+#						any_country = { is_puppet_of = ROOT controls_state = 217 }
+#					}
+#				}
+#			}
+#
+#			traits = { first_uno_queen }
+#
+#			ai_will_do = {
+#				factor = 100
+#			}
+#		}
+#	}
+
+	country = {
+		unoist_partisans_recruiting = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = mex_revolutionary_army
+			
+			modifier = {
+				conscription = -0.002
+				unoism_drift = 0.05
+			}
+		}
+
+		unoism_defeated = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_democratic_drift_bonus
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		
+ 		unoist_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_government = unoism }
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = por_iberian_workers_united
+			
+			modifier = {
+				unoism_drift = 0.15
+				unoism_acceptance = 25
+			}
+		}
+
+		unoist_conscription = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = unoism
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+
+			removal_cost = -1
+
+			picture = eng_imperial_conscription
+			
+			modifier = {
+				conscription = 0.05
+				training_time_factor = -0.2
+			}
+		}
+
+		focus_on_civilian_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		focus_on_military_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_tank
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+
+		focus_on_civ_and_mil_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_local_self_management
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		investments_in_unograd_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+
+			removal_cost = -1
+
+			picture = tur_balkan_central_bank_wealthy_greece
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		investments_in_unograd_2 = {
+
+			name = investments_in_unograd_1
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+
+			removal_cost = -1
+
+			picture = tur_balkan_central_bank_wealthy_greece
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		investments_in_unograd_3 = {
+
+			name = investments_in_unograd_1
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+
+			removal_cost = -1
+
+			picture = tur_balkan_central_bank_wealthy_greece
+			
+			modifier = {
+				consumer_goods_factor = -0.2
+			}
+		}
+
+		the_breeding_programme = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = unoism
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+
+			removal_cost = -1
+
+			picture = idea_generic_political_support
+			
+			modifier = {
+				monthly_population = 50
+			}
+		}
+
+		grantas = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = unoism
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+
+			removal_cost = -1
+
+			picture = idea_grantas
+			
+			modifier = {
+				decryption = 2
+				encryption = 2
+				agency_upgrade_time = -0.7
+				operation_outcome = 0.5
+				operative_slot = 1
+				crypto_strength = 2
+				decryption_power = 50
+			}
+		}
+
+		niels = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = unoism
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+
+			removal_cost = -1
+
+			picture = idea_niels
+			
+			modifier = {
+				army_org = 3
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+				attrition = -0.1
+			}
+		}
+
+		ernest = {
+			
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = unoism
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+
+			removal_cost = -1
+
+			picture = idea_ernest
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				global_building_slots = 1
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
+				industry_free_repair_factor = 0.5
+				consumer_goods_factor = -0.03
+			}
+		}
+		
+		consultant_embezzlement = {
+
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = unoism
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+
+}

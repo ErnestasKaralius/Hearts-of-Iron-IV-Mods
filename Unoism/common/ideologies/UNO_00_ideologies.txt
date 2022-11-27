@@ -1,0 +1,46 @@
+ideologies = {
+	unoism = {
+		types = {
+			true_unoism = {}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_UNOIST_1"
+			"FACTION_NAME_UNOIST_2"
+			"FACTION_NAME_UNOIST_3"
+			"FACTION_NAME_UNOIST_4"
+			"FACTION_NAME_UNOIST_5"
+		}
+		
+		color = { 235 52 116 }
+		
+		war_impact_on_world_tension = 0.7
+		faction_impact_on_world_tension = 0.5
+		
+		ai_communist = yes
+		
+		rules = {
+			can_force_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+		}
+		
+		can_collaborate = yes
+		can_host_government_in_exile = yes
+		
+		modifiers = {
+			puppet_cost_factor = -0.7
+			civilian_intel_to_others = 10.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+			hidden_modifier = { join_faction_tension = -0.1 }
+		}
+		
+		faction_modifiers = {}
+	}
+
+}
