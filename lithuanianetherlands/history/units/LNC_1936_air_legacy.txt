@@ -1,0 +1,77 @@
+﻿
+air_wings = {
+	7 = {
+		fighter_equipment_1 = {
+			owner = "LNC" 
+			amount = 100
+		}
+		name = "1e Jachtvliegtuiggroep"
+
+		fighter_equipment_1 = {
+			owner = "LNC" 
+			amount = 75
+		}
+		name = "3e Jachtvliegtuiggroep"
+	}
+
+	814 = {
+		fighter_equipment_1 = {
+			owner = "LNC" 
+			amount = 100
+		}
+		name = "1-asis Naikintuvų Pulkas"
+	}
+	
+	6 = {
+		CAS_equipment_1 = {
+			owner = "LNC" 
+			amount = 100
+		}
+		name = "2e Jachtvliegtuiggroep"
+	}
+	295 = {
+		CAS_equipment_1 = {
+			owner = "LNC" 
+			amount = 10
+		}
+		name = "Congo Air Support Wing"
+		
+		fighter_equipment_0 = {
+			owner = "LNC" 
+			amount = 15
+		}
+		name = "Congo Defense Wing"
+	}
+	309 = {
+		fighter_equipment_0 = {
+			owner = "LNC" 
+			amount = 10
+		}
+		name = "Suriname Defense Wing"
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "LNC" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 35
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "LNC" 
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 35
+	}
+}

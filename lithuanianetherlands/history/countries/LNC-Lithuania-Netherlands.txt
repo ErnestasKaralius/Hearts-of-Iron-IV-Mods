@@ -1,0 +1,672 @@
+﻿capital = 6 # Brussels
+
+if = {
+	limit = { 
+		has_dlc = "Man the Guns" 
+	}
+	set_naval_oob = "LNC_1936_naval_mtg"
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_heavy_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+	}
+	else = {
+		set_naval_oob = "LNC_1936_naval_legacy"
+		set_technology = {
+			early_submarine = 1
+			basic_submarine = 1
+			early_destroyer = 1
+			basic_destroyer = 1
+			early_light_cruiser = 1
+			early_heavy_cruiser = 1
+			early_battleship = 1
+			basic_battleship = 1
+			early_battlecruiser = 1
+			transport = 1
+		}
+	}
+}
+
+if = {
+	limit = { 
+		has_dlc = "No Step Back" 
+	}
+	set_oob = "LNC_1936_nsb"
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	else = {
+		set_oob = "LNC_1936"
+		set_technology = {
+			gwtank = 1
+			basic_light_tank = 1
+		}
+	}
+}
+
+if = {
+	limit = { 
+		has_dlc = "By Blood Alone" 
+	}
+	set_air_oob = "LNC_1936_air_bba"
+	set_technology = {
+		aa_lmg = 1
+		aa_cannon_1 = 1
+		engines_1 = 1
+		early_bombs = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		basic_small_airframe = 1
+		iw_medium_airframe = 1
+	}
+	else = {
+		set_air_oob = "LNC_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			cv_early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+	}
+}
+
+set_research_slots = 4
+
+set_fuel_ratio = 0.2
+
+set_stability = 0.33
+set_war_support = 0.21
+
+recruit_character = LNC_jaschutte
+recruit_character = LNC_niels
+recruit_character = LNC_grantas
+recruit_character = LNC_karina
+recruit_character = LNC_ernest
+recruit_character = LNC_brigita
+recruit_character = LNC_nikita
+recruit_character = LNC_outlook
+recruit_character = LNC_noob_male
+recruit_character = LNC_noob_female
+recruit_character = LNC_kazys_paleckis
+recruit_character = LNC_jonas_gudaitis
+recruit_character = LNC_stasys_galdikas
+recruit_character = LNC_romy_brugman
+recruit_character = LNC_amir_de_moor
+recruit_character = LNC_shen_xinxin
+recruit_character = LNC_povilas_balciunas
+recruit_character = LNC_iesus
+recruit_character = LNC_rebecca
+recruit_character = LNC_rowan
+recruit_character = LNC_josef_kaal
+recruit_character = LNC_rogier_van_eijk
+recruit_character = LNC_algirdas_krupavicius
+recruit_character = LNC_piet_oosterhuis
+recruit_character = LNC_claudia_kuhn
+recruit_character = LNC_zydrunas_rapsys
+recruit_character = LNC_vincent_von_werth
+recruit_character = LNC_hubert_bauwens
+recruit_character = LNC_ramunas_navickas
+recruit_character = LNC_jurius_avizienis
+recruit_character = LNC_arturas_sirvydas
+recruit_character = LNC_antonius_cornelissen
+recruit_character = LNC_henk_ebbers
+recruit_character = LNC_tadas_steponavicius
+recruit_character = LNC_vygantas_karvelis
+recruit_character = LNC_wisse_vollenhoven
+recruit_character = LNC_kees_tinbergen
+recruit_character = LNC_sigitas_mikutavicius
+recruit_character = LNC_mykolas_baltrusaitis
+recruit_character = LNC_albert_van_gelderen
+recruit_character = LNC_nick_kuijpers
+recruit_character = LNC_azuolas_poskus
+recruit_character = LNC_dziugas_dauksa
+recruit_character = LNC_mark_overmars
+recruit_character = LNC_carel_gerritsen
+recruit_character = LNC_ovidijus_jankauskas
+recruit_character = LNC_frank_zweerts
+recruit_character = LNC_gediminas_vileisis
+recruit_character = LNC_zygimantas_dovydaitis
+recruit_character = LNC_julius_roodenburgh
+recruit_character = LNC_daniel_moerman
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Kęstas Nilsenas"
+		gfx = "gfx/leaders/LNC/Portrait_LNC_Kestas_Nilsenas.dds"
+		traits = { operative_infiltrator operative_safe_cracker }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { LNC ENG }
+	}
+	create_operative_leader = {
+		name = "Rodrick Gastell"
+		gfx = "gfx/leaders/LNC/Portrait_LNC_Rodrick_Gastell.dds"
+		traits = { operative_tough operative_master_interrogator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { LNC GER }
+	}
+}
+
+add_ideas = {
+	LNC_peasant_militias
+	LNC_divided_union_1
+	
+	partial_economic_mobilisation
+	limited_conscription
+	Limited_exports
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	add_ideas = MTG_naval_treaty_adherent
+}
+
+309 = {
+	start_resistance = yes
+	set_compliance = 5
+	set_resistance = 20
+	set_garrison_strength = 0.3
+}
+
+295 = {
+	start_resistance = yes
+	set_compliance = 3
+	set_resistance = 28
+	set_garrison_strength = 0.3
+}
+
+538 = {
+	start_resistance = yes
+	set_compliance = 3
+	set_resistance = 28
+	set_garrison_strength = 0.3
+}
+
+718 = {
+	start_resistance = yes
+	set_compliance = 3
+	set_resistance = 28
+	set_garrison_strength = 0.3
+}
+
+768 = {
+	start_resistance = yes
+	set_compliance = 3
+	set_resistance = 28
+	set_garrison_strength = 0.2
+}
+
+769 = {
+	start_resistance = yes
+	set_compliance = 3
+	set_resistance = 28
+	set_garrison_strength = 0.2
+}
+
+888 = {
+	start_resistance = yes
+	set_compliance = 3
+	set_resistance = 28
+	set_garrison_strength = 0.3
+}
+
+889 = {
+	start_resistance = yes
+	set_compliance = 3
+	set_resistance = 28
+	set_garrison_strength = 0.3
+}
+
+890 = {
+	start_resistance = yes
+	set_compliance = 3
+	set_resistance = 28
+	set_garrison_strength = 0.4
+}
+
+set_technology = {
+	# Weapons
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	marines = 1
+
+	# Support Companies
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+
+	# Artillery
+	gw_artillery = 1
+	interwar_antiair = 1
+
+	# Doctrines
+	fleet_in_being = 1
+	force_rotation = 1
+
+	# Industry
+	fuel_silos = 1
+
+	# Trains
+	basic_train = 1
+}
+
+set_convoys = 75
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	add_command_power = 100
+
+	set_fuel_ratio = 0.7
+
+	set_war_support = 0.75
+	set_stability = 0.65
+
+	remove_ideas = LNC_divided_union_1
+	
+	add_ideas = {
+		LNC_divided_union_3
+		LNC_socialist_propaganda
+		LNC_militarised_industries
+		LNC_patriotic_youth_idea
+	 	LNC_peoples_industry_idea
+		LNC_army_maneuvers_idea
+		LNC_hangar_expansion
+	 	LNC_naval_buildup
+
+		war_economy
+		extensive_conscription
+	}
+	
+	unlock_national_focus = LNC_rewrite_the_constitution
+	unlock_national_focus = LNC_stay_loyal_to_proletariat
+	unlock_national_focus = LNC_support_jaschutte
+	unlock_national_focus = LNC_expand_the_military_sector
+	unlock_national_focus = LNC_patriotic_youth
+	unlock_national_focus = LNC_reorganise_LDAF
+	unlock_national_focus = LNC_two_year_plan
+	unlock_national_focus = LNC_army_maneuvers
+	unlock_national_focus = LNC_a_nation_ready_for_war
+	unlock_national_focus = LNC_invite_foreign_pilots	
+	unlock_national_focus = LNC_construct_new_hangars
+	unlock_national_focus = LNC_begin_the_naval_buildup
+	unlock_national_focus = LNC_build_new_shipyards
+	unlock_national_focus = LNC_advanced_admilar_training
+
+	complete_national_focus = LNC_brussels_technology_institute
+	complete_national_focus = LNC_focus_on_assault_strategies
+	complete_national_focus = LNC_pilotenschool
+	complete_national_focus = LNC_baltijos_laivu_statykla
+	complete_national_focus = LNC_mechanised_units
+	complete_national_focus = LNC_reorganise_LDAF
+	complete_national_focus = LNC_two_year_plan
+		
+	if = {
+		limit = {
+			has_dlc = "Man the Guns" 
+		}
+		set_naval_oob = "LNC_1939_naval_mtg"
+		remove_ideas = MTG_naval_treaty_adherent
+		else = {
+			set_naval_oob = "LNC_1939_naval_legacy"
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_oob = "LNC_1939_nsb"
+		set_technology = {
+			improved_light_tank_chassis = 1
+			armor_tech_1 = 1
+			engine_tech_1 = 1
+		}
+		else = {
+			set_oob = "LNC_1939"
+			set_technology = {
+				improved_light_tank = 1
+			}
+		}
+	}
+
+	if = {
+		limit = { 
+			has_dlc = "By Blood Alone" 
+		}
+		set_air_oob = "LNC_1939_air_bba"
+		else = {
+			set_air_oob = "LNC_1939_air_legacy"
+		}
+	}
+
+	#Trade
+	create_import = {
+		resource = steel
+		factories = 3
+		exporter = SWE
+	}
+
+	set_convoys = 160
+
+	set_technology = {
+		# Weapons
+		improved_infantry_weapons = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+		support_weapons2 = 1
+
+		# Support Companies
+		tech_support = 1	
+		tech_engineers2 = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		tech_maintenance_company = 1
+
+		# Artillery
+		gw_artillery = 1
+		interwar_artillery = 1
+		interwar_antiair = 1
+
+		# Doctrines
+		sup_delay = 1
+		mobile_defence = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+		fighter_baiting = 1
+		low_echelon_support = 1
+		convoy_escorts = 1
+
+		# Electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		basic_decryption = 1
+
+		# Industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		fuel_silos = 1
+		fuel_refining2 = 1
+		oil_processing = 1
+		excavation1 = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1935.04.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	fascism = 10
+	communism = 50
+	neutrality = 20
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = communism
+		last_election = "1939.04.21"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 10
+		fascism = 5
+		communism = 70
+		neutrality = 15
+	}
+	
+	add_corps_commander_role = {
+		character = LNC_rebecca
+		traits = { scavenger }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 2
+	}
+	add_corps_commander_role = {
+		character = LNC_rowan
+		traits = { camouflage_expert }
+		skill = 1
+		attack_skill = 1
+		defense_skill =  1
+		planning_skill = 2
+		logistics_skill = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	create_equipment_variant = {
+		name = "LN Class"
+		type = ship_hull_submarine_2
+		name_group = LNC_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Ouwens Class"					
+		type = ship_hull_light_2
+		name_group = LNC_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Schutte Class"					
+		type = ship_hull_light_2
+		name_group = LNC_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_sweeper_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Vilnius-Amsterdam Class"					
+		type = ship_hull_light_2
+		name_group = LNC_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_1 
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Grant Class"
+		type = ship_hull_cruiser_2
+		name_group = LNC_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			mid_1_custom_slot = ship_torpedo_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Ernest Class"
+		type = ship_hull_cruiser_2
+		name_group = LNC_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = ship_sonar_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			front_1_custom_slot = ship_anti_air_2
+			mid_1_custom_slot = ship_torpedo_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Queen Class"
+		type = ship_hull_heavy_1
+		name_group = LNC_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
+		}
+	}
+	else = {
+		# Battleship
+		create_equipment_variant = {
+			name = "Queen Class"
+			type = battleship_2
+			parent_version = 0
+			upgrades = {
+				ship_reliability_upgrade = 3
+				ship_engine_upgrade = 4
+				ship_armor_upgrade = 3
+				ship_gun_upgrade = 2
+			}
+		}
+	}
+}
+
+if = {
+	limit = { has_dlc = "No Step Back" }
+	create_equipment_variant = {
+		name = "The King"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot =  tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_2 = additional_machine_guns
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 2
+			tank_nsb_engine_upgrade = 2
+		}
+		icon = "gfx/interface/technologies/lnc_basic_light_tank.dds"
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Untamed Bullet"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "Molten Fury" 
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Frozen Fire" 
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+
+	create_equipment_variant = {
+		name = "The Shark"
+		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+}

@@ -1,0 +1,152 @@
+
+LNC_change_indonesian_leader = {
+	if = {
+		limit = { FROM = { has_government = communism }}
+		create_country_leader = {
+			name = "Peter Ekkebus"
+			desc = ""
+			picture = "gfx/leaders/LNC/Portrait_LNC_Peter_Ekkebus.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+			}
+		}
+	}
+	else_if = {
+		limit = { FROM = { has_government = fascism }}
+		create_country_leader = {
+			name = "Geert Reimert"
+			desc = ""
+			picture = "gfx/leaders/LNC/Portrait_LNC_Geert_Reimert.dds"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+			}
+		}
+	}
+	else_if = {
+		limit = { FROM = { has_government = neutrality }}
+		create_country_leader = {
+			name = "Sterre Langehuis"
+			female = yes
+			desc = ""
+			picture = "gfx/leaders/LNC/Portrait_LNC_Sterre_Langehuis.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+	else_if = {
+		limit = { FROM = { has_government = democratic }}
+		create_country_leader = {
+			name = "Tijs van Kleef"
+			desc = ""
+			picture = "gfx/leaders/LNC/Portrait_LNC_Tijs_van_Kleef.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {
+			}
+		}
+	}
+}
+
+LNC_change_scandinavia_leader = {
+	if = {
+		limit = { original_tag = DEN }
+		create_country_leader = {
+			name = "Lotte Søborg"
+			female = yes
+			desc = ""
+			picture = "gfx/leaders/LNC/Portrait_LNC_Lotte_Soborg.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+	else_if = {
+		limit = { original_tag = SWE }
+		create_country_leader = {
+			name = "Nanne Grönvall"
+			female = yes
+			desc = ""
+			picture = "gfx/leaders/LNC/Portrait_LNC_Nanne_Gronvall.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+	else_if = {
+		limit = { original_tag = NOR }
+		create_country_leader = {
+			name = "Signe Howell"
+			female = yes
+			desc = ""
+			picture = "gfx/leaders/LNC/Portrait_LNC_Signe_Howell.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+			}
+		}
+	}
+}
+
+LNC_lower_divided_union_spirit = {
+	if = {
+		limit = { has_idea = LNC_divided_union_1 }
+		swap_ideas = {
+			remove_idea = LNC_divided_union_1
+			add_idea = LNC_divided_union_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = LNC_divided_union_2 }
+		swap_ideas = {
+			remove_idea = LNC_divided_union_2
+			add_idea = LNC_divided_union_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = LNC_divided_union_3 }
+		swap_ideas = {
+			remove_idea = LNC_divided_union_3
+			add_idea = LNC_divided_union_4
+		}
+	}
+	else = {
+		remove_ideas = LNC_divided_union_4
+	}
+}
+
+LNC_remove_unnecessary_focuses = {
+	if = {
+		limit = { has_completed_focus = LNC_stay_loyal_to_proletariat }
+		uncomplete_national_focus = {
+			focus = LNC_stay_loyal_to_proletariat
+			uncomplete_children = yes
+		}
+	}
+	else_if = {
+		limit = { has_completed_focus = LNC_legalise_NAIP_organisation }
+		uncomplete_national_focus = {
+			focus = LNC_legalise_NAIP_organisation
+			uncomplete_children = yes
+		}
+	}
+	else_if = {
+		limit = { has_completed_focus = LNC_grant_amnesty_to_royalists }
+		uncomplete_national_focus = {
+			focus = LNC_grant_amnesty_to_royalists
+			uncomplete_children = yes
+		}
+	}
+	else_if = {
+		limit = { has_completed_focus = LNC_permit_local_elections }
+		uncomplete_national_focus = {
+			focus = LNC_permit_local_elections
+			uncomplete_children = yes
+		}
+	}
+}

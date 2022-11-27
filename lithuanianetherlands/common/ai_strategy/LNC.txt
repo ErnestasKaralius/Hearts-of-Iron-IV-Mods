@@ -1,0 +1,164 @@
+
+ENG_ally_LNC = {
+	enable = {
+		original_tag = ENG
+		country_exists = LNC
+		LNC = { 
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "LNC"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "LNC"
+		value = 100
+	}
+}
+
+LNC_annoy_france = {
+	enable = {
+		original_tag = LNC
+		has_country_leader = { ruling_only = yes character = LNC_jaschutte }
+		country_exists = FRA
+	}
+
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = ignore
+		id = FRA
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = 200
+	}
+}
+
+LNC_protect_estonia = {
+	enable = {
+		original_tag = LNC
+		has_government = democratic
+		NOT = { 
+			has_idea = LNC_divided_union_1
+			has_idea = LNC_divided_union_2
+			has_idea = LNC_divided_union_3
+		}
+		country_exists = EST
+		EST = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+	}
+	abort = {
+		EST = {
+			has_war_with = ROOT
+			has_wargoal_against = ROOT
+			is_justifying_wargoal_against = ROOT
+		}
+	}
+
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "EST"			
+		value = 200
+	}
+	ai_strategy = {
+		type = protect
+		id = "EST"
+		value = 100
+	}
+}
+
+LNC_protect_latvia = {
+	enable = {
+		original_tag = LNC
+		NOT = { 
+			has_idea = LNC_divided_union_1
+			has_idea = LNC_divided_union_2
+			has_idea = LNC_divided_union_3
+		}
+		has_government = democratic
+		country_exists = LAT
+		LAT = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+	}
+	abort = {
+		LAT = {
+			has_war_with = ROOT
+			has_wargoal_against = ROOT
+			is_justifying_wargoal_against = ROOT
+		}
+	}
+
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "LAT"			
+		value = 200
+	}
+	ai_strategy = {
+		type = protect
+		id = "LAT"
+		value = 100
+	}
+}
+
+LNC_protect_lithuania = {
+	enable = {
+		original_tag = LNC
+		NOT = { 
+			has_idea = LNC_divided_union_1
+			has_idea = LNC_divided_union_2
+			has_idea = LNC_divided_union_3
+		}
+		has_government = democratic
+		country_exists = LIT
+		LIT = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+	}
+	abort = {
+		LIT = {
+			has_war_with = ROOT
+			has_wargoal_against = ROOT
+			is_justifying_wargoal_against = ROOT
+		}
+	}
+
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "LIT"			
+		value = 200
+	}
+	ai_strategy = {
+		type = protect
+		id = "LIT"
+		value = 100
+	}
+}

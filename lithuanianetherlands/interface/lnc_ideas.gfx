@@ -1,0 +1,63 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_LNC_aftermath_of_the_protests"
+		texturefile = "gfx/interface/ideas/spr_political_violence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LNC_army_maneuvers_idea"
+		texturefile = "gfx/interface/ideas/idea_cze_planning_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LNC_grantas_husband"
+		texturefile = "gfx/interface/ideas/idea_LNC_grantas_husband.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LNC_ernest_husband"
+		texturefile = "gfx/interface/ideas/idea_LNC_ernest_husband.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LNC_niels_husband"
+		texturefile = "gfx/interface/ideas/idea_LNC_niels_husband.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LNC_jaschutte_husband"
+		texturefile = "gfx/interface/ideas/idea_LNC_jaschutte_husband.dds"
+	}
+
+	##########################################################
+	######### Designers if doesn't have Man the Guns #########
+	##########################################################
+
+	spriteType = {
+		name = "GFX_idea_HOL_philips"
+		texturefile = "gfx/interface/ideas/idea_hol_philips.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hih_siderius"
+		texturefile = "gfx/interface/ideas/idea_hol_hih_siderius.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_royal_dutch_shell"
+		texturefile = "gfx/interface/ideas/idea_hol_royal_dutch_shell.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_daf"
+		texturefile = "gfx/interface/ideas/idea_hol_daf.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_artillerie_inrichtingen"
+		texturefile = "gfx/interface/ideas/idea_hol_a_i_hemburg.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fokker"
+		texturefile = "gfx/interface/ideas/idea_hol_fokker.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_koolhoven"
+		texturefile = "gfx/interface/ideas/idea_hol_koolhoven.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wilton_fijenoord"
+		texturefile = "gfx/interface/ideas/idea_hol_wilton_fijenoord.dds"
+	}
+}

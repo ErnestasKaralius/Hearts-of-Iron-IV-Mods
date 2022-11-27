@@ -1,0 +1,539 @@
+LNC_communist_alternate_resign = {
+	name = "Lithuanian-Dutch alternate communist plan (resignation)"
+	desc = ""
+
+	allowed = {
+		original_tag = LNC
+	}
+	enable = {
+		OR = {
+			has_country_flag = LNC_AI_RANDOM_COMMUNIST_RESIGN
+			has_game_rule = {
+				rule = LNC_ai_behavior
+				option = COMMUNIST_ALTERNATE_RESIGN
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		# 1936
+		LNC_rewrite_the_constitution
+		LNC_two_year_plan
+		LNC_expand_the_civilian_sector
+		LNC_reorganise_LDAF
+		LNC_brussels_technology_institute
+		# 1937
+		LNC_support_ernest
+		LNC_force_jaschutte_to_resign
+		LNC_pilotenschool
+		LNC_army_maneuvers
+		LNC_focus_on_assault_strategies
+		# 1938
+		LNC_red_wave
+		LNC_mechanised_units
+		LNC_baltijos_laivu_statykla
+		LNC_begin_the_naval_buildup
+		LNC_invite_foreign_pilots
+		# 1939
+		LNC_construct_new_hangars
+		LNC_build_new_shipyards
+		LNC_peoples_industry
+		LNC_lt_nl_autobahn
+		LNC_homeland_for_communists
+		# 1940
+		LNC_interventionism
+		LNC_conquer_baltic_nations
+		LNC_modernise_weapons
+		LNC_expand_the_state_arsenal
+
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = 100
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+LNC_communist_alternate_assassinate = {
+	name = "Lithuanian-Dutch alternate communist plan (assassination)"
+	desc = ""
+
+	allowed = {
+		original_tag = LNC
+	}
+	enable = {
+		OR = {
+			has_country_flag = LNC_AI_RANDOM_COMMUNIST_ASSASSINATE
+			has_game_rule = {
+				rule = LNC_ai_behavior
+				option = COMMUNIST_ALTERNATE_ASSASSINATE
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		# 1936
+		LNC_rewrite_the_constitution
+		LNC_two_year_plan
+		LNC_expand_the_civilian_sector
+		LNC_reorganise_LDAF
+		LNC_brussels_technology_institute
+		# 1937
+		LNC_support_ernest
+		LNC_assassinate_jaschutte
+		LNC_pilotenschool
+		LNC_army_maneuvers
+		LNC_focus_on_assault_strategies
+		# 1938
+		LNC_red_wave
+		LNC_mechanised_units
+		LNC_baltijos_laivu_statykla
+		LNC_begin_the_naval_buildup
+		LNC_invite_foreign_pilots
+		# 1939
+		LNC_construct_new_hangars
+		LNC_build_new_shipyards
+		LNC_peoples_industry
+		LNC_lt_nl_autobahn
+		LNC_homeland_for_communists
+		# 1940
+		LNC_interventionism
+		LNC_conquer_baltic_nations
+		LNC_modernise_weapons
+		LNC_expand_the_state_arsenal
+
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = 100
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+LNC_fascist = {
+	name = "Lithuanian-Dutch fascist plan"
+	desc = ""
+
+	allowed = {
+		original_tag = LNC
+	}
+	enable = {
+		OR = {
+			has_country_flag = LNC_AI_RANDOM_FASCIST
+			has_game_rule = {
+				rule = LNC_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		# 1936
+		LNC_rewrite_the_constitution
+		LNC_legalise_NAIP_organisation
+		LNC_reorganise_LDAF
+		LNC_army_maneuvers
+		LNC_focus_on_assault_strategies
+		# 1937
+		LNC_two_year_plan
+		LNC_expand_the_military_sector
+		LNC_brussels_technology_institute
+		LNC_coup_against_jaschutte
+		LNC_leef_om_te_dienen
+		# 1938
+		LNC_mechanised_units
+		LNC_forward_army_reforms
+		LNC_modernise_tanks
+		LNC_pilotenschool
+		LNC_lt_nl_autobahn
+		# 1939
+		LNC_modernise_weapons
+		LNC_lithuanian_dutch_special_forces
+		LNC_roaring_lion
+		LNC_prepare_for_war
+		LNC_interventionism
+		# 1940
+		LNC_conquer_baltic_nations
+		LNC_expand_the_state_arsenal
+		LNC_exterminate_the_french
+		LNC_invite_foreign_pilots
+		LNC_modernise_fighters
+	}
+
+	research = {
+		industry = 30.0
+		infantry_tech = 10.0
+		armor = 20.0
+		artillery = 10.0
+		support_tech = 6.0
+	}
+
+	ideas = {
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = 100
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+LNC_monarchist_aggressive = {
+	name = "Lithuanian-Dutch monarchist path (aggressive)"
+	desc = ""
+
+	allowed = {
+		original_tag = LNC
+	}
+	enable = {
+		OR = {
+			has_country_flag = LNC_AI_RANDOM_MONARCHIST_AGGRESSIVE
+			has_game_rule = {
+				rule = LNC_ai_behavior
+				option = MONARCHIST_AGGRESSIVE
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		# 1936
+		LNC_rewrite_the_constitution
+		LNC_grant_amnesty_to_royalists
+		LNC_two_year_plan
+		LNC_expand_the_civilian_sector
+		LNC_brussels_technology_institute
+		# 1937
+		LNC_reorganise_LDAF
+		LNC_modernise_weapons
+		LNC_lt_nl_autobahn
+		LNC_modernise_artillery
+		LNC_expand_the_state_arsenal
+		# 1938
+		LNC_put_karina_in_charge
+		LNC_queens_royal_guards
+		LNC_develop_light_industry
+		LNC_fur_das_vaterland
+		LNC_expand_the_royal_family
+		# 1939
+		LNC_interventionism
+		LNC_conquer_baltic_nations
+		LNC_pilotenschool
+		LNC_army_maneuvers
+		LNC_focus_on_assault_strategies
+		# 1940
+		LNC_conquer_poland
+		LNC_invite_foreign_pilots
+		LNC_exterminate_the_french
+		LNC_advanced_admilar_training
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+LNC_monarchist_neutral = {
+	name = "Lithuanian-Dutch monarchist path (neutrality)"
+	desc = ""
+
+	allowed = {
+		original_tag = LNC
+	}
+	enable = {
+		OR = {
+			has_country_flag = LNC_AI_RANDOM_MONARCHIST_NEUTRAL
+			has_game_rule = {
+				rule = LNC_ai_behavior
+				option = MONARCHIST_NEUTRAL
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		# 1936
+		LNC_rewrite_the_constitution
+		LNC_grant_amnesty_to_royalists
+		LNC_two_year_plan
+		LNC_expand_the_civilian_sector
+		LNC_brussels_technology_institute
+		# 1937
+		LNC_reorganise_LDAF
+		LNC_modernise_weapons
+		LNC_lt_nl_autobahn
+		LNC_modernise_artillery
+		LNC_expand_the_state_arsenal
+		# 1938
+		LNC_put_karina_in_charge
+		LNC_queens_royal_guards
+		LNC_develop_light_industry
+		LNC_fur_das_vaterland
+		LNC_expand_the_royal_family
+		# 1939
+		LNC_remain_neutral
+		LNC_koekange_line
+		LNC_pilotenschool
+		LNC_connect_rural_areas
+		LNC_invite_foreign_professors
+		# 1940
+		LNC_army_maneuvers
+		LNC_focus_on_defensive_strategies
+		LNC_baltijos_laivu_statykla
+		LNC_advanced_admilar_training
+		LNC_invite_foreign_pilots
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+LNC_democratic_allies = {
+	name = "Lithuanian-Dutch democratic path (allies)"
+	desc = ""
+
+	allowed = {
+		original_tag = LNC
+	}
+	enable = {
+		OR = {
+			has_country_flag = LNC_AI_RANDOM_DEMOCRATIC_ALLIES
+			has_game_rule = {
+				rule = LNC_ai_behavior
+				option = DEMOCRATIC_ALLIES
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		# 1936
+		LNC_rewrite_the_constitution
+		LNC_permit_local_elections
+		LNC_two_year_plan
+		LNC_expand_the_civilian_sector
+		LNC_brussels_technology_institute
+		# 1937
+		LNC_baltijos_laivu_statykla
+		LNC_begin_the_naval_buildup
+		LNC_lt_nl_autobahn
+		LNC_invest_in_civilian_industry
+		LNC_advanced_admilar_training
+		# 1938
+		LNC_peaceful_revolution
+		LNC_develop_light_industry
+		LNC_rural_schools
+		LNC_expand_amsterdam_shipyard
+		LNC_exploitation_of_our_riches
+		# 1939
+		LNC_proclaim_a_united_federation
+		LNC_join_the_allies
+		LNC_reorganise_LDAF
+		LNC_british_naval_technology
+		LNC_pilotenschool
+		# 1940
+		LNC_allied_plane_research
+		LNC_army_maneuvers
+		LNC_the_wolves
+		LNC_invite_foreign_pilots
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 10.5
+	}
+
+	ideas = {
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = 100
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+
+LNC_democratic_neutral = {
+	name = "Lithuanian-Dutch democratic path (neutrality)"
+	desc = ""
+
+	allowed = {
+		original_tag = LNC
+	}
+	enable = {
+		OR = {
+			has_country_flag = LNC_AI_RANDOM_DEMOCRATIC_NEUTRAL
+			has_game_rule = {
+				rule = LNC_ai_behavior
+				option = DEMOCRATIC_NEUTRAL
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		# 1936
+		LNC_rewrite_the_constitution
+		LNC_permit_local_elections
+		LNC_two_year_plan
+		LNC_expand_the_civilian_sector
+		LNC_brussels_technology_institute
+		# 1937
+		LNC_baltijos_laivu_statykla
+		LNC_begin_the_naval_buildup
+		LNC_lt_nl_autobahn
+		LNC_invest_in_civilian_industry
+		LNC_advanced_admilar_training
+		# 1938
+		LNC_peaceful_revolution
+		LNC_develop_light_industry
+		LNC_rural_schools
+		LNC_expand_amsterdam_shipyard
+		LNC_exploitation_of_our_riches
+		# 1939
+		LNC_proclaim_a_united_federation
+		LNC_remain_neutral
+		LNC_reorganise_LDAF
+		LNC_koekange_line
+		LNC_pilotenschool
+		# 1940
+		LNC_connect_rural_areas
+		LNC_army_maneuvers
+		LNC_the_wolves
+		LNC_invite_foreign_pilots
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 10.5
+	}
+
+	ideas = {
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = 100
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+

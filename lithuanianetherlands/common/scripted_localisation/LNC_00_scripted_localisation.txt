@@ -1,0 +1,25 @@
+
+defined_text = {
+	name = GetInvitePilotsNameADJ
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = "[SOV.GetAdjective]"
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		localization_key = "[GER.GetAdjective]"
+	}
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = "[ENG.GetAdjective]"
+	}
+}

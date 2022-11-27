@@ -1,0 +1,494 @@
+spriteTypes = {
+	
+	###########################
+	### Political Advisers  ###
+	###########################
+
+	spriteType = {
+		name = "GFX_idea_generic_communist_revolutionary_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_communism_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_democratic_reformer_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_democratic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_fascist_demagogue_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_fascism_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_intelligence_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_roblox_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_captain_of_industry_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_roblox_6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_fortification_engineer_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_roblox_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_war_industrialist_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_roblox_8.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_chief_off_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_13.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_chief_def_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_14.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_chief_decisive_bat_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_9.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_anti_submarine_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_8.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_close_air_sup_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_art_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_10.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_log_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_fleet_log_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_7.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_air_combat_trainer_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_roblox_7.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_military_theorist_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_naval_theorist_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_warfare_theorist_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_roblox_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_air_chief_all_weather_roblox_2d"
+		texturefile = "gfx/interface/ideas/idea_generic_political_advisor_roblox_4.dds"
+	}
+
+	#################
+	#### Leaders ####
+	#################
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_communism_1"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_communism_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_communism_1_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_communism_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_communism_2"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_communism_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_communism_2_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_communism_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_communism_3"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_communism_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_communism_3_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_communism_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_democratic_1"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_democratic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_democratic_1_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_democratic_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_democratic_2"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_democratic_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_democratic_2_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_democratic_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_democratic_3"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_democratic_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_democratic_3_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_democratic_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_fascism_1"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_fascism_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_fascism_1_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_fascism_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_fascism_2"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_fascism_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_fascism_2_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_fascism_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_fascism_3"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_fascism_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_fascism_3_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_fascism_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_neutrality_1"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_neutrality_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_neutrality_1_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_neutrality_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_neutrality_2"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_neutrality_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_neutrality_2_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_neutrality_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_neutrality_3"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_neutrality_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_neutrality_3_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_neutrality_3.dds"
+	}
+
+	##############
+	#### Army ####
+	##############
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_1"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_1_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_2"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_2_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_3"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_3_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_4"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_4_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_5"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_5_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_6"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_6_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_7"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_7.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_7_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_8"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_8.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_8_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_9"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_9.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_9_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_10"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_10.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_10_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_10.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_11"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_11.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_11_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_11.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_12"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_12.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_12_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_12.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_13"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_13.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_13_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_13.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_14"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_14.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_14_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_14.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_15"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_15.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_15_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_15.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_16"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_land_16.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_land_16_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_land_16.dds"
+	}
+
+	##############
+	#### Navy ####
+	##############
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_1"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_1_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_2"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_2_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_3"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_3_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_4"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_4_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_5"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_5_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_6"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_6_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_7"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_7.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_7_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_8"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_8.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_8_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_9"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_navy_9.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_navy_9_small"
+		texturefile = "gfx/interface/ideas/idea_roblox_generic_navy_9.dds"
+	}
+
+	####################
+	#### Operatives ####
+	####################
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_male_1"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_male_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_male_2"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_male_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_male_3"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_male_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_male_4"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_male_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_male_5"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_male_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_male_6"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_male_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_male_7"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_male_7.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_male_8"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_male_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_female_1"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_female_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_female_2"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_female_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_female_3"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_female_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_female_4"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_female_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_female_5"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_female_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_female_6"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_female_6.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_female_7"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_female_7.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Roblox_Generic_operative_female_8"
+		texturefile = "gfx/leaders/LNC/Portrait_Roblox_Generic_operative_female_8.dds"
+	}
+}

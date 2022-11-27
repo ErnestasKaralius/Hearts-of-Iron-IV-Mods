@@ -1,0 +1,178 @@
+﻿
+add_namespace = lnc_news
+
+# Jaschutte Assasinated
+news_event = {
+	id = lnc_news.1
+	title = lnc_news.1.t
+	desc = lnc_news.1.desc
+	picture = GFX_news_event_generic_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.1.a
+	}
+}
+
+# Jaschutte Resigns
+news_event = {
+	id = lnc_news.2
+	title = lnc_news.2.t
+	desc = lnc_news.2.desc
+	picture = GFX_news_event_polish_army
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.2.a
+	}
+}
+
+# NAIP Coup
+news_event = {
+	id = lnc_news.3
+	title = lnc_news.3.t
+	desc = lnc_news.3.desc
+	picture = GFX_news_event_fascist_gathering
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.3.a
+	}
+}
+
+# Monarchism Reinstated
+news_event = {
+	id = lnc_news.4
+	title = lnc_news.4.t
+	desc = lnc_news.4.desc
+	picture = GFX_news_event_por_return_of_monarchy
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.4.a
+	}
+}
+
+# Peaceful Revolution
+news_event = {
+	id = lnc_news.5
+	title = lnc_news.5.t
+	desc = lnc_news.5.desc
+	picture = GFX_news_event_election_vote
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.5.a
+	}
+}
+
+# Remain Neutral
+news_event = {
+	id = lnc_news.6
+	title = lnc_news.6.t
+	desc = lnc_news.6.desc
+	picture = GFX_news_event_generic_read_write
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.6.a
+	}
+}
+
+# Grantas is husband
+news_event = {
+	id = lnc_news.7
+	title = lnc_news.7.t
+	desc = lnc_news.7.desc
+	picture = GFX_news_event_royal_visit
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.7.a
+	}
+}
+
+# Ernest is husband
+news_event = {
+	id = lnc_news.8
+	title = lnc_news.8.t
+	desc = lnc_news.8.desc
+	picture = GFX_news_event_royal_visit
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.8.a
+	}
+}
+
+# Niels is husband
+news_event = {
+	id = lnc_news.9
+	title = lnc_news.9.t
+	desc = lnc_news.9.desc
+	picture = GFX_news_event_royal_visit
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.9.a
+	}
+}
+
+# James is husband
+news_event = {
+	id = lnc_news.10
+	title = lnc_news.10.t
+	desc = lnc_news.10.desc
+	picture = GFX_news_event_royal_visit
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.10.a
+	}
+}
+
+# Lithuania-Netherlands Pursues Aggression
+news_event = {
+	id = lnc_news.11
+	title = lnc_news.11.t
+	desc = lnc_news.11.desc
+	picture = GFX_news_event_hitler_speech
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = lnc_news.11.a
+	}
+}

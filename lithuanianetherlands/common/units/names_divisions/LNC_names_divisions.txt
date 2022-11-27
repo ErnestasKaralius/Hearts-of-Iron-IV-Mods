@@ -1,0 +1,1003 @@
+﻿
+LNC_INF_01 = {
+	name = "Infantry Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Infantry Division"
+
+	ordered ={
+		1 = { "%dst. Infantry Division 'Amsterdam'" }
+		2 = { "%dnd. Infantry Division 'Luxembourg'" }
+		3 = { "%drd. Infantry Division 'Brussels'" }
+		4 = { "%dth. Infantry Division 'Calais'" }
+		5 = { "%dth. Infantry Division 'Klaipėda'" }
+		6 = { "%dth. Infantry Division 'Šiauliai'" }
+		7 = { "%dth. Infantry Division 'Groningen'" }
+		8 = { "%dth. Infantry Division 'Maastricht'" }
+		9 = { "%dth. Infantry Division 'Rotterdam'" }
+		10 = { "%dth. Infantry Division 'Vilnius'" }
+		11 = { "%dth. Infantry Division 'Breda'" }
+		12 = { "%dth. Infantry Division 'Panevėžys'" }
+		13 = { "%dth. Infantry Division 'Eindhoven'" }
+		14 = { "%dth. Infantry Division 'Marijampolė'" }
+		15 = { "%dth. Infantry Division 'Lille'" }
+		16 = { "%dth. Infantry Division 'Rokiškis'" }
+		17 = { "%dth. Infantry Division 'Arnhem'" }
+		18 = { "%dth. Infantry Division 'Palanga'" }
+		19 = { "%dth. Infantry Division 'Namur'" }
+		20 = { "%dth. Infantry Division 'Alytus'" }	
+		21 = { "%dst. Infantry Division 'Charleroi'" }
+		22 = { "%dnd. Infantry Division 'Telšiai'" }
+		23 = { "%drd. Infantry Division 'Tilburg'" }
+		24 = { "%dth. Infantry Division 'Plungė'" }
+		25 = { "%dth. Infantry Division 'Amersfoort'" }
+		26 = { "%dth. Infantry Division 'Tauragė'" }
+		27 = { "%dth. Infantry Division 'Mons'" }
+		28 = { "%dth. Infantry Division 'Anykščiai'" }
+		29 = { "%dth. Infantry Division 'Hasselt'" }
+		30 = { "%dth. Infantry Division 'Mažeikiai'" }	
+		31 = { "%dst. Home Guard Infantry Division 'Jaschutte'" }	
+		32 = { "%dnd. Home Guard Infantry Division" }	
+		33 = { "%drd. Home Guard Infantry Division" }	
+		34 = { "%dth. Infantry Division" }	
+		35 = { "%dth. Infantry Division" }	
+		36 = { "%dth. Infantry Division" }	
+		37 = { "%dth. Infantry Division" }	
+		38 = { "%dth. Infantry Division" }	
+		39 = { "%dth. Infantry Division" }	
+		40 = { "%dth. Light Infantry Division" }
+		41 = { "%dst. Light Infantry Division" }	
+		42 = { "%dnd. Light Infantry Division" }	
+		43 = { "%drd. Light Infantry Division" }	
+		44 = { "%dth. Light Infantry Division" }	
+		45 = { "%dth. Infantry Division" }	
+		46 = { "%dth. Infantry Division" }	
+		47 = { "%dth. Infantry Division" }	
+		48 = { "%dth. Infantry Division" }	
+		49 = { "%dth. Infantry Division" }	
+		50 = { "%dth. Infantry Division 'Rūkas'" }
+		51 = { "%dst. Infantry Division" }		
+		52 = { "%dnd. Infantry Division" }
+		53 = { "%drd. Infantry Division" }
+		54 = { "%dth. Infantry Division" }
+		55 = { "%dth. Infantry Division" }
+		56 = { "%dth. Infantry Division" }
+		57 = { "%dth. Infantry Division" }
+		58 = { "%dth. Infantry Division" }
+		59 = { "%dth. Infantry Division" }
+		60 = { "%dth. Infantry Division" }
+		61 = { "%dst. Infantry Division" }
+		62 = { "%dnd. Infantry Division" }
+		63 = { "%drd. Infantry Division" }
+		64 = { "%dth. Infantry Division" }
+		65 = { "%dth. Heavy Infantry Division" }
+		66 = { "%dth. Heavy Infantry Division" }
+		67 = { "%dth. Heavy Infantry Division" }
+		68 = { "%dth. Infantry Division" }
+		69 = { "%dth. Infantry Division" }
+		70 = { "%dth. Infantry Division" }
+		71 = { "%dst. Infantry Division" }
+		72 = { "%dnd. Infantry Division" }
+		73 = { "%drd. Infantry Division" }
+		74 = { "%dth. Infantry Division" }
+		75 = { "%dth. Infantry Division" }
+		76 = { "%dth. Infantry Division" }
+		77 = { "%dth. Infantry Division" }
+		78 = { "%dth. Infantry Division" }
+		79 = { "%dth. Infantry Division" }
+		80 = { "%dth. Infantry Division" }
+		81 = { "%dst. Infantry Division" }
+		82 = { "%dnd. Infantry Division" }
+		83 = { "%drd. Infantry Division" }
+		84 = { "%dth. Infantry Division" }
+		85 = { "%dth. Infantry Division" }
+		86 = { "%dth. Infantry Division" }
+		87 = { "%dth. Infantry Division" }
+		88 = { "%dth. Infantry Division" }
+		89 = { "%dth. Infantry Division" }
+		90 = { "%dth. Infantry Division" }
+		91 = { "%dst. Infantry Division" }
+		92 = { "%dnd. Infantry Division" }
+		93 = { "%drd. Infantry Division" }
+		94 = { "%dth. Infantry Division" }
+		95 = { "%dth. Infantry Division" }
+		96 = { "%dth. Infantry Division" }
+		97 = { "%dth. Infantry Division" }
+		98 = { "%dth. Infantry Division" }
+		99 = { "%dth. Infantry Division" }
+		100 = { "%dth. Infantry Division 'Raudonoji Audra'" }
+		101 = { "%dst. Infantry Division 'Aitvaras'" }
+		102 = { "%dnd. Infantry Division 'Gevaar'" }
+		103 = { "%drd. Infantry Division 'Zege'" }
+		104 = { "%dth. Infantry Division" }
+		105 = { "%dth. Infantry Division" }
+		106 = { "%dth. Infantry Division" }
+		107 = { "%dth. Infantry Division" }
+		108 = { "%dth. Infantry Division" }
+		109 = { "%dth. Infantry Division" }
+		110 = { "%dth. Infantry Division" }
+		111 = { "%dth. Infantry Division" }
+		112 = { "%dth. Infantry Division" }
+		113 = { "%dth. Infantry Division" }
+		114 = { "%dth. Infantry Division" }
+		115 = { "%dth. Infantry Division" }
+		116 = { "%dth. Infantry Division" }
+		117 = { "%dth. Infantry Division" }
+		118 = { "%dth. Infantry Division" }
+		119 = { "%dth. Infantry Division" }
+		120 = { "%dth. Infantry Division" }
+		121 = { "%dst. Infantry Division" }
+		122 = { "%dnd. Infantry Division" }
+		123 = { "%drd. Infantry Division" }
+		124 = { "%dth. Infantry Division" }
+		125 = { "%dth. Infantry Division" }
+		126 = { "%dth. Infantry Division" }
+		127 = { "%dth. Infantry Division" }
+		128 = { "%dth. Infantry Division" }
+		129 = { "%dth. Infantry Division" }
+		130 = { "%dth. Infantry Division" }
+		131 = { "%dst. Infantry Division" }
+		132 = { "%dnd. Infantry Division" }
+		133 = { "%drd. Infantry Division" }
+		134 = { "%dth. Infantry Division" }
+		135 = { "%dth. Infantry Division" }
+		136 = { "%dth. Infantry Division" }
+		137 = { "%dth. Infantry Division" }
+		138 = { "%dth. Infantry Division" }
+		139 = { "%dth. Infantry Division" }
+		140 = { "%dth. Infantry Division" }
+		141 = { "%dst. Infantry Division" }
+		142 = { "%dnd. Infantry Division" }
+		143 = { "%drd. Infantry Division" }
+		144 = { "%dth. Infantry Division" }
+		145 = { "%dth. Infantry Division" }
+		146 = { "%dth. Infantry Division" }
+		147 = { "%dth. Infantry Division" }
+		148 = { "%dth. Infantry Division" }
+		149 = { "%dth. Infantry Division" }
+		150 = { "%dth. Infantry Division" }
+		151 = { "%dst. Infantry Division" }
+		152 = { "%dnd. Infantry Division" }
+		153 = { "%drd. Infantry Division" }
+		154 = { "%dth. Infantry Division" }
+		155 = { "%dth. Infantry Division" }
+		156 = { "%dth. Infantry Division" }
+		157 = { "%dth. Infantry Division" }
+		158 = { "%dth. Infantry Division" }
+		159 = { "%dth. Infantry Division" }
+		160 = { "%dth. Infantry Division" }
+		161 = { "%dst. Infantry Division" }
+		162 = { "%dnd. Infantry Division" }
+		163 = { "%drd. Infantry Division" }
+		164 = { "%dth. Infantry Division" }
+		165 = { "%dth. Infantry Division" }
+		166 = { "%dth. Infantry Division" }
+		167 = { "%dth. Infantry Division" }
+		168 = { "%dth. Infantry Division" }
+		169 = { "%dth. Infantry Division" }
+		170 = { "%dth. Infantry Division" }
+	}
+}
+
+LNC_CAV_01 = {
+	name = "Cavalry Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "%d. Cavalry Division"
+
+	ordered ={
+		1 = { "%dst. Cavalry Division 'Brigita Wolf'" }
+		2 = { "%dnd. Cavalry Division" }
+		3 = { "%drd. Cavalry Division" }
+		4 = { "%dth. Cavalry Division" }
+		5 = { "%dth. Cavalry Division" }
+		6 = { "%dth. Cavalry Division" }
+		7 = { "%dth. Cavalry Division" }
+		8 = { "%dth. Cavalry Division" }
+		9 = { "%dth. Cavalry Division" }
+		10 = { "%dth. Cavalry Division" }
+		11 = { "%dth. Cavalry Division" }
+		12 = { "%dth. Cavalry Division" }
+		13 = { "%dth. Cavalry Division" }
+		14 = { "%dth. Cavalry Division" }
+		15 = { "%dth. Cavalry Division" }
+		16 = { "%dth. Cavalry Division" }
+		17 = { "%dth. Cavalry Division" }
+		19 = { "%dth. Cavalry Division" }
+		20 = { "%dth. Cavalry Division" }
+		21 = { "%dst. Cavalry Division" }
+		22 = { "%dnd. Cavalry Division" }
+		23 = { "%drd. Cavalry Division" }
+		24 = { "%dth. Cavalry Division" }
+		25 = { "%dth. Cavalry Division" }
+		26 = { "%dth. Cavalry Division" }
+		27 = { "%dth. Cavalry Division" }
+		28 = { "%dth. Cavalry Division" }
+		29 = { "%dth. Cavalry Division" }
+		30 = { "%dth. Cavalry Division" }
+		31 = { "%dst. Cavalry Division" }
+		32 = { "%dnd. Cavalry Division" }
+		33 = { "%drd. Cavalry Division" }
+		34 = { "%dth. Cavalry Division" }
+		35 = { "%dth. Cavalry Division" }
+		36 = { "%dth. Cavalry Division" }
+		37 = { "%dth. Cavalry Division" }
+		38 = { "%dth. Cavalry Division" }
+		39 = { "%dth. Cavalry Division" }
+		40 = { "%dth. Cavalry Division" }
+		41 = { "%dst. Cavalry Division" }
+		42 = { "%dnd. Cavalry Division" }
+		43 = { "%drd. Cavalry Division" }
+		44 = { "%dth. Cavalry Division" }
+		45 = { "%dth. Cavalry Division" }
+		46 = { "%dth. Cavalry Division" }
+		47 = { "%dth. Cavalry Division" }
+		48 = { "%dth. Cavalry Division" }
+		49 = { "%dth. Cavalry Division" }
+		50 = { "%dth. Cavalry Division" }
+		51 = { "%dst. Cavalry Division" }
+		52 = { "%dnd. Cavalry Division" }
+		53 = { "%drd. Cavalry Division" }
+		54 = { "%dth. Cavalry Division" }
+		55 = { "%dth. Cavalry Division" }
+		56 = { "%dth. Cavalry Division" }
+		57 = { "%dth. Cavalry Division" }
+		58 = { "%dth. Cavalry Division" }
+		59 = { "%dth. Cavalry Division" }
+		60 = { "%dth. Cavalry Division" }
+	}
+}
+
+LNC_MOT_01 = {
+	name = "Motorised Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "%d. Motorised Division"
+
+	ordered ={
+		1 = { "%dst. Motorised Division" }
+		2 = { "%dnd. Motorised Division" }
+		3 = { "%drd. Motorised Division" }
+		4 = { "%dth. Motorised Division" }
+		5 = { "%dth. Motorised Division" }
+		6 = { "%dth. Motorised Division" }
+		7 = { "%dth. Motorised Division" }
+		8 = { "%dth. Motorised Division" }
+		9 = { "%dth. Motorised Division" }
+		10 = { "%dth. Motorised Division" }
+		11 = { "%dth. Motorised Division" }
+		12 = { "%dth. Motorised Division" }
+		13 = { "%dth. Motorised Division" }
+		14 = { "%dth. Motorised Division" }
+		15 = { "%dth. Motorised Division" }
+		16 = { "%dth. Motorised Division" }
+		17 = { "%dth. Motorised Division" }
+		18 = { "%dth. Motorised Division" }
+		19 = { "%dth. Motorised Division" }
+		20 = { "%dth. Motorised Division" }
+		21 = { "%dst. Motorised Division" }
+		22 = { "%dnd. Motorised Division" }
+		23 = { "%drd. Motorised Division" }
+		24 = { "%dth. Motorised Division" }
+		25 = { "%dth. Motorised Division" }
+		26 = { "%dth. Motorised Division" }
+		27 = { "%dth. Motorised Division" }
+		28 = { "%dth. Motorised Division" }
+		29 = { "%dth. Motorised Division" }
+		30 = { "%dth. Motorised Division" }
+		31 = { "%dst. Motorised Division" }
+		32 = { "%dnd. Motorised Division" }
+		33 = { "%drd. Motorised Division" }
+		34 = { "%dth. Motorised Division" }
+		35 = { "%dth. Motorised Division" }
+	}
+}
+
+LNC_MEC_01 = {
+	name = "Mechanised Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "mechanized" }
+
+	fallback_name = "%d. Mechanised Division"
+
+	ordered ={
+		1 = { "%dst. Mechanised Division" }
+		2 = { "%dnd. Mechanised Division" }
+		3 = { "%drd. Mechanised Division" }
+		4 = { "%dth. Mechanised Division" }
+		5 = { "%dth. Mechanised Division" }
+		6 = { "%dth. Mechanised Division" }
+		7 = { "%dth. Mechanised Division" }
+		8 = { "%dth. Mechanised Division" }
+		9 = { "%dth. Mechanised Division" }
+		10 = { "%dth. Mechanised Division" }
+		11 = { "%dth. Mechanised Division" }
+		12 = { "%dth. Mechanised Division" }
+		13 = { "%dth. Mechanised Division" }
+		14 = { "%dth. Mechanised Division" }
+		15 = { "%dth. Mechanised Division" }
+		16 = { "%dth. Mechanised Division" }
+		17 = { "%dth. Mechanised Division" }
+		18 = { "%dth. Mechanised Division" }
+		19 = { "%dth. Mechanised Division" }
+		20 = { "%dth. Mechanised Division" }
+		21 = { "%dst. Mechanised Division" }
+		22 = { "%dnd. Mechanised Division" }
+		23 = { "%drd. Mechanised Division" }
+		24 = { "%dth. Mechanised Division" }
+		25 = { "%dth. Mechanised Division" }
+		26 = { "%dth. Mechanised Division" }
+		27 = { "%dth. Mechanised Division" }
+		28 = { "%dth. Mechanised Division" }
+		29 = { "%dth. Mechanised Division" }
+		30 = { "%dth. Mechanised Division" }
+		31 = { "%dst. Mechanised Division" }
+		32 = { "%dnd. Mechanised Division" }
+		33 = { "%drd. Mechanised Division" }
+		34 = { "%dth. Mechanised Division" }
+		35 = { "%dth. Mechanised Division" }
+	}
+}
+
+LNC_ARM_01 = {
+	name = "Armoured Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Armoured Division"
+
+	ordered ={
+		1 = { "%dst. Armoured Division 'Nederlands'" }
+		2 = { "%dnd. Armoured Division 'Lietuva'" }
+		3 = { "%drd. Armoured Division 'Ernest King" }
+		4 = { "%dth. Royal Panzer Division 'Blitzkrieg'" }
+		5 = { "%dth. Royal Panzer Division 'Totaler Krieg'" }
+		6 = { "%dth. Royal Panzer Division 'Niels'" }
+		7 = { "%dth. Armoured Division" }
+		8 = { "%dth. Armoured Division" }
+		9 = { "%dth. Armoured Division" }
+		10 = { "%dth. Armoured Division" }
+		11 = { "%dth. Armoured Division" }
+		12 = { "%dth. Armoured Division" }
+		13 = { "%dth. Armoured Division" }
+		14 = { "%dth. Armoured Division" }
+		15 = { "%dth. Armoured Division" }
+		16 = { "%dth. Armoured Division" }
+		17 = { "%dth. Armoured Division" }
+		18 = { "%dth. Armoured Division" }
+		19 = { "%dth. Armoured Division" }
+		20 = { "%dth. Armoured Division" }
+		21 = { "%dst. Armoured Division" }
+		22 = { "%dnd. Armoured Division" }
+		23 = { "%drd. Armoured Division" }
+		24 = { "%dth. Armoured Division" }
+		25 = { "%dth. Armoured Division" }
+		26 = { "%dth. Armoured Division" }
+		27 = { "%dth. Armoured Division" }
+		28 = { "%dth. Armoured Division" }
+		29 = { "%dth. Armoured Division" }
+		30 = { "%dth. Armoured Division" }
+		31 = { "%dst. Armoured Division" }
+		32 = { "%dnd. Armoured Division" }
+		33 = { "%drd. Armoured Division" }
+		34 = { "%dth. Armoured Division" }
+		35 = { "%dth. Armoured Division" }
+	}
+}
+
+LNC_ARM_02 = {
+	name = "Heavy Armoured Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d. Heavy Armoured Division"
+
+	ordered ={
+		1 = { "%dst. Heavy Armoured Division" }
+		2 = { "%dnd. Heavy Armoured Division" }
+		3 = { "%drd. Heavy Armoured Division" }
+		4 = { "%dth. Heavy Armoured Division" }
+		5 = { "%dth. Heavy Armoured Division" }
+		6 = { "%dth. Heavy Armoured Division" }
+		7 = { "%dth. Heavy Armoured Division" }
+		8 = { "%dth. Heavy Armoured Division" }
+		9 = { "%dth. Heavy Armoured Division" }
+		10 = { "%dth. Heavy Armoured Division" }
+		11 = { "%dth. Heavy Armoured Division" }
+		12 = { "%dth. Heavy Armoured Division" }
+		13 = { "%dth. Heavy Armoured Division" }
+		14 = { "%dth. Heavy Armoured Division" }
+		15 = { "%dth. Heavy Armoured Division" }
+		16 = { "%dth. Heavy Armoured Division" }
+		17 = { "%dth. Heavy Armoured Division" }
+		18 = { "%dth. Heavy Armoured Division" }
+		19 = { "%dth. Heavy Armoured Division" }
+		20 = { "%dth. Heavy Armoured Division" }
+		21 = { "%dst. Heavy Armoured Division" }
+		22 = { "%dnd. Heavy Armoured Division" }
+		23 = { "%drd. Heavy Armoured Division" }
+		24 = { "%dth. Heavy Armoured Division" }
+		25 = { "%dth. Heavy Armoured Division" }
+		26 = { "%dth. Heavy Armoured Division" }
+		27 = { "%dth. Heavy Armoured Division" }
+		28 = { "%dth. Heavy Armoured Division" }
+		29 = { "%dth. Heavy Armoured Division" }
+		30 = { "%dth. Heavy Armoured Division" }
+		31 = { "%dst. Heavy Armoured Division" }
+		32 = { "%dnd. Heavy Armoured Division" }
+		33 = { "%drd. Heavy Armoured Division" }
+		34 = { "%dth. Heavy Armoured Division" }
+		35 = { "%dth. Heavy Armoured Division" }
+	}
+}
+
+LNC_PAR_01 = {
+	name = "Paratrooper Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	fallback_name = "%d. Airborne Division"
+
+	ordered ={
+		1 = { "%dst. Airborne Division" }
+		2 = { "%dnd. Airborne Division" }
+		3 = { "%drd. Airborne Division" }
+		4 = { "%dth. Airborne Division" }
+		5 = { "%dth. Airborne Division" }
+		6 = { "%dth. Airborne Division" }
+		7 = { "%dth. Airborne Division" }
+		8 = { "%dth. Airborne Division" }
+		9 = { "%dth. Airborne Division" }
+		10 = { "%dth. Airborne Division" }
+		11 = { "%dth. Airborne Division" }
+		12 = { "%dth. Airborne Division" }
+		13 = { "%dth. Airborne Division" }
+		14 = { "%dth. Airborne Division" }
+		15 = { "%dth. Airborne Division" }
+		16 = { "%dth. Airborne Division" }
+		17 = { "%dth. Airborne Division" }
+		18 = { "%dth. Airborne Division" }
+		19 = { "%dth. Airborne Division" }
+		20 = { "%dth. Airborne Division" }
+		21 = { "%dst. Airborne Division" }
+		22 = { "%dnd. Airborne Division" }
+		23 = { "%drd. Airborne Division" }
+		24 = { "%dth. Airborne Division" }
+		25 = { "%dth. Airborne Division" }
+		26 = { "%dth. Airborne Division" }
+		27 = { "%dth. Airborne Division" }
+		28 = { "%dth. Airborne Division" }
+		29 = { "%dth. Airborne Division" }
+		30 = { "%dth. Airborne Division" }
+		31 = { "%dst. Airborne Division" }
+		32 = { "%dnd. Airborne Division" }
+		33 = { "%drd. Airborne Division" }
+		34 = { "%dth. Airborne Division" }
+		35 = { "%dth. Airborne Division" }
+	}
+}
+
+LNC_MAR_01 = {
+	name = "Marine Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+	fallback_name = "%d. Marine Division"
+
+	ordered ={
+		1 = { "%dst. Marine Division 'Queen'" }
+		2 = { "%dnd. Marine Division 'King'" }
+		3 = { "%drd. Marine Division" }
+		4 = { "%dth. Marine Division" }
+		5 = { "%dth. Marine Division" }
+		6 = { "%dth. Marine Division" }
+		7 = { "%dth. Marine Division" }
+		8 = { "%dth. Marine Division" }
+		9 = { "%dth. Marine Division" }
+		10 = { "%dth. Marine Division" }
+		11 = { "%dth. Marine Division" }
+		12 = { "%dth. Marine Division" }
+		13 = { "%dth. Marine Division" }
+		14 = { "%dth. Marine Division" }
+		15 = { "%dth. Marine Division" }
+		16 = { "%dth. Marine Division" }
+		17 = { "%dth. Marine Division" }
+		18 = { "%dth. Marine Division" }
+		19 = { "%dth. Marine Division" }
+		20 = { "%dth. Marine Division" }
+		21 = { "%dst. Marine Division" }
+		22 = { "%dnd. Marine Division" }
+		23 = { "%drd. Marine Division" }
+		24 = { "%dth. Marine Division" }
+		25 = { "%dth. Marine Division" }
+		26 = { "%dth. Marine Division" }
+		27 = { "%dth. Marine Division" }
+		28 = { "%dth. Marine Division" }
+		29 = { "%dth. Marine Division" }
+		30 = { "%dth. Marine Division" }
+		31 = { "%dst. Marine Division" }
+		32 = { "%dnd. Marine Division" }
+		33 = { "%drd. Marine Division" }
+		34 = { "%dth. Marine Division" }
+		35 = { "%dth. Marine Division" }
+	}
+}
+
+LNC_MNT_01 = {
+	name = "Mountaineer Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "mountaineers" }
+
+	fallback_name = "%d Mountaineer Division"
+
+	ordered ={
+		1 = { "%st. Mountaineer Division" }
+		2 = { "%snd. Mountaineer Division" }
+		3 = { "%srd. Mountaineer Division" }
+		4 = { "%dth. Mountaineer Division" }
+		5 = { "%dth. Mountaineer Division" }
+		6 = { "%dth. Mountaineer Division" }
+		7 = { "%dth. Mountaineer Division" }
+		8 = { "%dth. Mountaineer Division" }
+		9 = { "%dth. Mountaineer Division" }
+		10 = { "%dth. Mountaineer Division" }
+		11 = { "%dth. Mountaineer Division" }
+		12 = { "%dth. Mountaineer Division" }
+		13 = { "%dth. Mountaineer Division" }
+		14 = { "%dth. Mountaineer Division" }
+		15 = { "%dth. Mountaineer Division" }
+		16 = { "%dth. Mountaineer Division" }
+		17 = { "%dth. Mountaineer Division" }
+		18 = { "%dth. Mountaineer Division" }
+		19 = { "%dth. Mountaineer Division" }
+		20 = { "%dth. Mountaineer Division" }
+		21 = { "%dst. Mountaineer Division" }
+		22 = { "%dnd. Mountaineer Division" }
+		23 = { "%drd. Mountaineer Division" }
+		24 = { "%dth. Mountaineer Division" }
+		25 = { "%dth. Mountaineer Division" }
+		26 = { "%dth. Mountaineer Division" }
+		27 = { "%dth. Mountaineer Division" }
+		28 = { "%dth. Mountaineer Division" }
+		29 = { "%dth. Mountaineer Division" }
+		30 = { "%dth. Mountaineer Division" }
+		31 = { "%dst. Mountaineer Division" }
+		32 = { "%dnd. Mountaineer Division" }
+		33 = { "%drd. Mountaineer Division" }
+		34 = { "%dth. Mountaineer Division" }
+		35 = { "%dth. Mountaineer Division" }
+	}
+}
+
+LNC_GAR_01 = {
+	name = "Garrison Division"
+
+	for_countries = { LNC }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Garrison Division"
+
+	ordered ={
+		11 = { "%dth. Garrison Division 'Suriname'" }
+		12 = { "%dth. Garrison Division 'Western Congo'" }
+		13 = { "%dth. Garrison Division 'Eastern Congo'" }		
+		14 = { "%dth. Garrison Division 'Northern Congo'" }	
+		15 = { "%dth. West African Garrison Division" }
+		16 = { "%dth. West African Garrison Division" }
+		17 = { "%dth. West African Garrison Division" }
+		18 = { "%dth. South American Garrison Division" }
+		19 = { "%dth. South American Garrison Division" }
+		20 = { "%dth. Colonial Guard Division" }
+		21 = { "%dst. Colonial Guard Division" }
+		22 = { "%dnd. East African Garrison Division" }
+		23 = { "%drd. East African Garrison Division" }
+		24 = { "%dth. Coastal Defense Division" }
+		25 = { "%dth. Coastal Defense Division" }
+		26 = { "%dth. Coastal Defense Division" }
+		27 = { "%dth. Coastal Defense Division" }
+		28 = { "%dth. Coastal Defense Division" }
+		29 = { "%dth. Coastal Defense Division" }
+		30 = { "%dth. Coastal Defense Division" }
+		31 = { "%dst. Garrison Division" }
+		32 = { "%dnd. Garrison Division" }
+		33 = { "%drd. Garrison Division" }
+		34 = { "%dth. Garrison Division" }
+		35 = { "%dth. Garrison Division" }
+		36 = { "%dth. Garrison Division" }
+		37 = { "%dth. Garrison Division" }
+		38 = { "%dth. Garrison Division" }
+		39 = { "%dth. Garrison Division" }
+		40 = { "%dth. Garrison Division" }
+		41 = { "%dst. Garrison Division" }
+		42 = { "%dnd. Garrison Division" }
+		43 = { "%drd. Garrison Division" }
+		44 = { "%dth. Garrison Division" }
+		45 = { "%dth. Garrison Division" }
+		46 = { "%dth. Garrison Division" }
+		47 = { "%dth. Garrison Division" }
+		48 = { "%dth. Garrison Division" }
+		49 = { "%dth. Garrison Division" }
+		50 = { "%dth. Garrison Division" }
+		51 = { "%dst. Garrison Division" }
+		52 = { "%dnd. Garrison Division" }
+		53 = { "%drd. Garrison Division" }
+		54 = { "%dth. Garrison Division" }
+		55 = { "%dth. Garrison Division" }
+		56 = { "%dth. Garrison Division" }
+		57 = { "%dth. Garrison Division" }
+		58 = { "%dth. Garrison Division" }
+		59 = { "%dth. Garrison Division" }
+		60 = { "%dth. Garrison Division" }
+		61 = { "%dst. Garrison Division" }
+		62 = { "%dnd. Garrison Division" }
+		63 = { "%drd. Garrison Division" }
+		64 = { "%dth. Garrison Division" }
+		65 = { "%dth. Garrison Division" }
+		66 = { "%dth. Garrison Division" }
+		67 = { "%dth. Garrison Division" }
+		68 = { "%dth. Garrison Division" }
+		69 = { "%dth. Garrison Division" }
+		70 = { "%dth. Garrison Division" }
+	}
+}
+
+LNC_RGD_01 = {
+	name = "Königliche Wache Division"
+
+	for_countries = { LNC }
+
+	can_use = {
+		has_government = neutrality
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Königliche Wache Division"
+
+	ordered ={
+		1 = { "%d. Königliche Wache Division" }
+		2 = { "%d. Königliche Wache Division" }
+		3 = { "%d. Königliche Wache Division" }
+		4 = { "%d. Königliche Wache Division" }
+		5 = { "%d. Königliche Wache Division" }
+		6 = { "%d. Königliche Wache Division" }
+		7 = { "%d. Königliche Wache Division" }
+		8 = { "%d. Königliche Wache Division" }
+		9 = { "%d. Königliche Wache Division" }
+		10 = { "%d. Königliche Wache Division" }
+		11 = { "%d. Königliche Wache Division" }
+		12 = { "%d. Königliche Wache Division" }
+		13 = { "%d. Königliche Wache Division" }
+		14 = { "%d. Königliche Wache Division" }
+		15 = { "%d. Königliche Wache Division" }
+		16 = { "%d. Königliche Wache Division" }
+		17 = { "%d. Königliche Wache Division" }
+		18 = { "%d. Königliche Wache Division" }
+		19 = { "%d. Königliche Wache Division" }
+		20 = { "%d. Königliche Wache Division" }
+		21 = { "%d. Königliche Wache Division" }
+		22 = { "%d. Königliche Wache Division" }
+		23 = { "%d. Königliche Wache Division" }
+		24 = { "%d. Königliche Wache Division" }
+		25 = { "%d. Königliche Wache Division" }
+		26 = { "%d. Königliche Wache Division" }
+		27 = { "%d. Königliche Wache Division" }
+		28 = { "%d. Königliche Wache Division" }
+		29 = { "%d. Königliche Wache Division" }
+		30 = { "%d. Königliche Wache Division" }
+	}
+}
+
+LNC_SLV_01 = {
+	name = "Slave Brigade"
+
+	for_countries = { LNC }
+
+	can_use = {
+		has_government = communism
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Slave Brigade"
+
+	ordered ={
+		1 = { "%dst. Belgian Slave Brigade" }
+		2 = { "%dnd. Belgian Slave Brigade" }
+		3 = { "%drd. French Slave Brigade" }
+		4 = { "%dth. French Slave Brigade" }
+		5 = { "%dth. French Slave Brigade" }
+		6 = { "%dth. Luxembourgian Slave Brigade" }
+		7 = { "%dth. Luxembourgian Slave Brigade" }
+		8 = { "%dth. Slave Brigade" }
+		9 = { "%dth. Slave Brigade" }
+		10 = { "%dth. Slave Brigade" }
+		11 = { "%dth. Slave Brigade" }
+		12 = { "%dth. Slave Brigade" }
+		13 = { "%dth. Slave Brigade" }
+		14 = { "%dth. Slave Brigade" }
+		15 = { "%dth. Latvian Slave Brigade" }
+		16 = { "%dth. Latvian Slave Brigade" }
+		17 = { "%dth. Slave Brigade" }
+		18 = { "%dth. Slave Brigade" }
+		19 = { "%dth. Slave Brigade" }
+		20 = { "%dth. Slave Brigade" }
+		21 = { "%dst. Slave Brigade" }
+		22 = { "%dnd. Polish Slave Brigade" }
+		23 = { "%drd. Polish Slave Brigade" }
+		24 = { "%dth. Slave Brigade" }
+		25 = { "%dth. Slave Brigade" }
+		26 = { "%dth. Slave Brigade" }
+		27 = { "%dth. Slave Brigade" }
+		28 = { "%dth. Slave Brigade" }
+		29 = { "%dth. Slave Brigade" }
+		30 = { "%dth. Slave Brigade" }
+	}
+}
+
+LNC_FRT_01 = {
+	name = "Fortress Division"
+
+	for_countries = { LNC }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d. Fortress Division"
+
+	ordered ={
+		1 = { "%dst. Fortress Division" }
+		2 = { "%dnd. Fortress Division" }
+		3 = { "%drd. Fortress Division" }
+		4 = { "%dth. Fortress Division" }
+		5 = { "%dth. Fortress Division" }
+		6 = { "%dth. Fortress Division" }
+		7 = { "%dth. Fortress Division" }
+		8 = { "%dth. Fortress Division" }
+		9 = { "%dth. Fortress Division" }
+		10 = { "%dth. Coastal Fortress Division" }
+		11 = { "%dth. Coastal Fortress Division" }
+		12 = { "%dth. Coastal Fortress Division" }
+		13 = { "%dth. Coastal Fortress Division" }
+		14 = { "%dth. Fortress Division" }
+		15 = { "%dth. Fortress Division" }
+		16 = { "%dth. Fortress Division" }
+		17 = { "%dth. Fortress Division" }
+		18 = { "%dth. Fortress Division" }
+		19 = { "%dth. Fortress Division" }
+		20 = { "%dth. Fortress Division" }
+		21 = { "%dst. Fortress Division" }
+		22 = { "%dnd. Fortress Division" }
+		23 = { "%drd. Fortress Division" }
+		24 = { "%dth. Fortress Division" }
+		25 = { "%dth. Fortress Division" }
+		26 = { "%dth. Fortress Division" }
+		27 = { "%dth. Fortress Division" }
+		28 = { "%dth. Fortress Division" }
+		29 = { "%dth. Fortress Division" }
+		30 = { "%dth. Fortress Division" }
+	}
+}
+
+LNC_LTD_01 = {
+	name = "Lithuanian Division"
+
+	for_countries = { LNC }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d-oji Pėstininkų Divizija"
+
+	ordered ={
+		1 = { "%d-oji Pėstininkų Divizija" }
+		2 = { "%d-oji Pėstininkų Divizija" }
+		3 = { "%d-oji Pėstininkų Divizija" }
+		4 = { "%d-oji Pėstininkų Divizija" }
+		5 = { "%d-oji Pėstininkų Divizija" }
+		6 = { "%d-oji Pėstininkų Divizija" }
+		7 = { "%d-oji Pėstininkų Divizija" }
+		8 = { "%d-oji Pėstininkų Divizija" }
+		9 = { "%d-oji Pėstininkų Divizija" }
+		10 = { "%d-oji Pėstininkų Divizija" }
+		11 = { "%d-oji Pėstininkų Divizija" }
+		12 = { "%d-oji Pėstininkų Divizija" }
+		13 = { "%d-oji Pėstininkų Divizija" }
+		14 = { "%d-oji Pėstininkų Divizija" }
+		15 = { "%d-oji Pėstininkų Divizija" }
+		16 = { "%d-oji Pėstininkų Divizija" }
+		17 = { "%d-oji Pėstininkų Divizija" }
+		18 = { "%d-oji Pėstininkų Divizija" }
+		19 = { "%d-oji Pėstininkų Divizija" }
+		20 = { "%d-oji Pėstininkų Divizija" }
+		21 = { "%d-oji Pėstininkų Divizija" }
+		22 = { "%d-oji Pėstininkų Divizija" }
+		23 = { "%d-oji Pėstininkų Divizija" }
+		24 = { "%d-oji Pėstininkų Divizija" }
+		25 = { "%d-oji Pėstininkų Divizija" }
+		26 = { "%d-oji Pėstininkų Divizija" }
+		27 = { "%d-oji Pėstininkų Divizija" }
+		28 = { "%d-oji Pėstininkų Divizija" }
+		29 = { "%d-oji Pėstininkų Divizija" }
+		30 = { "%d-oji Pėstininkų Divizija" }
+	}
+}
+
+LNC_NDD_01 = {
+	name = "Dutch Division"
+
+	for_countries = { LNC }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%de Infanterie Divisie"
+
+	ordered ={
+		1 = { "%de Infanterie Divisie" }
+		2 = { "%de Infanterie Divisie" }
+		3 = { "%de Infanterie Divisie" }
+		4 = { "%de Infanterie Divisie" }
+		5 = { "%de Infanterie Divisie" }
+		6 = { "%de Infanterie Divisie" }
+		7 = { "%de Infanterie Divisie" }
+		8 = { "%de Infanterie Divisie" }
+		9 = { "%de Infanterie Divisie" }
+		10 = { "%de Infanterie Divisie" }
+		11 = { "%de Infanterie Divisie" }
+		12 = { "%de Infanterie Divisie" }
+		13 = { "%de Infanterie Divisie" }
+		14 = { "%de Infanterie Divisie" }
+		15 = { "%de Infanterie Divisie" }
+		16 = { "%de Infanterie Divisie" }
+		17 = { "%de Infanterie Divisie" }
+		18 = { "%de Infanterie Divisie" }
+		19 = { "%de Infanterie Divisie" }
+		20 = { "%de Infanterie Divisie" }
+		21 = { "%de Infanterie Divisie" }
+		22 = { "%de Infanterie Divisie" }
+		23 = { "%de Infanterie Divisie" }
+		24 = { "%de Infanterie Divisie" }
+		25 = { "%de Infanterie Divisie" }
+		26 = { "%de Infanterie Divisie" }
+		27 = { "%de Infanterie Divisie" }
+		28 = { "%de Infanterie Divisie" }
+		29 = { "%de Infanterie Divisie" }
+		30 = { "%de Infanterie Divisie" }
+	}
+}
+
+LNC_ELO_01 = {
+	name = "Ernest' Loyalist Division"
+
+	for_countries = { LNC }
+
+	can_use = {
+		has_government = communism
+		OR = {
+			has_completed_focus = LNC_assassinate_jaschutte
+			has_completed_focus = LNC_force_jaschutte_to_resign
+		}
+	}
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Ernest' Loyalist Division"
+
+	ordered ={
+		1 = { "%dst Ernest' Loyalist Division" }
+		2 = { "%dnd Ernest' Loyalist Division" }
+		3 = { "%drd Ernest' Loyalist Division" }
+		4 = { "%dth Ernest' Loyalist Division" }
+		5 = { "%dth Ernest' Loyalist Division" }
+		6 = { "%dth Ernest' Loyalist Division" }
+		7 = { "%dth Ernest' Loyalist Division" }
+		8 = { "%dth Ernest' Loyalist Division" }
+		9 = { "%dth Ernest' Loyalist Division" }
+		10 = { "%dth Ernest' Loyalist Division" }
+		11 = { "%dth Ernest' Loyalist Division" }
+		12 = { "%dth Ernest' Loyalist Division" }
+		13 = { "%dth Ernest' Loyalist Division" }
+		14 = { "%dth Ernest' Loyalist Division" }
+		15 = { "%dth Ernest' Loyalist Division" }
+		16 = { "%dth Ernest' Loyalist Division" }
+		17 = { "%dth Ernest' Loyalist Division" }
+		18 = { "%dth Ernest' Loyalist Division" }
+		19 = { "%dth Ernest' Loyalist Division" }
+		20 = { "%dth Ernest' Loyalist Division" }
+		21 = { "%dst Ernest' Loyalist Division" }
+		22 = { "%dnd Ernest' Loyalist Division" }
+		23 = { "%drd Ernest' Loyalist Division" }
+		24 = { "%dth Ernest' Loyalist Division" }
+		25 = { "%dth Ernest' Loyalist Division" }
+		26 = { "%dth Ernest' Loyalist Division" }
+		27 = { "%dth Ernest' Loyalist Division" }
+		28 = { "%dth Ernest' Loyalist Division" }
+		29 = { "%dth Ernest' Loyalist Division" }
+		30 = { "%dth Ernest' Loyalist Division" }
+	}
+}
+
+LNC_SS_01 = {
+	name = "Lithuanian-Dutch SS-Division"
+
+	for_countries = { LNC }
+
+	can_use = { 
+		has_government = fascism
+	}
+
+	division_types = { "infantry" "motorized" "medium_armor" "mechanized" }
+
+	fallback_name = "%d. Lithuanian-Dutch SS-Division"
+
+	ordered ={
+		1 = { "%dst. Lithuanian-Dutch SS-Division 'Leider Niels'" }
+		2 = { "%dnd. Lithuanian-Dutch SS-Division 'Rijk'" }
+		3 = { "%drd. Lithuanian-Dutch SS-Division 'Litouwen'" }
+		4 = { "%dth. Lithuanian-Dutch SS-Division 'Nederlands'" }
+		6 = { "%dth. Lithuanian-Dutch SS-Division" }
+		7 = { "%dth. Lithuanian-Dutch SS-Division" }
+		8 = { "%dth. Lithuanian-Dutch SS-Division" }
+		9 = { "%dth. Lithuanian-Dutch SS-Division" }
+		10 = { "%dth. Lithuanian-Dutch SS-Division" }
+		11 = { "%dth. Lithuanian-Dutch SS-Division" }
+		12 = { "%dth. Lithuanian-Dutch SS-Division" }
+		13 = { "%dth. Lithuanian-Dutch SS-Division" }
+		14 = { "%dth. Lithuanian-Dutch SS-Division" }
+		16 = { "%dth. Lithuanian-Dutch SS-Division" }
+		17 = { "%dth. Lithuanian-Dutch SS-Division" }
+		18 = { "%dth. Lithuanian-Dutch SS-Division" }
+		19 = { "%dth. Lithuanian-Dutch SS-Division" }
+		20 = { "%dth. Lithuanian-Dutch SS-Division" }
+		21 = { "%dst. Lithuanian-Dutch SS-Division" }
+		22 = { "%dnd. Lithuanian-Dutch SS-Division" }
+		23 = { "%drd. Lithuanian-Dutch SS-Division" }
+		24 = { "%dth. Lithuanian-Dutch SS-Division" }
+		25 = { "%dth. Lithuanian-Dutch SS-Division" }
+		26 = { "%dth. Lithuanian-Dutch SS-Division" }
+		27 = { "%dth. Lithuanian-Dutch SS-Division" }
+		28 = { "%dth. Lithuanian-Dutch SS-Division" }
+		29 = { "%dth. Lithuanian-Dutch SS-Division" }
+		30 = { "%dth. Lithuanian-Dutch SS-Division" }
+	}
+}

@@ -1,0 +1,353 @@
+﻿
+add_namespace = lithuania_netherlands
+
+# Civilian Disloyalty
+country_event = {
+	id = lithuania_netherlands.1
+	title = lithuania_netherlands.1.t
+	desc = lithuania_netherlands.1.desc
+	picture = GFX_report_event_generic_strikes
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.1.a
+		add_ideas = LNC_civilian_disloyalty
+		set_country_flag = LNC_civilians_protests_happened
+	}
+}
+
+# Aftermath of the Protests
+country_event = {
+	id = lithuania_netherlands.2
+	title = lithuania_netherlands.2.t
+	desc = lithuania_netherlands.2.desc
+	picture = GFX_report_event_generic_strike
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.2.a
+		remove_ideas = LNC_civilian_disloyalty
+		add_timed_idea = {
+			idea = LNC_aftermath_of_the_protests
+			days = 500
+		}
+		set_country_flag = LNC_aftermath_of_protests
+	}
+}
+
+# Jaschutte Assasinated
+country_event = {
+	id = lithuania_netherlands.3
+	title = lithuania_netherlands.3.t
+	desc = lithuania_netherlands.3.desc
+	picture = GFX_report_event_europe_funeral
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.3.a
+	}
+}
+
+# Jaschutte Resigns
+country_event = {
+	id = lithuania_netherlands.4
+	title = lithuania_netherlands.4.t
+	desc = lithuania_netherlands.4.desc
+	picture = GFX_report_event_saf_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.3.a
+	}
+}
+
+# The Royal Marriage
+country_event = {
+	id = lithuania_netherlands.5
+	title = lithuania_netherlands.5.t
+	desc = lithuania_netherlands.5.desc
+	picture = GFX_report_event_mussolini_hotel
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.5.a # Grantas
+		ai_chance = { 
+			factor = 50
+		}
+		custom_effect_tooltip = LNC_grantas_husband_tt
+		add_ideas = LNC_grantas_husband
+		hidden_effect = { news_event = { hours = 12 id = lnc_news.7 } }
+	}
+
+	option = {
+		name = lithuania_netherlands.5.b # Ernest
+		ai_chance = { 
+			factor = 30
+		}
+		custom_effect_tooltip = LNC_ernestas_husband_tt
+		add_ideas = LNC_ernest_husband
+		hidden_effect = { news_event = { hours = 12 id = lnc_news.8 } }
+	}
+
+	option = {
+		name = lithuania_netherlands.5.c # Niels
+		ai_chance = { 
+			factor = 30
+		}
+		custom_effect_tooltip = LNC_niels_husband_tt
+		add_ideas = LNC_niels_husband
+		hidden_effect = { news_event = { hours = 12 id = lnc_news.9 } }
+	}
+
+	option = {
+		name = lithuania_netherlands.5.d # James
+		ai_chance = { 
+			factor = 30
+		}
+		custom_effect_tooltip = LNC_jaschutte_husband_tt
+		add_ideas = LNC_jaschutte_husband
+		hidden_effect = { news_event = { hours = 12 id = lnc_news.10 } }
+	}
+}
+
+# Demand Curacao
+country_event = {
+	id = lithuania_netherlands.6
+	title = lithuania_netherlands.6.t
+	desc = lithuania_netherlands.6.desc
+	picture = GFX_report_event_SOV_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.6.a
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				OR = {
+					strength_ratio = { tag = FROM ratio > 2 }
+					FROM = {
+						has_wargoal_against = ROOT
+						is_justifying_wargoal_against = ROOT
+					}
+				}
+			}
+		}
+		FROM = { country_event = lithuania_netherlands.7 }
+	}
+
+	option = {
+		name = lithuania_netherlands.6.b
+		ai_chance = {
+			factor = 5
+		}
+		FROM = { country_event = lithuania_netherlands.8 }
+	}
+}
+# Accepted
+country_event = {
+	id = lithuania_netherlands.7
+	title = lithuania_netherlands.7.t
+	desc = lithuania_netherlands.7.desc
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.7.a
+		transfer_state = 695
+	}
+}
+# Rejected
+country_event = {
+	id = lithuania_netherlands.8
+	title = lithuania_netherlands.8.t
+	desc = lithuania_netherlands.8.desc
+	picture = GFX_report_event_ast_troops_landing
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.8.a
+		add_state_claim = 695
+		create_wargoal = {
+			type = take_state_focus
+			target = FROM
+			expire = 0
+			generator = { 695 }
+		}
+	}
+}
+
+# Demand Indonesia
+country_event = {
+	id = lithuania_netherlands.9
+	title = lithuania_netherlands.9.t
+	desc = lithuania_netherlands.9.desc
+	picture = GFX_report_event_SOV_demands
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.9.a
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 0
+				OR = {
+					strength_ratio = { tag = FROM ratio > 2 }
+					FROM = {
+						has_wargoal_against = ROOT
+						is_justifying_wargoal_against = ROOT
+					}
+				}
+			}
+		}
+		FROM = { country_event = lithuania_netherlands.10 }
+		LNC_change_indonesian_leader = yes
+	}
+
+	option = {
+		name = lithuania_netherlands.9.b
+		ai_chance = {
+			factor = 5
+		}
+		FROM = { country_event = lithuania_netherlands.11 }
+	}
+}
+# Accepted
+country_event = {
+	id = lithuania_netherlands.10
+	title = lithuania_netherlands.10.t
+	desc = lithuania_netherlands.10.desc
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.10.a
+		puppet = FROM
+	}
+}
+# Rejected
+country_event = {
+	id = lithuania_netherlands.11
+	title = lithuania_netherlands.11.t
+	desc = lithuania_netherlands.11.desc
+	picture = GFX_report_event_ast_troops_landing
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.11.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}
+
+# Monarchist coup
+country_event = {
+	id = lithuania_netherlands.12
+	title = lithuania_netherlands.12.t
+	desc = lithuania_netherlands.12.desc
+	picture = GFX_report_event_ast_troops_landing
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.12.a
+		ai_chance = {
+			factor = 100
+		}
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		LNC_change_scandinavia_leader = yes
+		FROM = { puppet = ROOT }
+	}
+	option = {
+		name = lithuania_netherlands.12.b
+		ai_chance = {
+			factor = 0
+		}
+		start_civil_war = {
+			ideology = ROOT
+			size = 0.3
+		}
+		FROM = { puppet = ROOT }
+		LNC_change_scandinavia_leader = yes
+	}
+}
+
+# Anne Frank Found
+country_event = {
+	id = lithuania_netherlands.13
+	title = lithuania_netherlands.13.t
+	desc = lithuania_netherlands.13.desc
+	picture = GFX_report_event_spr_captured_republican
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.13.a
+		add_ideas = LNC_jews_eliminated
+	}
+}
+
+# First Presidential Election
+country_event = {
+	id = lithuania_netherlands.14
+	title = lithuania_netherlands.14.t
+	desc = lithuania_netherlands.14.desc
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = LNC
+		has_government = democratic
+		NOT = { has_country_flag = LNC_first_elections_happened }
+	}
+
+	option = {
+		name = lithuania_netherlands.14.a
+		add_country_leader_trait = polish_peasant_champion
+	}
+	option = {
+		name = lithuania_netherlands.14.b
+		set_country_flag = LNC_first_elections_happened
+		promote_character = LNC_iesus
+		set_party_name = {
+			ideology = democratic
+			long_name = LNC_christian_socialist_party_long
+			name = LNC_christian_socialist_party
+		}
+	}
+}
+
+# Queen Karina Resigns
+country_event = {
+	id = lithuania_netherlands.15
+	title = lithuania_netherlands.15.t
+	desc = lithuania_netherlands.15.desc
+	picture = GFX_report_event_eng_royal_family
+
+	is_triggered_only = yes
+
+	option = {
+		name = lithuania_netherlands.15.a
+		retire_ideology_leader = neutrality
+	}
+}

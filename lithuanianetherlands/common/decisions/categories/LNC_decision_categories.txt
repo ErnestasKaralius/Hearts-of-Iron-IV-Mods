@@ -1,0 +1,103 @@
+
+LNC_unite_lithuania_netherlands = {
+
+	icon = usa_congress
+
+	priority = 100
+
+	allowed = {
+		original_tag = LNC
+	}
+
+	visible = {
+		OR = {
+			has_idea = LNC_divided_union_1
+			has_idea = LNC_divided_union_2
+			has_idea = LNC_divided_union_3
+			has_idea = LNC_divided_union_4
+		}
+	}
+}
+
+LNC_purge_opposition = {
+
+	icon = sov_great_patriotic_war
+
+	priority = 70
+
+	allowed = {
+		original_tag = LNC
+	}
+
+	visible = {
+		NOT = { has_government = democratic }
+	}
+}
+
+LNC_political_reforms = {
+
+	icon = sov_great_patriotic_war
+
+	priority = 60
+
+	allowed = {
+		original_tag = LNC
+	}
+}
+
+LNC_territorial_expansion = {
+
+	icon = border_war
+
+	priority = 40
+
+	allowed = {
+		original_tag = LNC
+		NOT = { has_government = democratic }
+	}
+}
+
+LNC_expand_the_monarchy = {
+
+	icon = category_generic_monarchism
+
+	priority = 100
+
+	allowed = {
+		original_tag = LNC
+	}
+
+	visible = {
+		has_government = neutrality
+		has_completed_focus = LNC_expand_the_royal_family
+	}
+}
+
+LNC_develop_regions = {
+
+	icon = generic_economy
+
+	priority = 100
+
+	allowed = {
+		original_tag = LNC
+	}
+
+	visible = {
+		has_completed_focus = LNC_proclaim_a_united_federation
+	}
+}
+
+LNC_hunt_the_jews = {
+
+	priority = 100
+
+	allowed = {
+		original_tag = LNC
+	}
+
+	visible = {
+		has_government = fascism
+		has_completed_focus = LNC_coup_against_jaschutte
+	}
+}

@@ -1,0 +1,6 @@
+
+
+graphical_culture = roblox_gfx
+graphical_culture_2d = roblox_2d	 
+
+color = { 203 138 74 }

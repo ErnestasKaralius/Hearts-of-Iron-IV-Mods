@@ -1,0 +1,299 @@
+﻿
+### SUBMARINES ###
+LNC_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { LNC }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "LDS "
+	fallback_name = "Submarine %d"
+	
+	ordered = {
+		1 = {"K-%d"}
+		2 = {"K-%d"} 
+		3 = {"K-%d"} 
+		4 = {"K-%d"} 
+		5 = {"K-%d"}
+		6 = {"K-%d"}
+		7 = {"K-%d"}
+		8 = {"K-%d"}
+		9 = {"K-%d"}
+		10 = {"K-%d"}
+		11 = {"K-%d"}
+		12 = {"K-%d"}
+		13 = {"K-%d"}
+		14 = {"K-%d"}
+		15 = {"K-%d"}
+		16 = {"K-%d"}
+		17 = {"K-%d"}
+		18 = {"K-%d"}
+		19 = {"K-%d"}
+		20 = {"K-%d"}
+		21 = {"K-%d"}
+		22 = {"K-%d"}
+		23 = {"K-%d"}
+		24 = {"K-%d"}
+		25 = {"K-%d"}
+		26 = {"K-%d"}
+		27 = {"K-%d"}
+		28 = {"K-%d"}
+		29 = {"K-%d"}
+		30 = {"K-%d"}
+		31 = {"K-%d"}
+		32 = {"K-%d"}
+		33 = {"K-%d"}
+		34 = {"K-%d"}
+		35 = {"K-%d"}
+		36 = {"K-%d"}
+		37 = {"K-%d"}
+		38 = {"K-%d"}
+		39 = {"K-%d"}
+		40 = {"K-%d"}
+	}
+}
+
+### DESTROYER NAMES###
+LNC_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { LNC }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "LDS "
+	fallback_name = "Destroyer %d"					
+
+	unique = {											
+		"Witte de With" "Žemaitis" "Van Nes" "Gerard Callenburgh" "Aukštaitis" "Philips van Almonde" "Suvalkas""Campbelltown" "Telšiai" "Marnix" "Grinius" "Holland" "Pastovys" "Zeeland" "Gardinas" "Noord-Brabant" "Astravas" "Gelderland" "Šilalė" "Friesland" "Kelmė" "Groningen" "Plungė" "Limburg" "Venta" "Overijssel" "Luokė" "Drenthe" "Minija" "Utrecht" "Ventė" "Rotterdam" "Kupiškis""Wolf" "Varėna" "Fret" "Jurbarkas" "Bulhond" "Dotnuva" "Jakhals" "Rietabas" "Hermelijn" "Kretinga" "Vos" "Ušna"
+	}
+}
+
+### LIGHT CRUISER NAMES###
+LNC_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { LNC }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "LDS "
+	fallback_name = "Light Cruiser %d"
+
+	unique = {
+		"Sumatra" "Butigeidis" "De Ruyter" "Vytenis" "Jacob van Heemskerck" "Jaunutis" "De Zeven Provinciën" "Švitrigaila" "Kijkduin" "Butvydas" "Gelderland" "Nesvyžius" "Zeeland" "Ikaznė" "Friesland" "Breslauja" "Noord-Brabant" "Katra" "Utrecht" "Galdapė" "Drenthe" "Merkys" "Limburg"
+	}
+}
+
+### HEAVY CRUISER NAMES###
+LNC_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { LNC }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "LDS "
+	fallback_name = "Heavy Cruiser %d"
+
+	unique = {
+		"Hertog Hendrik" "Livonija" "Jacob van Heemskerck" "Taurapilis" "Soerabaja" "Bražuolė" "Celebes" "Algirdas" "Batjan" "Kęstutis" "Ceram" "Treniota" "Ambon" "Švarnas" "Banda" "Traidenis" "Ternate"
+	}
+}
+
+### BATTLECRUISER NAMES ###
+LNC_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { LNC }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "LDS "
+	fallback_name = "Battlecruiser %d"		
+
+	unique = {
+		"Van Speijk" "Įsrutis" "Witte de With" "Valkaviskas" "Piet Hein" "Knišinas" "Kortenaer" "Daugpilis" "Koningin Regentes" "Nemunas"
+	}
+}
+
+### BATTLESHIP NAMES ###
+LNC_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { LNC }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "LDS "
+	fallback_name = "Battleship %d"	
+
+	unique = {
+		"Queen Karina" "Evertsen" "Vytautas" "Piet Hein" "Mindaugas" "Kortenaer" "Kaškelis" "Koningin Regentes" "Minskas" "Hertog Hendrik" "Naugardukas" "Van Speijk" "Naugardukas" "Witte de With" "Dūkštas" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+LNC_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { LNC }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "LDS "
+	fallback_name = "Carrier %d"	
+
+	unique = {
+		"Karel Doorman" "Lietuva" "De Zeven Provinciën" "Kuršis" "De Ruyter" "Neris" "Tromp" "Jūrava" "Piet Hein" "Nida"
+	}
+}
+
+### LITHUANIAN HISTORICAL FIGURES ###
+LNC_THEME_HISTORICAL_FIGURES = {
+	name = LNC_NAME_THEME_HISTORICAL_FIGURES
+
+	for_countries = { LNC }
+
+	can_use = { 
+		not = { has_government = communism }
+	}
+
+	type = ship
+
+	prefix = "LDS "
+
+	unique = { 
+		"Mindaugas" "Švarnas" "Traidenis" "Butigeidis" "Butvydas" "Vytenis" "Gediminas" "Jaunutis" "Algirdas" "Kęstutis" "Vytautas" "Jogaila"
+	}
+}
+
+### LITHUANIAN WEATHER ###
+LNC_THEME_WEATHER = {
+	name = LNC_NAME_THEME_WEATHER
+
+	for_countries = { LNC }
+
+	type = ship
+	
+	prefix = "LDS "
+
+	unique = {
+		"Audra" "Žaibas" "Pūga" "Uraganas" "Viesulas" "Kruša" "Rūkas"
+	}
+}
+
+### LITHUANIAN RIVERS ###
+LNC_THEME_RIVERS = {
+	name = LNC_NAME_THEME_RIVERS
+
+	for_countries = { LNC }
+
+	type = ship
+	
+	prefix = "LDS "
+
+	unique = {
+		"Nemunas" "Neris" "Venta" "Šešupė" "Mūša" "Šventoji" "Nevėžis" "Merkys" "Minija" "Nemunėlis" "Šešuvis" "Žeimena" "Šušvė" "Luknė" "Anykšta" "Lėvuo" "Kražantė" "Virvytė"
+	}
+}
+
+### LITHUANIAN LAKES ###
+LNC_THEME_LAKES = {
+	name = LNC_NAME_THEME_LAKES
+
+	for_countries = { LNC }
+
+	type = ship
+	
+	prefix = "LDS "
+
+	unique = {
+		"Tauragnas" "Vištytis" "Gavys" "Verniejus" "Žeimenys" "Čičirys" "Luodis" "Metelys" "Avilys" "Alaušas" "Žuvintas" "Kretuonas" "Aisetas"
+	}
+}
+
+### LITHUANIAN FISH ###
+LNC_THEME_FISH = {
+	name = LNC_NAME_THEME_LITHUANIAN_FISH
+
+	for_countries = { LNC }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "LDS "
+
+	unique = {
+		"Delfinas" "Ryklys" "Ungurys" "Vijūnas" "Šližys" "Orka" "Skersnukis" "Ragys" "Banginis" "Pūgžlys" "Gleivys" "Kalmaras" "Čyras" "Builis" "Kašalotas"
+	}
+}
+
+### LITHUANIAN MYTHOLOGY ###
+LNC_THEME_MYTHOLOGY = {
+	name = LNC_NAME_THEME_MYTHOLOGY
+
+	for_countries = { LNC }
+
+	type = ship
+	
+	prefix = "LDS "
+
+	unique = {
+		"Perkūnas" "Žemyna" "Medeina" "Laumė" "Žvorūna" "Indraja" "Giltinė" "Bangpūtys" "Aušrinė" "Praamžius" "Auštara" "Auštaras" "Austėja" "Vėlinas" "Gabija" "Jūratė" "Laima" "Puškaitis" "Žvaigždikis" "Jėvulis" "Magyla" "Mėletėlė" "Karvaitis" "Ėraitis" "Rasa" "Sėlija"
+	}
+}
+
+### DUTCH REGIONS  ###
+LNC_REGIONS = {
+	name = LNC_NAME_THEME_REGIONS
+
+	for_countries = { LNC }
+
+	type = ship
+
+	prefix = "LDS "	
+
+	unique = {
+		"Gelderland" "Zeeland" "Friesland" "Gelderland" "Noord-Brabant" "Utrecht" "Drenthe" "Brabant" "Limburg"
+	}
+}
+
+## DUTCH CITIES ###
+LNC_CITIES = {
+	name = LNC_NAME_THEME_CITIES
+
+	for_countries = { LNC }
+
+	type = ship
+
+	prefix = "LDS "
+
+	unique = {
+		"Rotterdam" "Amsterdam" "Den Haag" "Utrecht" "Eindhoven" "Tilburg" "Groningen" "Nijmegen" "Breda" "Almere Stad" "Enschede" 
+		"Arnhem" "Amersfoort" "Maastricht" "Zwolle" "Deventer" "Venlo" "Zoetermeer" "Roosendaal" "Apeldoorn" 
+	}
+}
+
+## DUTCH FISH ###
+LNC_FISH = {
+	name = LNC_NAME_THEME_DUTCH_FISH
+
+	for_countries = { LNC }
+
+	type = ship
+
+	prefix = "LDS "
+
+	unique = {
+		"Dolfijn" "Zeehond" "Zwaardvis" "Tijgerhaai" "Walrus" "Zeeleeuw" "Potvis" "Tonijn" "Zwaardvis" "Bruinvis"
+	}
+}

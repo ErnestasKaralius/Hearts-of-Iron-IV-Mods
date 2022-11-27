@@ -1,0 +1,84 @@
+LNC = {
+	army = {
+		male = {
+			"GFX_Portrait_Roblox_Generic_land_1"
+			"GFX_Portrait_Roblox_Generic_land_2"
+			"GFX_Portrait_Roblox_Generic_land_3"
+			"GFX_Portrait_Roblox_Generic_land_4"
+			"GFX_Portrait_Roblox_Generic_land_5"
+			"GFX_Portrait_Roblox_Generic_land_6"
+			"GFX_Portrait_Roblox_Generic_land_7"
+			"GFX_Portrait_Roblox_Generic_land_8"
+			"GFX_Portrait_Roblox_Generic_land_9"
+			"GFX_Portrait_Roblox_Generic_land_10"
+			"GFX_Portrait_Roblox_Generic_land_11"
+			"GFX_Portrait_Roblox_Generic_land_12"
+			"GFX_Portrait_Roblox_Generic_land_13"
+			"GFX_Portrait_Roblox_Generic_land_14"
+			"GFX_Portrait_Roblox_Generic_land_15"
+			"GFX_Portrait_Roblox_Generic_land_16"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Roblox_Generic_navy_1"
+			"GFX_Portrait_Roblox_Generic_navy_2"
+			"GFX_Portrait_Roblox_Generic_navy_3"
+			"GFX_Portrait_Roblox_Generic_navy_4"
+			"GFX_Portrait_Roblox_Generic_navy_5"
+			"GFX_Portrait_Roblox_Generic_navy_6"
+			"GFX_Portrait_Roblox_Generic_navy_7"
+			"GFX_Portrait_Roblox_Generic_navy_8"
+			"GFX_Portrait_Roblox_Generic_navy_9"
+		}
+	}
+	political = {
+		communism = {
+			male = { 
+				"GFX_Portrait_Roblox_Generic_communism_1"
+				"GFX_Portrait_Roblox_Generic_communism_2"
+				"GFX_Portrait_Roblox_Generic_communism_3"
+			}
+		}
+		democratic = {
+			male = { 
+				"GFX_Portrait_Roblox_Generic_democratic_1"
+				"GFX_Portrait_Roblox_Generic_democratic_2"
+				"GFX_Portrait_Roblox_Generic_democratic_3"
+			}
+		}
+		fascism = {
+			male = { 
+				"GFX_Portrait_Roblox_Generic_fascism_1"
+				"GFX_Portrait_Roblox_Generic_fascism_2"
+				"GFX_Portrait_Roblox_Generic_fascism_3"
+			}
+		}
+		neutrality = {
+			male = { 
+				"GFX_Portrait_Roblox_Generic_neutrality_1"
+				"GFX_Portrait_Roblox_Generic_neutrality_2"
+				"GFX_Portrait_Roblox_Generic_neutrality_3"
+			}
+		}
+	}
+	operative = {
+		male = {
+			"GFX_Portrait_Roblox_Generic_operative_male_1"
+			"GFX_Portrait_Roblox_Generic_operative_male_2"
+			"GFX_Portrait_Roblox_Generic_operative_male_3"
+			"GFX_Portrait_Roblox_Generic_operative_male_4"
+			"GFX_Portrait_Roblox_Generic_operative_male_5"
+			"GFX_Portrait_Roblox_Generic_operative_male_6"
+		}
+		female = {
+			"GFX_Portrait_Roblox_Generic_operative_female_1"
+			"GFX_Portrait_Roblox_Generic_operative_female_2"
+			"GFX_Portrait_Roblox_Generic_operative_female_3"
+			"GFX_Portrait_Roblox_Generic_operative_female_4"
+			"GFX_Portrait_Roblox_Generic_operative_female_5"
+			"GFX_Portrait_Roblox_Generic_operative_female_6"
+		}
+	}
+}

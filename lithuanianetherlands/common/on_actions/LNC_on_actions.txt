@@ -1,0 +1,164 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = { LIT = { exists = yes }}
+				LNC = { annex_country = { target = LIT transfer_troops = no }}
+				every_state = {
+					limit = { is_core_of = LIT }
+					add_core_of = LNC
+				}
+			}
+			if = {
+				limit = { HOL = { exists = yes }}
+				LNC = { annex_country = { target = HOL transfer_troops = no }}
+				every_state = {
+					limit = { is_core_of = HOL }
+					add_core_of = LNC
+				}
+			}
+			if = {
+				limit = { BEL = { exists = yes }}
+				LNC = { annex_country = { target = BEL transfer_troops = no }}
+				every_state = {
+					limit = { is_core_of = BEL }
+					add_core_of = LNC
+				}
+			}
+			if = {
+				limit = { LUX = { exists = yes }}
+				LNC = { annex_country = { target = LUX transfer_troops = no }}
+				every_state = {
+					limit = { is_core_of = LUX }
+					add_core_of = LNC
+				}
+			}
+			LNC = {
+				if = { 
+					limit = {
+						OR = {
+							AND = {
+								is_historical_focus_on = no
+								has_game_rule = {
+									rule = LNC_ai_behavior
+									option = DEFAULT
+								}
+							}
+							has_game_rule = {
+								rule = LNC_ai_behavior
+								option = RANDOM
+							}
+						}
+					}
+					random_list = {
+						10 = { set_country_flag = LNC_AI_RANDOM_HISTORICAL }
+						15 = { set_country_flag = LNC_AI_RANDOM_COMMUNIST_RESIGN }
+						5 = { set_country_flag = LNC_AI_RANDOM_COMMUNIST_ASSASSINATE }
+						25 = { set_country_flag = LNC_AI_RANDOM_FASCIST }
+						20 = { set_country_flag = LNC_AI_RANDOM_MONARCHIST_AGGRESSIVE }
+						5 = { set_country_flag = LNC_AI_RANDOM_MONARCHIST_NEUTRAL }
+						15 = { set_country_flag = LNC_AI_RANDOM_DEMOCRATIC_ALLIES }
+						5 = { set_country_flag = LNC_AI_RANDOM_DEMOCRATIC_NEUTRAL }
+					}
+				}
+			}
+		}
+	}
+	
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					original_tag = INS 
+					FROM = { original_tag = LNC }
+				}
+				LNC_change_indonesian_leader = yes
+			}
+		}
+	}
+	on_release_as_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					original_tag = INS 
+					FROM = { original_tag = LNC }
+				}
+				LNC_change_indonesian_leader = yes
+			}
+		}
+	}
+	
+	on_new_term_election = {
+		random_events = {
+			100 = lithuania_netherlands.14
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = LNC
+					LNC_karina = { is_country_leader = yes }
+				}
+				country_event = { id = lithuania_netherlands.15 }
+			}
+		}
+	}
+
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = LNC
+					has_government = fascism
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = LNC
+						NOT = { has_government = fascism }
+					}
+				}
+				load_focus_tree = { tree = lithuania_netherlands_focus keep_completed = yes }
+				LNC_remove_unnecessary_focuses = yes
+				unlock_national_focus = LNC_rewrite_the_constitution
+				unlock_national_focus = LNC_legalise_NAIP_organisation
+				unlock_national_focus = LNC_coup_against_jaschutte
+				add_ideas = LNC_NAIP_organisation
+			}
+			else_if = {
+				limit = {
+					original_tag = LNC
+					has_government = neutrality
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = LNC
+						NOT = { has_government = neutrality }
+					}
+				}
+				load_focus_tree = { tree = lithuania_netherlands_focus keep_completed = yes }
+				LNC_remove_unnecessary_focuses = yes
+				unlock_national_focus = LNC_rewrite_the_constitution
+				unlock_national_focus = LNC_grant_amnesty_to_royalists
+				unlock_national_focus = LNC_put_karina_in_charge
+				add_ideas = LNC_royalist_movement
+			}
+			else_if = {
+				limit = {
+					original_tag = LNC
+					has_government = democratic
+					has_focus_tree = generic_focus
+					FROM = {
+						original_tag = LNC
+						NOT = { has_government = democratic }
+					}
+				}
+				load_focus_tree = { tree = lithuania_netherlands_focus keep_completed = yes }
+				LNC_remove_unnecessary_focuses = yes
+				unlock_national_focus = LNC_rewrite_the_constitution
+				unlock_national_focus = LNC_permit_local_elections
+				unlock_national_focus = LNC_peaceful_revolution
+				add_ideas = LNC_local_elections
+			}
+		}
+	}
+}

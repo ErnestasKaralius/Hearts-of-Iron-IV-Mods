@@ -1,0 +1,129 @@
+﻿units= {
+
+########################## Main Fleet #################################
+	fleet = {
+		name = "Homeland Fleet of Lithuania-Netherlands"			
+		task_force = {
+			name = "Nederlandse Vloot"
+			base = 9498
+			location = 9498
+			ship = { name = "LDS Queen Karina" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = LNC version_name = "Queen Class" } } } 
+			ship = { name = "LDS K-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-7" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-8" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-9" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-10" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS Piet Hein" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Ouwens Class" } } }
+			ship = { name = "LDS Eversten" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Ouwens Class" } } }
+			ship = { name = "LDS Van Ghent" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Ouwens Class" } } }
+			ship = { name = "LDS Kortenaer" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Schutte Class" } } }
+			ship = { name = "LDS Van Galen" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Schutte Class" } } }
+			ship = { name = "LDS Tromp" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = LNC version_name = "Grant Class" } } }
+			ship = { name = "LDS Java" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = LNC version_name = "Grant Class" } } }
+		}
+		task_force = {
+			name = "Lietuvių Laivynas"
+			base = 6314
+			location = 6314
+			ship = { name = "LDS K-11" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-12" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-13" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-14" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-15" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-18" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS Ukmergė" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Ouwens Class" } } }
+			ship = { name = "LDS Visaginas" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Ouwens Class" } } }
+			ship = { name = "LDS Šiauliai" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = LNC version_name = "Ernest Class" } } }
+			ship = { name = "LDS Panevėžys" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = LNC version_name = "Ernest Class" } } }
+			ship = { name = "LDS Dzūkas" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = LNC version_name = "Grant Class" } } }
+		}
+		
+	}
+
+	###################### Colonial Fleet ###########################
+	fleet = {
+		name = "Colonial Fleet of Lithuania-Netherlands"			
+		task_force = {
+			name = "Fleet of Suriname"
+			base = 12828
+			location = 12828
+			ship = { name = "LDS K-16" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-17" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-22" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS Banckert" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Vilnius-Amsterdam Class" } } }
+		}
+		task_force = {
+			name = "Fleet of Congo"
+			base = 10968
+			location = 10968
+			ship = { name = "LDS K-19" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-20" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-21" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS K-23" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = LNC version_name = "LN Class" } } }
+			ship = { name = "LDS Isaac Sweers" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = LNC version_name = "Vilnius-Amsterdam Class" } } }
+			ship = { name = "LDS Brabant" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = LNC version_name = "Grant Class" } } }
+		}
+	}
+
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_1
+			creator = "LNC"
+			version_name = "Queen Class"
+		}
+		requested_factories = 5
+		progress = 0.95
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2 
+			creator = "LNC"
+			version_name = "Ernest Class"
+		}
+		requested_factories = 2
+		progress = 0.8
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2 
+			creator = "LNC"
+			version_name = "Grant Class"
+		}
+		requested_factories = 1
+		progress = 0.71
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "LNC"
+			version_name = "Ouwens Class"
+		}
+		requested_factories = 1
+		progress = 0.75
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "LNC"
+			version_name = "Vilnius-Amsterdam Class"
+		}
+		requested_factories = 1
+		progress = 0.67
+		amount = 1
+	}
+}

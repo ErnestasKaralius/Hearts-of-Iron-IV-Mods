@@ -1,0 +1,1278 @@
+characters={
+	LNC_jaschutte={
+		name=LNC_jaschutte
+		portraits={
+			civilian={
+				large="gfx/leaders/LNC/Portrait_LNC_Jaschutte.dds"
+			}
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Jaschutte.dds"
+				small="gfx/interface/ideas/idea_LNC_Jaschutte.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				staunch_stalinist 
+				dislikes_france
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LNC_jaschutte
+			ledger = army
+			allowed = {
+				original_tag = LNC
+			}
+			research_bonus = {
+				nuclear = 0.150
+				rocketry = 0.150
+			}
+			traits = {
+				nuclear_scientist
+				rocket_scientist
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	LNC_niels={
+		name=LNC_niels
+		portraits={
+			civilian={
+				large="gfx/leaders/LNC/Portrait_LNC_Niels.dds"
+			}
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Niels.dds"
+				small="gfx/interface/ideas/idea_LNC_Niels.dds"
+			}
+		}
+		country_leader={
+			ideology = nazism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				war_profiteer
+			}
+		}
+		corps_commander = {
+			traits = { panzer_expert fast_planner armor_officer politically_connected }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_niels
+			ledger = army
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 8.000
+			}
+		}
+	}
+	LNC_grantas={
+		name=LNC_grantas
+		portraits={
+			civilian={
+				large="gfx/leaders/LNC/Portrait_LNC_Grantas.dds"
+				small="gfx/interface/ideas/idea_LNC_Grantas.dds"
+			}
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Grantas.dds"
+			}
+		}
+		country_leader={
+			ideology = socialism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				social_reformer
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_martin_bormann
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				silent_workhorse 
+			}
+		}
+	}
+	LNC_karina={
+		name=LNC_karina
+		portraits={
+			civilian={
+				large="gfx/leaders/LNC/Portrait_LNC_Karina.dds"
+			}
+		}
+		gender = female
+		country_leader={
+			ideology = despotism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				popular_queen
+				imperial_connections
+			}
+		}
+	}
+	LNC_ernest={
+		name=LNC_ernest
+		portraits={
+			civilian={
+				large="gfx/leaders/LNC/Portrait_LNC_Ernest.dds"
+				small="gfx/interface/ideas/idea_LNC_Ernest.dds"
+			}
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Ernest.dds"
+			}
+		}
+		field_marshal = {
+			traits = { skilled_staffer infantry_officer ranger defensive_doctrine politically_connected }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology = marxism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				socialist_lion	
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_ernest
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	LNC_brigita={
+		name=LNC_brigita
+		gender = female 
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Brigita.dds"
+				small="gfx/interface/ideas/idea_LNC_Brigita.dds"
+			}
+		}
+		field_marshal = {
+			traits = { harsh_leader trickster thorough_planner fortress_buster}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = LNC_brigita
+			allowed = {
+				original_tag = LNC
+			}
+			available = {
+				has_completed_focus = LNC_focus_on_assault_strategies
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5
+			}
+		}
+		country_leader={
+			ideology = marxism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				the_werewolf	
+			}
+		}
+	}
+	LNC_nikita={
+		name=LNC_nikita
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Nikita.dds"
+			}
+		}
+		corps_commander = {
+			traits = { fast_planner fortress_buster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+	LNC_outlook={
+		name=LNC_outlook
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Outlook.dds"
+			}
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Outlook.dds"
+			}
+		}
+		corps_commander = {
+			traits = { unyielding_defender media_personality }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_outlook
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				propaganda_expert
+			}
+		}
+	}
+	LNC_noob_male={
+		name=LNC_noob
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Noob_Male.dds"
+			}
+		}
+		corps_commander = {
+			traits = { adaptable }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+		}
+	}
+	LNC_kazys_paleckis={
+		name=LNC_kazys_paleckis
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Kazys_Paleckis.dds"
+			}
+		}
+		corps_commander = {
+			traits = { naval_invader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=-1
+		}
+	}
+	LNC_noob_female={
+		name=LNC_noob
+		gender = female 
+		portraits={
+			navy={
+				large="gfx/leaders/LNC/Portrait_LNC_Noob_Female.dds"
+				small="gfx/interface/ideas/idea_LNC_Noob_Female.dds"
+			}
+		}
+		navy_leader = {
+			traits = { chief_engineer caustic_personality }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = LNC_noob_female
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_jonas_gudaitis={
+		name=LNC_jonas_gudaitis
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Jonas_Gudaitis.dds"
+				small="gfx/interface/ideas/idea_LNC_Jonas_Gudaitis.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = LNC_jonas_gudaitis
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				army_chief_maneuver_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	LNC_stasys_galdikas={
+		name=LNC_stasys_galdikas
+		portraits={
+			navy={
+				large="gfx/leaders/LNC/Portrait_LNC_Stasys_Galdikas.dds"
+				small="gfx/interface/ideas/idea_LNC_Stasys_Galdikas.dds"
+			}
+		}
+		navy_leader = {
+			traits = { old_guard_navy gentlemanly superior_tactician }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 3
+			legacy_id=-1
+		}
+		advisor={
+			slot = theorist
+			idea_token = LNC_stasys_galdikas
+			ledger = navy
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				grand_fleet_proponent
+			}
+			cost = 150
+		}
+	}
+
+	LNC_romy_brugman={
+		name=LNC_romy_brugman
+		portraits={
+			navy={
+				large="gfx/leaders/LNC/Portrait_LNC_Romy_Brugman.dds"
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+			legacy_id=-1
+		}
+	}
+	LNC_amir_de_moor={
+		name=LNC_amir_de_moor
+		portraits={
+			navy={
+				large="gfx/leaders/LNC/Portrait_LNC_Amir_De_Moor.dds"
+				small="gfx/interface/ideas/idea_LNC_Amir_De_Moor.dds"
+			}
+		}
+		navy_leader = {
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id=-1
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = LNC_amir_de_moor
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				navy_chief_maneuver_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_shen_xinxin={
+		name=LNC_shen_xinxin
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Shen_Xinxin.dds"
+			}
+		}
+	}
+	LNC_povilas_balciunas={
+		name=LNC_povilas_balciunas
+		portraits={
+			navy={
+				large="gfx/leaders/LNC/Portrait_LNC_Povilas_Balciunas.dds"
+			}
+		}
+	}
+	LNC_the_unknown={
+		name=LNC_the_unknown
+		portraits={
+			civilian={
+				large="gfx/leaders/LNC/Portrait_LNC_The_Unknown.dds"
+				small="gfx/interface/ideas/idea_LNC_The_Unknown.dds"
+			}
+		}
+	}
+	LNC_iesus={
+		name=LNC_iesus
+		portraits={
+			civilian={
+				large="gfx/leaders/LNC/Portrait_LNC_Iesus.dds"
+			}
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Iesus.dds"
+			}
+		}
+		country_leader={
+			ideology = socialism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				reincarnation_of_jesus
+			}
+		}
+	}
+	LNC_rebecca={
+		name=LNC_rebecca
+		gender = female 
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Rebecca.dds"
+			}
+			civilian={
+				large="gfx/leaders/LNC/Portrait_LNC_Rebecca.dds"
+				small="gfx/interface/ideas/idea_LNC_Rebecca.dds"
+			}
+		}
+		country_leader={
+			ideology = despotism
+			expire="1965.1.1.1"
+			id=-1
+			traits = {
+				queen_of_koekange
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_rebecca
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				dexterous_gipsy
+			}
+		}
+	}
+	LNC_rowan={
+		name=LNC_rowan
+		gender = female
+		portraits={
+			army={
+				large="gfx/leaders/LNC/Portrait_LNC_Rowan.dds"
+			}
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Rowan.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_rowan
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				bastion_of_pansexuality
+			}
+		}
+	}
+	LNC_zydrunas_rapsys={
+		name= LNC_zydrunas_rapsys
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Zydrunas_Rapsys.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = LNC_zydrunas_rapsys
+			allowed = {
+				original_tag = LNC
+			}
+			available = {
+				has_completed_focus = LNC_focus_on_defensive_strategies
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+	LNC_vincent_von_werth={
+		name= LNC_vincent_von_werth
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Vincent_Von_Werth.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = LNC_vincent_von_werth
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				navy_chief_naval_aviation_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_hubert_bauwens={
+		name= LNC_hubert_bauwens
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Hubert_Bauwens.dds"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = LNC_hubert_bauwens
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				navy_chief_reform_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_ramunas_navickas={
+		name= LNC_ramunas_navickas
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Ramunas_Navickas.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = LNC_ramunas_navickas
+			allowed = {
+				original_tag  = LNC
+			}
+			traits = {
+				air_chief_ground_support_2 
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_jurius_avizienis={
+		name= LNC_jurius_avizienis
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Jurius_Avizienis.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = LNC_jurius_avizienis
+			allowed = {
+				original_tag  = LNC
+			}
+			traits = {
+				air_chief_night_operations_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_arturas_sirvydas={
+		name= LNC_arturas_sirvydas
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Arturas_Sirvydas.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = LNC_arturas_sirvydas
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				air_chief_safety_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_antonius_cornelissen={
+		name= LNC_antonius_cornelissen
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Antonius_Cornelissen.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_antonius_cornelissen
+			ledger = army
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	LNC_henk_ebbers={
+		name= LNC_henk_ebbers
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Henk_Ebbers.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_henk_ebbers
+			ledger = army
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	LNC_tadas_steponavicius={
+		name= LNC_tadas_steponavicius
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Tadas_Steponavicius.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_tadas_steponavicius
+			ledger = army
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				army_cavalry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
+			}
+		}
+	}
+	LNC_vygantas_karvelis={
+		name= LNC_vygantas_karvelis
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Vygantas_Karvelis.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_vygantas_karvelis
+			ledger = air
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				air_air_superiority_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_wisse_vollenhoven={
+		name= LNC_wisse_vollenhoven
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Wisse_Vollenhoven.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_wisse_vollenhoven
+			ledger = air
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				air_tactical_bombing_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_kees_tinbergen={
+		name= LNC_kees_tinbergen
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Kees_Tinbergen.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_kees_tinbergen
+			ledger = air
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	LNC_sigitas_mikutavicius={
+		name= LNC_sigitas_mikutavicius
+		portraits={
+			navy={
+				small="gfx/interface/ideas/idea_LNC_Sigitas_Mikutavicius.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_sigitas_mikutavicius
+			ledger = navy
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				navy_screen_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.700
+			}
+		}
+	}
+	LNC_mykolas_baltrusaitis={
+		name= LNC_mykolas_baltrusaitis
+		portraits={
+			navy={
+				small="gfx/interface/ideas/idea_LNC_Mykolas_Baltrusaitis.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_mykolas_baltrusaitis
+			ledger = navy
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				navy_submarine_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.700
+			}
+		}
+	}
+	LNC_albert_van_gelderen={
+		name= LNC_albert_van_gelderen
+		portraits={
+			navy={
+				small="gfx/interface/ideas/idea_LNC_Albert_Van_Gelderen.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = LNC_albert_van_gelderen
+			ledger = navy
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				navy_fleet_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 0.700
+			}
+		}
+	}
+	LNC_nick_kuijpers={
+		name= LNC_nick_kuijpers
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Nick_Kuijpers.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LNC_nick_kuijpers
+			ledger = army
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				military_theorist
+			}
+			cost = 100
+		}
+	}
+	LNC_azuolas_poskus={
+		name= LNC_azuolas_poskus
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_LNC_Azuolas_Poskus.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LNC_azuolas_poskus
+			ledger = air
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				air_warfare_theorist
+			}
+			cost = 100
+		}
+	}
+	LNC_dziugas_dauksa={
+		name= LNC_dziugas_dauksa
+		portraits={
+			navy={
+				small="gfx/interface/ideas/idea_LNC_Dziugas_Dauksa.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LNC_dziugas_dauksa
+			ledger = navy
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				naval_theorist
+			}
+			cost = 100
+		}
+	}
+	LNC_mark_overmars={
+		name= LNC_mark_overmars
+		portraits={
+			navy={
+				small="gfx/interface/ideas/idea_LNC_Mark_Overmars.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LNC_mark_overmars
+			ledger = army
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				superior_firepower_expert
+			}
+			cost = 150
+		}
+	}
+	LNC_carel_gerritsen={
+		name= LNC_carel_gerritsen
+		portraits={
+			navy={
+				small="gfx/interface/ideas/idea_LNC_Carel_Gerritsen.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LNC_carel_gerritsen
+			ledger = army
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				grand_battle_plan_expert
+			}
+			cost = 150
+		}
+	}
+	LNC_ovidijus_jankauskas={
+		name= LNC_ovidijus_jankauskas
+		portraits={
+			navy={
+				small="gfx/interface/ideas/idea_LNC_Ovidijus_Jankauskas.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = LNC_ovidijus_jankauskas
+			ledger = air
+			allowed = {
+				original_tag = LNC
+			}
+			traits = {
+				assault_avaition
+			}
+			cost = 150
+		}
+	}
+	LNC_frank_zweerts={
+		name= LNC_frank_zweerts
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Frank_Zweerts.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_frank_zweerts
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				financial_expert
+			}
+		}
+	}
+	LNC_gediminas_vileisis={
+		name= LNC_gediminas_vileisis
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Gediminas_Vileisis.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_gediminas_vileisis
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 30.000
+			}
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+	LNC_zygimantas_dovydaitis={
+		name= LNC_zygimantas_dovydaitis
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Zygimantas_Dovydaitis.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_zygimantas_dovydaitis
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 20.000
+			}
+			traits = {
+				prince_of_terror
+			}
+		}
+	}
+	LNC_julius_roodenburgh={
+		name= LNC_julius_roodenburgh
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Julius_Roodenburgh.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_julius_roodenburgh
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 10.000
+			}
+			traits = {
+				fortification_engineer
+			}
+		}
+	}
+	LNC_daniel_moerman={
+		name= LNC_daniel_moerman
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Daniel_Moerman.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_daniel_moerman
+			allowed = {
+				original_tag = LNC
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+	}
+	LNC_rogier_van_eijk={
+		name=LNC_rogier_van_eijk
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Rogier_van_Eijk.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_rogier_van_eijk
+			allowed = {
+				original_tag = LNC
+			}
+			available = {
+				has_completed_focus = LNC_legalise_NAIP_organisation
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			traits = {
+				fascist_demagogue
+			}
+			do_effect = {
+				NOT = {
+					has_government = fascism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	LNC_algirdas_krupavicius={
+		name=LNC_algirdas_krupavicius
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Algirdas_Krupavicius.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_algirdas_krupavicius
+			allowed = {
+				original_tag = LNC
+			}
+			available = {
+				has_completed_focus = LNC_stay_loyal_to_proletariat
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					has_government = communism 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	LNC_piet_oosterhuis={
+		name=LNC_piet_oosterhuis
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Piet_Oosterhuis.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_piet_oosterhuis
+			allowed = {
+				original_tag = LNC
+			}
+			available = {
+				has_completed_focus = LNC_permit_local_elections 
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			traits = {
+				democratic_reformer
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	LNC_claudia_kuhn={
+		name=LNC_claudia_kuhn
+		gender = female
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Claudia_Kuhn.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_claudia_kuhn
+			allowed = {
+				original_tag = LNC
+			}
+			available = {
+				has_completed_focus = LNC_grant_amnesty_to_royalists
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			traits = {
+				staunch_monarchist
+			}
+			do_effect = {
+				NOT = {
+					has_government = neutrality 
+				}
+			}
+			ai_will_do = {
+				factor = 0.000
+			}
+		}
+	}
+	LNC_josef_kaal={
+		name=LNC_josef_kaal
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/idea_LNC_Josef_Kaal.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = LNC_josef_kaal
+			available  = {
+				has_intelligence_agency  = yes 
+			}
+			allowed  = {
+				original_tag  = LNC
+				has_dlc = "La Resistance"
+			}
+			traits  = {
+				head_of_intelligence 
+			}
+		}
+	}
+}

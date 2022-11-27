@@ -1,0 +1,72 @@
+leader_traits = {
+	dislikes_france = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "FRA"			
+			value = 200
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	socialist_lion = {
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+		army_defence_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_werewolf = {
+		random = no
+		war_support_factor = 0.1
+		land_doctrine_cost_factor = -0.05
+		air_doctrine_cost_factor = -0.05
+		naval_doctrine_cost_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	bastion_of_pansexuality = {
+		sprite = 13
+		random = no
+		non_core_manpower = 0.1
+		stability_weekly = 0.005
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dexterous_gipsy = {
+		sprite = 13
+		random = no
+		global_building_slots_factor = 0.05
+		drift_defence_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	reincarnation_of_jesus = {
+		random = no
+		trade_laws_cost_factor = -0.50
+		mobilization_laws_cost_factor = -0.50
+		economy_cost_factor = -0.50
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	queen_of_koekange = {
+		random = no
+		exiled_government_weekly_manpower = 700
+		army_core_defence_factor = 0.05
+		mobilization_speed = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

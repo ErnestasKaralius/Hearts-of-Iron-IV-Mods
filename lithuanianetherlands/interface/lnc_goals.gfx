@@ -1,0 +1,6 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_goal_attack_poland"
+		texturefile = "gfx/interface/goals/goal_attack_poland.dds"
+	}
+}

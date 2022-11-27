@@ -1,0 +1,1832 @@
+
+LNC_unite_lithuania_netherlands = {
+	LNC_crack_down_on_dutch_nationalists = {
+
+		icon = generic_civil_support
+
+		custom_cost_trigger = {
+			has_political_power > 29
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = decision_cost_pp_30_ie_1000
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			has_start_date < 1936.01.02
+		}
+
+		days_remove = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			    producer = ROOT
+			}
+			add_political_power = -30
+		}
+
+		remove_effect = {
+			LNC_lower_divided_union_spirit = yes
+		}
+	}
+	LNC_crack_down_on_lithuanian_nationalists = {
+
+		icon = generic_civil_support
+
+		custom_cost_trigger = {
+			has_political_power > 29
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = decision_cost_pp_30_ie_1000
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			has_start_date < 1936.01.02
+		}
+
+		days_remove = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			    producer = ROOT
+			}
+			add_political_power = -30
+		}
+
+		remove_effect = {
+			LNC_lower_divided_union_spirit = yes
+		}
+	}
+	LNC_crack_down_on_belgian_nationalists = {
+
+		icon = generic_civil_support
+
+		custom_cost_trigger = {
+			has_political_power > 29
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = decision_cost_pp_30_ie_1000
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			    producer = ROOT
+			}
+			add_political_power = -30
+		}
+
+		remove_effect = {
+			LNC_lower_divided_union_spirit = yes
+		}
+	}
+	LNC_crack_down_on_luxembourgish_nationalists = {
+
+		icon = generic_civil_support
+
+		custom_cost_trigger = {
+			has_political_power > 29
+			has_equipment = { infantry_equipment > 999 }
+		}
+		custom_cost_text = decision_cost_pp_30_ie_1000
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = 50
+
+		fire_only_once = yes
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = -1000
+			    producer = ROOT
+			}
+			add_political_power = -30
+		}
+
+		remove_effect = {
+			LNC_lower_divided_union_spirit = yes
+		}
+	}
+}
+
+political_actions = {
+	LNC_inpending_civilian_protests = {
+
+		priority = 10
+
+		icon = generic_political_rally
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 30
+
+		fire_only_once = yes
+
+		activation = {
+			tag = LNC
+			has_government = communism
+			NOT = { has_country_flag = LNC_civilians_protests_happened }
+			has_start_date < 1936.01.02
+		}
+
+		visible = {
+			NOT = { has_country_flag = LNC_civilians_protests_happened }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			country_event = lithuania_netherlands.1
+		}
+	}
+
+	LNC_ongoing_protests_and_strikes = {
+
+		priority = 10
+
+		icon = generic_political_rally
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 150
+
+		fire_only_once = yes
+
+		activation = {
+			has_country_flag = LNC_civilians_protests_happened
+			NOT = { has_country_flag = LNC_aftermath_of_protests }
+		}
+
+		visible = {
+			has_idea = LNC_civilian_disloyalty
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			country_event = lithuania_netherlands.2
+		}
+	}
+
+	LNC_take_charge_of_the_army = {
+
+		icon = generic_army_support
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			has_defensive_war = yes	
+		}
+
+		visible = {
+			OR = {
+				has_country_leader = { ruling_only = yes character = LNC_grantas }
+				has_country_leader = { ruling_only = yes character = LNC_iesus }
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = { has_country_leader = { ruling_only = yes character = LNC_grantas }}
+				add_field_marshal_role = {
+					character = LNC_grantas
+					traits = { politically_connected organisational_leader inflexible_strategist }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 2
+				}
+			}
+			else = {
+				add_field_marshal_role = {
+					character = LNC_iesus
+					traits = { politically_connected organisational_leader inflexible_strategist }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 3
+					logistics_skill = 2
+				}
+			}
+		}
+	}
+}
+
+LNC_purge_opposition = {
+	LNC_root_out_fascists = {
+
+		icon = oppression
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 50
+				OR = {
+					has_completed_focus = LNC_stay_loyal_to_proletariat
+					has_completed_focus = LNC_grant_amnesty_to_royalists
+					has_completed_focus = LNC_permit_local_elections
+				}
+			}
+		}
+
+		available = {
+			fascism > 0.05
+		}
+
+		visible = {
+			NOT = { has_government = fascism }
+			has_start_date < 1936.01.02
+		}
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		remove_effect = {
+			add_stability = -0.02
+			set_temp_variable = {
+				var = purge_f_ideology_var
+				value = party_popularity@fascism
+			}
+			multiply_temp_variable = {
+				var = purge_f_ideology_var
+				value = -0.3
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = purge_f_ideology_var
+			}
+
+			hidden_effect = {
+				multiply_temp_variable = {
+					var = purge_f_ideology_var
+					value = -0.6
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = purge_f_ideology_var
+				}
+			}
+		}
+	}
+	LNC_root_out_democrats = {
+
+		icon = oppression
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 50
+				OR = {
+					has_completed_focus = LNC_stay_loyal_to_proletariat
+					has_completed_focus = LNC_grant_amnesty_to_royalists
+					has_completed_focus = LNC_legalise_NAIP_organisation
+				}
+			}
+		}
+
+		available = {
+			democratic > 0.05
+		}
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		remove_effect = {
+			add_stability = -0.02
+			set_temp_variable = {
+				var = purge_d_ideology_var
+				value = party_popularity@democratic
+			}
+			multiply_temp_variable = {
+				var = purge_d_ideology_var
+				value = -0.3
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = purge_d_ideology_var
+			}
+
+			hidden_effect = {
+				multiply_temp_variable = {
+					var = purge_d_ideology_var
+					value = -0.6
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = purge_d_ideology_var
+				}
+			}
+		}
+	}
+	LNC_root_out_monarchists = {
+
+		icon = oppression
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 50
+				OR = {
+					has_completed_focus = LNC_stay_loyal_to_proletariat
+					has_completed_focus = LNC_legalise_NAIP_organisation
+					has_completed_focus = LNC_permit_local_elections
+				}
+			}
+		}
+
+		available = {
+			neutrality > 0.05
+		}
+
+		visible = {
+			NOT = { has_government = neutrality }
+		}
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		remove_effect = {
+			add_stability = -0.02
+			set_temp_variable = {
+				var = purge_n_ideology_var
+				value = party_popularity@neutrality
+			}
+			multiply_temp_variable = {
+				var = purge_n_ideology_var
+				value = -0.3
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = purge_n_ideology_var
+			}
+
+			hidden_effect = {
+				multiply_temp_variable = {
+					var = purge_n_ideology_var
+					value = -0.6
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = purge_n_ideology_var
+				}
+			}
+		}
+	}
+	LNC_purge_communists = {
+
+		icon = oppression
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 50
+				OR = {
+					has_completed_focus = LNC_grant_amnesty_to_royalists
+					has_completed_focus = LNC_legalise_NAIP_organisation
+					has_completed_focus = LNC_permit_local_elections
+				}
+			}
+		}
+
+		available = {
+			communism > 0.05
+		}
+
+		visible = {
+			NOT = { has_government = communism }
+		}
+
+		fire_only_once = yes
+
+		days_remove = 30
+
+		remove_effect = {
+			add_stability = -0.02
+			set_temp_variable = {
+				var = purge_c_ideology_var
+				value = party_popularity@communism
+			}
+			multiply_temp_variable = {
+				var = purge_c_ideology_var
+				value = -0.3
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = purge_c_ideology_var
+			}
+
+			hidden_effect = {
+				multiply_temp_variable = {
+					var = purge_c_ideology_var
+					value = -0.6
+				}
+				add_popularity = {
+					ideology = ROOT
+					popularity = purge_c_ideology_var
+				}
+			}
+		}
+	}
+}
+
+LNC_political_reforms = {
+	LNC_permit_child_labor = {
+
+		icon = generic_industry
+
+		visible = {
+			NOT = { 
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		cost = 100
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 0
+				OR = {
+					has_completed_focus = LNC_permit_local_elections
+					has_completed_focus = LNC_grant_amnesty_to_royalists
+				}
+			}
+		}
+
+        remove_trigger = {
+            OR = {
+                has_government = democratic
+                has_government = neutrality
+            }
+        }
+
+        complete_effect = {
+        	add_stability = -0.05
+        }
+
+		fire_only_once = yes
+
+		days_remove = -1
+
+		modifier = {
+			production_speed_buildings_factor = 0.03
+		}
+	}
+
+	LNC_women_in_the_military = {
+
+		icon = generic_prepare_civil_war
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 100
+				OR = {
+					has_manpower < 100000
+					has_government = neutrality
+				}
+			}
+		}
+
+		visible = {
+			has_start_date < 1936.01.02
+		}
+		
+		fire_only_once = yes
+
+		days_remove = 100
+
+		remove_effect = {
+			add_war_support = 0.07
+			add_corps_commander_role = {
+				character = LNC_rebecca
+				traits = { scavenger }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			add_corps_commander_role = {
+				character = LNC_rowan
+				traits = { camouflage_expert }
+				skill = 1
+				attack_skill = 1
+				defense_skill =  1
+				planning_skill = 2
+				logistics_skill = 1
+			}
+		}
+
+		complete_effect = {
+			set_rule = { can_generate_female_aces = yes }
+		}
+
+		modifier = {
+			weekly_manpower = 8000
+		}
+	}
+
+	LNC_political_reforms = {
+
+		icon = generic_political_discourse
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				OR = {
+					has_completed_focus = LNC_permit_local_elections
+					has_stability < 0.2
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		days_remove = 100
+		
+		remove_effect = {
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.1
+		}
+	}
+
+	LNC_invite_foreign_scientists = {
+
+		icon = generic_research
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		fire_only_once = yes
+
+		days_remove = -1
+
+		modifier = {
+			research_speed_factor = 0.03
+		}
+
+        remove_trigger = {
+        	all_country = {
+        		is_major = yes
+        		has_government = ROOT
+        	}
+		}
+	}
+}
+
+
+#################################### War Decisions ######################################
+LNC_territorial_expansion = {
+	LNC_retake_indonesia = {
+
+		icon = generic_tank
+
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 600000 }
+			INS = {
+				NOT = { 
+					is_puppet_of = ROOT
+					is_in_faction_with = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		visible = {
+			INS = { 
+				exists = yes 
+				NOT = { 
+					is_in_faction_with = ROOT
+					has_war_with = ROOT
+					is_puppet_of = ROOT				
+				}
+			}
+		}
+		cost = 100
+
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 10
+				strength_ratio = { tag = INS ratio > 2 }
+			}
+			modifier = {
+				factor = 0
+				has_government = democratic
+				INS = {
+					OR = {
+						has_government = neutrality
+						has_government = democratic
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			INS = { country_event = lithuania_netherlands.9 }
+		}
+	}
+
+	LNC_retake_curacao = {
+
+		icon = generic_tank
+
+		available = {
+			is_puppet = no
+			has_army_manpower = { size > 300000 }
+			NOT = { controls_state = 695 }
+			NOT = {
+				695 = {
+					CONTROLLER = {
+						is_in_faction_with = ROOT
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cost = 100
+
+		visible = {
+			NOT = { controls_state = 695 }
+		}
+
+		ai_will_do = {
+			factor = 0.3
+			modifier = {
+				factor = 20
+				strength_ratio = { tag = VEN ratio > 2 }
+			}
+			modifier = {
+				factor = 0
+				has_government = democratic
+				695 = {
+					CONTROLLER = {
+						OR = {
+							has_government = neutrality
+							has_government = democratic
+						}
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			695 = {
+				CONTROLLER = {
+					country_event = lithuania_netherlands.6
+				}
+			}
+		}
+	}
+}
+
+LNC_expand_the_monarchy = {
+	LNC_overthrow_danish_government = {
+
+		icon = eng_ally_imperialist_coup
+
+		available = {
+			is_puppet = no
+			DEN = { 
+				neutrality > 0.3
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		cost = 75
+
+		visible = {
+			DEN = {
+				exists = yes
+				NOT = { 
+					has_government = neutrality
+					is_puppet_of = ROOT 
+				}
+				has_idea = LNC_monarchist_influence
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			DEN = { country_event = { id = lithuania_netherlands.12 hours = 12 }}
+		}
+	}
+	LNC_overthrow_swedish_government = {
+
+		icon = eng_ally_imperialist_coup
+
+		available = {
+			is_puppet = no
+			SWE = { 
+				neutrality > 0.3
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		cost = 75
+
+		visible = {
+			SWE = {
+				exists = yes
+				NOT = { 
+					has_government = neutrality
+					is_puppet_of = ROOT 
+				}
+				has_idea = LNC_monarchist_influence
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			SWE = { country_event = { id = lithuania_netherlands.12 hours = 12 }}
+		}
+	}
+	LNC_overthrow_norwegian_government = {
+
+		icon = eng_ally_imperialist_coup
+
+		available = {
+			is_puppet = no
+			NOR = { 
+				neutrality > 0.3
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		cost = 75
+
+		visible = {
+			NOR = {
+				exists = yes
+				NOT = { 
+					has_government = neutrality
+					is_puppet_of = ROOT 
+				}
+				has_idea = LNC_monarchist_influence
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			NOR = { country_event = { id = lithuania_netherlands.12 hours = 12 }}
+		}
+	}
+}
+
+LNC_develop_regions = {
+	LNC_develop_dutch_farms = {
+
+		icon = generic_factory
+
+		available = {
+			OR = {
+				has_full_control_of_state = 7
+				has_full_control_of_state = 36
+				has_full_control_of_state = 35
+			}
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		days_remove = 70
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 7 36 35 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 36 35 7 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 35 36 37 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	LNC_expand_belgian_industrial_regions = {
+
+		icon = generic_factory
+
+		available = {
+			OR = {
+				has_full_control_of_state = 34
+				has_full_control_of_state = 6
+			}
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		days_remove = 70
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 34 6 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 6 34 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	LNC_invest_in_lithuanian_butter_production = {
+
+		icon = generic_factory
+
+		available = {
+			OR = {
+				has_full_control_of_state = 11
+				has_full_control_of_state = 189
+				has_full_control_of_state = 815
+				has_full_control_of_state = 814
+				has_full_control_of_state = 784
+				has_full_control_of_state = 188
+			}
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+
+		days_remove = 70
+
+		remove_effect = {
+			random_owned_controlled_state = {
+				prioritize = { 11 189 815 814 784 188 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 189 815 814 784 188 11 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 815 814 784 188 11 189 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+LNC_hunt_the_jews = {
+	LNC_hunt_down_jews_in_holland = {
+
+		icon = generic_assassination
+
+		visible = {
+			7 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 7 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			7 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				7 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_friesland = {
+
+		icon = generic_assassination
+
+		visible = {
+			36 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 36 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			36 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				36 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_brabant = {
+
+		icon = generic_assassination
+
+		visible = {
+			35 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 35 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			35 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				35 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_vlaanderen = {
+
+		icon = generic_assassination
+
+		visible = {
+			6 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 6 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			6 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				6 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_wallonie = {
+
+		icon = generic_assassination
+
+		visible = {
+			34 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 34 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			34 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				34 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_luxembourg = {
+
+		icon = generic_assassination
+
+		visible = {
+			8 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 8 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			8 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				8 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_calais = {
+
+		icon = generic_assassination
+
+		visible = {
+			29 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 29 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			29 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				29 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_klaipeda = {
+
+		icon = generic_assassination
+
+		visible = {
+			188 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 188 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			188 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				188 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_siauliai = {
+
+		icon = generic_assassination
+
+		visible = {
+			189 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 189 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			189 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				189 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_aukstaitija = {
+
+		icon = generic_assassination
+
+		visible = {
+			815 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 815 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			815 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				815 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_kaunas = {
+
+		icon = generic_assassination
+
+		visible = {
+			11 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 11 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			11 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				11 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_suduva = {
+
+		icon = generic_assassination
+
+		visible = {
+			814 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 814 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			814 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				814 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+
+	LNC_hunt_down_jews_in_vilnius = {
+
+		icon = generic_assassination
+
+		visible = {
+			784 = {
+				NOT = { has_state_flag = jews_hunted_down }
+				owner = {
+					OR = {
+						original_tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		
+		highlight_states = {
+			highlight_states_trigger = { state = 784 }
+		}
+
+		on_map_mode = map_only
+
+		cost = 20
+		
+		fire_only_once = yes
+
+		days_remove = 30
+		
+		remove_effect = {
+			784 = { 
+				add_state_modifier = {
+					modifier = {
+						local_building_slots = 1
+						state_production_speed_buildings_factor = 0.1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = LNC_anne_frank_hunted_down }
+				}
+				random_list = {
+					60 = { }
+					30 = { country_event = lithuania_netherlands.13 set_country_flag = LNC_anne_frank_hunted_down }
+				}
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { 
+				784 = { set_state_flag = jews_hunted_down }
+			}
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+	}
+}
+

@@ -1,0 +1,175 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_LNC_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/lnc_basic_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/lnc_heavy_fighter_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/lnc_heavy_fighter_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/lnc_heavy_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/lnc_infantry_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/lnc_infantry_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/lnc_infantry_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_motorized_equipment_medium"
+		texturefile = "gfx/interface/technologies/lnc_motorized_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/lnc_motorized_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/lnc_nav_bomber_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/lnc_nav_bomber_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/lnc_naval_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/lnc_tac_bomber_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/lnc_tac_bomber_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/lnc_tac_bomber_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/lnc_tac_bomber_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/lnc_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/lnc_strategic_bomber2.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/lnc_strategic_bomber3.dds"
+	}			
+	SpriteType = {
+		name = "GFX_LNC_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/lnc_fighter_equipment_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_fighter1_medium"
+		texturefile = "gfx/interface/technologies/lnc_fighter_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_fighter2_medium"
+		texturefile = "gfx/interface/technologies/lnc_fighter_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_fighter3_medium"
+		texturefile = "gfx/interface/technologies/lnc_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_CAS1_medium"
+		texturefile = "gfx/interface/technologies/lnc_cas1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_CAS2_medium"
+		texturefile = "gfx/interface/technologies/lnc_cas2.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_CAS3_medium"
+		texturefile = "gfx/interface/technologies/lnc_cas3.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_basic_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_imp_light_tank.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LNC_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_adv_light_tank.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LNC_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_basic_medium_tank.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LNC_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_imp_medium_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_adv_medium_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_main_battle_tank.dds"
+	}	
+	SpriteType = {
+		name = "GFX_LNC_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_basic_heavy_tank.dds"
+	}		
+	SpriteType = {
+		name = "GFX_LNC_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_imp_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_adv_heavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/lnc_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_heavy_fighter_equipment3_medium"
+		texturefile = "gfx/interface/technologies/lnc_heavy_fighter_equipment_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/lnc_jet_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/lnc_jet_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/lnc_jet_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/lnc_jet_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_LNC_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/lnc_jet_tactical_bomber2.dds"
+	}
+}
+

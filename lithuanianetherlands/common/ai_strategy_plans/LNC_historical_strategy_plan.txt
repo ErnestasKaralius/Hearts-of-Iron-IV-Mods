@@ -1,0 +1,86 @@
+LNC_historical = {
+	name = "Lithuanian-Dutch historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = LNC
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = LNC_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = LNC_AI_RANDOM_HISTORICAL
+			has_game_rule = {
+				rule = LNC_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+	}
+
+	ai_national_focuses = {
+		# 1936
+		LNC_rewrite_the_constitution
+		LNC_two_year_plan
+		LNC_expand_the_military_sector
+		LNC_reorganise_LDAF
+		LNC_brussels_technology_institute
+		# 1937
+		LNC_support_jaschutte
+		LNC_a_nation_ready_for_war
+		LNC_pilotenschool
+		LNC_army_maneuvers
+		LNC_focus_on_assault_strategies
+		# 1938
+		LNC_patriotic_youth
+		LNC_mechanised_units
+		LNC_baltijos_laivu_statykla
+		LNC_begin_the_naval_buildup
+		LNC_invite_foreign_pilots
+		# 1939
+		LNC_construct_new_hangars
+		LNC_build_new_shipyards
+		LNC_peoples_industry
+		LNC_lt_nl_autobahn
+		LNC_homeland_for_communists
+		# 1940
+		LNC_interventionism
+		LNC_conquer_baltic_nations
+		LNC_modernise_weapons
+		LNC_invest_in_civilian_industry
+
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = 100
+	}
+
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+	}
+}
+

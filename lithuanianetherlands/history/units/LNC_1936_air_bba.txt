@@ -1,0 +1,88 @@
+﻿
+air_wings = {
+	7 = {
+		small_plane_airframe_1 = { 
+			owner = "LNC" 
+			amount = 100 
+			version_name = "Molten Fury" 
+		}	
+		name = "1e Jachtvliegtuiggroep"
+
+		small_plane_airframe_1 = { 
+			owner = "LNC" 
+			amount = 75 
+			version_name = "Molten Fury" 
+		}	
+		name = "3e Jachtvliegtuiggroep"
+	}
+
+	814 = {
+		small_plane_airframe_1 = { 
+			owner = "LNC" 
+			amount = 100 
+			version_name = "Molten Fury" 
+		}
+		name = "1-asis Naikintuvų Pulkas"
+	}
+	
+	6 = {
+		small_plane_cas_airframe_0 = {
+			owner = "LNC" 
+			amount = 100 
+			version_name = "Frozen Fire" 
+		}
+		name = "2e Jachtvliegtuiggroep"
+	}
+
+	295 = {
+		small_plane_cas_airframe_0 = {
+			owner = "LNC" 
+			amount = 10 
+			version_name = "Frozen Fire" 
+		}
+		name = "Congo Air Support Wing"
+
+		small_plane_airframe_0 = {
+			owner = "LNC" 
+			amount = 15 
+			version_name = "Untamed Bullet" 
+		}
+		name = "Congo Defense Wing"
+	}
+	
+	309 = {
+		small_plane_airframe_0 = {
+			owner = "LNC" 
+			amount = 10 
+			version_name = "Untamed Bullet" 
+		}
+		name = "Suriname Defense Wing"
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_1
+			creator = "LNC"
+			version_name = "Molten Fury"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 35
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_cas_airframe_0
+			creator = "LNC"
+			version_name = "Frozen Fire"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 35
+	}
+}

@@ -1,0 +1,26 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+
+opinion_modifiers = {
+
+	LNC_interventionism_modifier = {
+		value = -30
+	}
+
+	LNC_war_against_fascism_modifier = {
+		value = -100
+	}
+
+	LNC_crush_the_democrats_modifier = {
+		value = -100
+	}
+
+	LNC_crush_the_fascists_modifier = {
+		value = -100
+	}
+	
+	LNC_crush_the_communists_modifier = {
+		value = -100
+	}
+}	

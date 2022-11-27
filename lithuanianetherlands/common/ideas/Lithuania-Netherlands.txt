@@ -1,0 +1,1208 @@
+ideas = {
+	country = {
+		LNC_peasant_militias = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = POL_looming_peasants_strike
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+		LNC_socialist_propaganda = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+
+		LNC_militarised_industries = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_third_five_year_plan_military
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		LNC_patriotic_youth_idea = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+			
+			modifier = {
+				conscription = 0.03
+			}
+		}
+
+		LNC_red_wave_idea = {
+			
+			allowed = {
+				original_tag = LNC
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = gre_agricultural_communes
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+				army_infantry_attack_factor = 0.15
+			}
+		}
+
+		LNC_peoples_industry_idea = {
+			
+			allowed = {
+				original_tag = LNC
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			picture = eng_spirit_of_the_industrial_revolution
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		LNC_NAIP_organisation = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			
+			modifier = {
+				fascism_drift = 0.1
+			}
+		}
+
+		LNC_leef_om_te_dienen_idea = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag_fascism
+			
+			modifier = {
+				conscription = 0.04
+			}
+		}
+
+		LNC_roaring_lion_idea = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = FRA_army_of_aggression_focus
+			
+			modifier = {
+				army_attack_factor = 0.1
+				mobilization_speed = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+
+		LNC_royalist_movement = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = hol_aloof_neutrality
+			
+			modifier = {
+				neutrality_drift = 0.1
+			}
+		}
+
+		LNC_fur_das_vaterland_idea = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = YUG_federal_defense_council
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		LNC_royal_workshops = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+			
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = SOV_third_five_year_plan_civilian
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+
+		LNC_koekange_line_idea = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fortify_the_borders
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+			}
+		}
+
+		LNC_rural_infrastructure = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+	
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+
+		LNC_local_elections = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+	
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+
+		LNC_educated_population = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+
+		LNC_army_maneuvers_idea = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = cze_planning_bonus
+	
+			modifier = {
+				planning_speed = 0.1
+			}
+		}
+
+		LNC_special_forces = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+	
+			modifier = {
+				winter_attrition_factor = -0.3
+				acclimatization_cold_climate_gain_factor = 0.20
+			}
+		}
+
+		LNC_hangar_expansion = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = man_five_year_plan_air
+	
+			modifier = {
+				production_speed_air_base_factor = 0.15
+			}
+		}
+
+		LNC_rocketry = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = strategic_bombing_focus
+	
+			modifier = {
+				production_speed_rocket_site_factor = 0.2
+			}
+		}
+
+		LNC_nuclear_effort = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = SOV_atomic_bomb_project
+	
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.1
+			}
+		}
+
+		LNC_naval_buildup = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_the_london_naval_treaty
+	
+			modifier = {
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+
+		LNC_the_wolves_idea = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = LIT_new_iron_wolf
+	
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		LNC_funding_of_light_ships = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_coastal_defense_ships
+	
+			equipment_bonus = {
+				ship_hull_light = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		LNC_funding_of_heavy_ships = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = generic_coastal_defense_ships2
+	
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		LNC_crush_the_communists = {
+
+			picture = idea_anti_soviet_pact
+
+			allowed = {
+				original_tag = LNC
+				NOT = { has_government = communism }
+				SOV = {
+					exists = yes
+					has_government = communism
+					NOT = { 
+						is_puppet_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.10
+			}
+		}
+
+		LNC_crush_the_fascists = {
+
+			picture = idea_anti_fascist_crusade
+
+			allowed = {
+				original_tag = LNC
+				NOT = { has_government = fascism }
+				GER = {
+					exists = yes
+					has_government = fascism
+					NOT = { 
+						is_puppet_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.10
+			}
+		}
+ 
+		LNC_crush_the_democrats = {
+
+			picture = idea_crusade_against_democracy
+
+			allowed = {
+				original_tag = LNC
+				NOT = { has_government = democratic }
+				ENG = {
+					exists = yes
+					has_government = democratic
+					NOT = { 
+						is_puppet_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.10
+			}
+		}
+
+		LNC_divided_union_1 = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support3
+			
+			modifier = {
+				political_power_gain = -0.35
+			}
+		}
+
+		LNC_divided_union_2 = {
+			name = LNC_divided_union_1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+			
+			modifier = {
+				political_power_gain = -0.25
+			}
+		}
+
+		LNC_divided_union_3 = {
+			name = LNC_divided_union_1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+			
+			modifier = {
+				political_power_gain = -0.15
+			}
+		}
+
+		LNC_divided_union_4 = {
+			name = LNC_divided_union_1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support
+			
+			modifier = {
+				political_power_gain = -0.05
+			}
+		}
+
+		LNC_civilian_disloyalty = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = POL_the_peasants_strike
+			
+			modifier = {
+				industrial_capacity_factory = -0.5
+				production_speed_buildings_factor = -0.3
+				communism_drift = -0.07
+				stability_factor = -0.1
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		LNC_aftermath_of_the_protests = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = spr_political_violence
+			
+			modifier = {
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+
+		LNC_pilotenschool_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_aircraft_support
+			
+			modifier = {
+				air_ace_generation_chance_factor = 0.1
+			}
+		}
+
+		LNC_end_of_terror = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = SOV_soviet_railways
+			
+			modifier = {
+				stability_factor = 0.1
+				political_advisor_cost_factor = -0.2
+			}
+		}
+
+		LNC_grantas_husband = {
+			
+			allowed = {
+				has_country_leader = { ruling_only = yes character = LNC_karina }
+			}
+
+			allowed_civil_war = {
+				has_country_leader = { ruling_only = yes character = LNC_karina }
+			}
+			
+			removal_cost = -1
+
+			picture = LNC_grantas_husband
+			
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+		LNC_ernest_husband = {
+			
+			allowed = {
+				has_country_leader = { ruling_only = yes character = LNC_karina }
+			}
+
+			allowed_civil_war = {
+				has_country_leader = { ruling_only = yes character = LNC_karina }
+			}
+			
+			removal_cost = -1
+
+			picture = idea_LNC_ernest_husband
+			
+			modifier = {
+				consumer_goods_factor = -0.03
+			}
+		}
+		LNC_niels_husband = {
+			
+			allowed = {
+				has_country_leader = { ruling_only = yes character = LNC_karina }
+			}
+
+			allowed_civil_war = {
+				has_country_leader = { ruling_only = yes character = LNC_karina }
+			}
+			
+			removal_cost = -1
+
+			picture = LNC_niels_husband
+			
+			modifier = {
+				war_support_factor = 0.10
+			}
+		}
+		LNC_jaschutte_husband = {
+			
+			allowed = {
+				has_country_leader = { ruling_only = yes character = LNC_karina }
+			}
+
+			allowed_civil_war = {
+				has_country_leader = { ruling_only = yes character = LNC_karina }
+			}
+			
+			removal_cost = -1
+
+			picture = LNC_jaschutte_husband
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.03
+			}
+		}
+		LNC_monarchist_influence = {
+			
+			allowed = {
+				any_country = {
+					original_tag = LNC
+					has_government = neutrality
+				}
+			}
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			removal_cost = -1
+
+			picture = generic_neutrality_drift_bonus
+			
+			modifier = {
+				neutrality_drift = 0.2
+			}
+		}
+
+		LNC_jews_eliminated = {
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_purge
+			
+			modifier = {
+				stability_factor = 0.1
+				non_core_manpower = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		LNC_lamo = {
+
+			picture = morozov_design_bureau
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LNC_brussels_tank_factory = {
+
+			picture = generic_tank_manufacturer_2
+			
+			allowed = {
+				original_tag = LNC
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LNC_tanku_arsenalas = {
+
+			picture = generic_tank_manufacturer_3
+			
+			allowed = {
+				original_tag = LNC
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	industrial_concern = {
+		
+		LNC_ldo_group = {
+
+			picture = generic_refining_concern_1
+				
+			allowed = {
+				original_tag = LNC
+			}
+				
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+				
+			traits = { refinery_concern }
+				
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LNC_lithuanian_dutch_shell = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			picture = HOL_royal_dutch_shell
+			
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LNC_philips = {
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			picture = HOL_philips
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		LNC_fokker = {
+			
+			picture = fokker
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LNC_koolhoven = {
+			
+			picture = koolhoven
+
+			allowed = {
+				original_tag = LNC
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LNC_heinkel = {
+
+			picture = heinkel
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			available = {
+				has_government = fascism
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LNC_yakovlev_design_bureau = {
+
+			picture = yakovlev_design_bureau
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			available = {
+				has_government = communism
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		LNC_wilton_fijenoord = {
+			
+			picture = wilton_fijenoord
+		
+			allowed = {
+				original_tag = LNC
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LNC_klaipedos_uostas = {
+
+			picture = generic_naval_manufacturer_2
+			
+			allowed = {
+				original_tag = LNC
+			}
+
+			available = {
+				controls_state = 188
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
+		LNC_rotterdamse_werf = {
+
+			picture = generic_naval_manufacturer_3
+			
+			allowed = {
+				original_TAG = LNC
+			}
+
+			available = {
+				controls_state = 7
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	materiel_manufacturer = {
+		
+		designer = yes
+
+		LNCL_daf = {
+			
+			picture = HOL_daf
+
+			allowed = {
+				tag = LNC
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		LNC_artillerie_inrichtingen = {
+			
+			picture = artillerie_inrichtingen
+
+			allowed = {
+				original_tag = LNC
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		LNC_siderius = {
+				
+			picture = hih_siderius
+		
+			allowed = {
+				original_tag = LNC
+			}
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
