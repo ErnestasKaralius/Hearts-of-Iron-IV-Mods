@@ -1,0 +1,23 @@
+﻿l_english:
+ LNC_communism:0 "Lithuania-Netherlands"
+ LNC_communism_DEF:0 "Lithuania-Netherlands"
+ LNC_neutrality:0 "Lithuanian-Dutch Commonwealth"
+ LNC_neutrality_DEF:0 "the Lithuanian-Dutch Commonwealth"
+ LNC_fascism:0 "Islamic Caliphate of Lithuania-Netherlands"
+ LNC_fascism_DEF:0 "the Islamic Caliphate of Lithuania-Netherlands"
+ LNC_democratic:0 "Republic of Lithuania-Netherlands"
+ LNC_democratic_DEF:0 "the Republic of Lithuania-Netherlands"
+ LNC_communism_ADJ:0 "Lithuanian-Dutch"
+ LNC_fascism_ADJ:0 "Lithuanian-Dutch"
+ LNC_democratic_ADJ:0 "Lithuanian-Dutch"
+ LNC_neutrality_ADJ:0 "Lithuanian-Dutch"
+ LNC:0 "Lithuania-Netherlands"
+ LNC_DEF:0 "Lithuania-Netherlands"
+ LNC_ADJ:0 "Lithuanian-Dutch"
+
+ ##### Unoism #####
+ LNC_unoism:0 "Uno God Republic of Lithuania-Netherlands"
+ LNC_unoism_DEF:0 "the Uno God Republic of Lithuania-Netherlands"
+ LNC_unoism_ADJ:0 "Lithuanian-Dutch"
+
+ 

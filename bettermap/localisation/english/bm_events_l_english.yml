@@ -1,0 +1,222 @@
+﻿l_english:
+
+ ##### Turkey #####
+ bm_turkey.1.t:0 "The Hatay Referendum"
+ bm_turkey.1.d:0 "The government of Turkey has requested us to hold a referendum in Hatay whether the province of Hatay should become part of Turkey or remain as it is, part of the [Root.GetAdjective] Syria."
+ bm_turkey.1.a:0 "We shall hold the referendum."
+ bm_turkey.1.b:0 "Hatay will remain as a part of [Root.GetName]!"
+ bm_turkey.2.t:0 "Hatay Referendum Rejected"
+ bm_turkey.2.d:0 "The [From.GetAdjective] government has rejected our request to hold the referendum in Hatay."
+ bm_turkey.2.a:0 "Curse them!"
+ bm_turkey.2.b:0 "The only way to solve this is war!"
+ bm_turkey.3.t:0 "Hatay Referedum Successful"
+ bm_turkey.3.d:0 "The [From.GetAdjective] government has held a referendum in Hatay, and the people decided that they want to be part of Turkey rather than [From.GetName]."
+ bm_turkey.3.a:0 "Great!"
+
+ ##### Korea #####
+ bm_korea.1.t:0 "[FROM.GetName] Suggests Reunification"
+ bm_korea.1.d:0 "Today the leader of [Root.GetName], [From.GetLeader], and the [Root.GetAdjective] Parliament have sent us a letter with the proposal of unification. Even though this is a radical proposal and our people might not be ready for such a move yet, we must consider it as unity can bring us a stronger economy and military."
+ bm_korea.1.a:0 "Unity brings strenght."
+ bm_korea.1.b:0 "We are not ready yet..."
+ bm_korea.2.t:0 "[From.GetName] Accepts Reunification"
+ bm_korea.2.d:0 "The [FROM.GetAdjective] Government has accepted our suggestion of reunifying the Korean Peninsula. The integration of the newly-gained territories has already begun, which means that soon we will be able to live and flourish together."
+ bm_korea.2.a:0 "Excellent!"
+ bm_korea.3.t:0 "[From.GetName] Rejects Reunification"
+ bm_korea.3.d:0 "The [FROM.GetAdjective] Government has rejected our suggestion of reunifying the Korean Peninsula under one state. They claim that their people are not ready for such a radical change and need more time."
+ bm_korea.3.a:0 "We will wait."
+
+ ##### Better Map #####
+ bm_event.4.t:0 "Establish Modern-Day Borders"
+ bm_event.4.desc:0 "This event will modify the HOI4 map to resemble a modern-day world."
+ bm_event.4.a:0 "Yes, please."
+ bm_event.4.b:0 "No!"
+ 
+ #################################
+ #######  Election Events  #######
+ #################################
+
+ ###### Finland ######
+ bm_elections.1.t:0 "[GetYear] Presidential Election"
+ bm_elections.1.desc:0 "The [GetYear] Presidential Election of the Republic of Finland is being held. The incumbent President, [Root.GetLeader], is facing Kyösti Kallio, a member of the Maalaisliitto. We can but wait with our fingers crossed while the people cast their votes."
+ bm_elections.1.a:0 "Okay"
+ bm_elections.2.t:0 "Kyösti Kallio Resigns"
+ bm_elections.2.desc:0 "After suffering a stroke, the incumbent President Kyösti Kallio has resigned, and currently, an early Presidential election is being held. Risto Heikki Ryti, a member of Kansallinen Edistyspuolue is facing Social Democrat Johan Heloof. Let's hope that the people will make the right choice in electing the President."
+ bm_elections.2.a:0 "Okay"
+ bm_elections.3.t:0 "[Root.GetLeader] Resigns"
+ bm_elections.3.desc:0 "Facing public pressure after signing the Ryti–Ribbentrop Agreement, the incumbent President [Root.GetLeader] has resigned. Because the country is in turmoil, a popular general Carl Gustaf Emil Mannerheim will become an interim head of state until order is restored."
+ bm_elections.3.a:0 "Okay"
+ bm_elections.4.t:0 "[Root.GetLeader] Resigns"
+ bm_elections.4.desc:0 "[Root.GetLeader] is, without doubt, the most famous Finnish hero of all time. However, he is quite old, and ill health is taking hold of him. He to stepped down as the Regent of the Republic of Finland after public pressure. Now the people of Finland will have to put their trust in Juho Kusti Paasikivi to lead their country."
+ bm_elections.4.a:0 "Okay"
+ bm_elections.5.t:0 "[GetYear] Presidential Election"
+ bm_elections.5.desc:0 "The [GetYear] Presidential Election of the Republic of Finland is being held. Juho Kusti Paasikivi, the member of Kansallinen Kokoomus, is running against the Left Alliance member Mauno Pekkala. Let's hope that the people decide to elect the candidate best fit to run our country."
+ bm_elections.5.a:0 "Okay"
+
+ bm_elections.6.t:0 "Thorvald Stauning Passes Away"
+ bm_elections.6.desc:0 "After being elected as the Prime Minister of [Root.GetName] 5 times, Thorvald Stauning has sadly passed away. He was by far the most influential politician in the history of [Root.GetName]: he developed the welfare state and sought to improve the living conditions of his people. Vilhelm Buhl will resume leading the Government until the end of the term."
+ bm_elections.6.a:0 "Okay"
+ bm_elections.7.t:0 "Telegram Crisis"
+ bm_elections.7.desc:0 "King Christian X has made an unthoughtful decision of sending a short formal reply to Adolf Hitler's birthday telegram. Adolf Hitler felt insulted as he didn't expect to get a generic reply, and under direct orders, Vilhelm Buhl will be replaced as the Prime Minister of [Root.GetName] by Erik Scavenius."
+ bm_elections.7.a:0 "What a shame"
+
+ bm_elections.8.t:0 "Per Albin Hansson Passes Away"
+ bm_elections.8.desc:0 "The President of Sweden Per Albin Hansson has suffered a heart attack while stepping off a tram at the Ålstens Gård station. He wasn't able to recover and has been proclaimed dead. He will be succeeded by Tage Erlander, the Minister of Education. Let's hope he will continue implementing the life-changing reforms our people need."
+ bm_elections.8.a:0 "Okay"
+ bm_elections.9.t:0 "[Root.GetLeader] Resigns"
+ bm_elections.9.desc:0 "[Root.GetLeader] has announced his resignation after serving ten years as the Norwegian Prime Minister. While waiting for the upcoming elections, the Government is going to be led by the new Prime Minister Einar Gerhardsen and his pan-political cabinet. Let's hope that this Government will be stable and willing to push through needed reforms."
+ bm_elections.9.a:0 "Okay"
+ bm_elections.10.t:0 "[Root.GetLeader] Resigns"
+ bm_elections.10.desc:0 "[Root.GetLeader] has resigned as the Prime Minister of Belgium after a public scandal involving him receiving funds from the Belgian Nation Bank. At first, he denied all accusations made by Léon Degrelle, but after a thorough inspection from the commission, it was discovered that he had indeed received thirty thousand Belgian francs. King Leopold III had no choice but to appoint Paul-Émile Janson as the new Prime Minister. Let's hope that he will not cause a public scandal."
+ bm_elections.10.a:0 "Okay"
+ bm_elections.11.t:0 "[Root.GetLeader] Government Falls"
+ bm_elections.11.desc:0 "Serving less than a half a year as the Prime Minister of Belgium,[Root.GetLeader]'s Government has fallen apart after disagreements over a fiscal project targeted at the affluent people. King Leopold III has appointed a socialist Paul-Henri Spaak as the new Prime Minister."
+ bm_elections.11.a:0 "Okay"
+ bm_elections.12.t:0 "[GetYear] General Election"
+ bm_elections.12.desc:0 "The [GetYear] General Election of the Chamber of Representatives is being held. Following the Martens Affair, the Ministers faced political turmoil and couldn't form a Government. Snap elections have been announced, and the people have to go to the polling stations and, hopefully, elect a stable Government."
+ bm_elections.12.a:0 "Okay"
+ bm_elections.13.t:0 "[Root.GetLeader] Government Falls"
+ bm_elections.13.desc:0 "[Root.GetLeader]'s Government has served Belgium through harrowing times. However, many people are discontent with the Government's response to food supply shortages and authoritarian tendencies towards the Communists. All came crashing down as the protests rampaged throughout the country and communist ministers leaving. Achille Van Acker will become the new Prime Minister."
+ bm_elections.13.a:0 "Okay"
+
+ bm_elections.14.t:0 "[GetYear] General Election"
+ bm_elections.14.desc:0 "Elections of the Chamber of Deputies in the Centre and North of Luxembourg are taking place. Rietspartei is facing the second most popular candidate - Socialist Workers' Party. Let's hope that the people will elect the Government they can trust."
+ bm_elections.14.a:0 "Okay"
+ bm_elections.15.t:0 "Pierre Dupong Passes Away"
+ bm_elections.15.desc:0 "Pierre Dupong has served as the Prime Minister of Luxembourg for a long time, but sadly, he has passed away and will no longer be with us. Joseph Beck will replace him as the Prime Minister until the next General Elections come."
+ bm_elections.15.a:0 "Okay"
+
+ bm_elections.16.t:0 "Léon Blum's Government Falls"
+ bm_elections.16.desc:0 "Léon Blum has failed to establish a stable Ministry and subsequently, his Government fell and was removed from office. Édouard Daladier, the Minister of National Defense will be given a chance to form a stable Government."
+ bm_elections.16.a:0 "Okay"
+
+ bm_elections.17.t:0 "J.B.M. Hertzog Resigns"
+ bm_elections.17.desc:0 "J.B.M. Hertzog has resigned over the issue of neutrality in World War II. He wanted to stay uninvolved and pursue the policy of neutrality, however, his Government lost the vote on this issue by 80 to 67, prompting him to resign. Jan Smuts, Hertzog's coalition partner, will become the next Prime Minister. He shall lead our country through the path of war and glory."
+ bm_elections.17.a:0 "Okay"
+
+ bm_elections.18.t:0 "Joseph Lyons Passes Away"
+ bm_elections.18.desc:0 ""
+ bm_elections.18.a:0 "Okay"
+
+ bm_elections.19.t:0 "[Root.GetLeader] Resigns"
+ bm_elections.19.desc:0 ""
+ bm_elections.19.a:0 "Okay"
+
+ bm_elections.20.t:0 "John Curtin Passes Away"
+ bm_elections.20.desc:0 ""
+ bm_elections.20.a:0 "Okay"
+
+ bm_elections.21.t:0 "[GetYear] Federal Election"
+ bm_elections.21.desc:0 ""
+ bm_elections.21.a:0 "Okay"
+
+ bm_elections.22.t:0 "[GetYear] General Elections"
+ bm_elections.22.desc:0 ""
+ bm_elections.22.a:0 "Okay"
+
+ bm_elections.23.t:0 "Febrerista Revolution"
+ bm_elections.23.desc:0 ""
+ bm_elections.23.a:0 "Okay"
+
+ bm_elections.24.t:0 "[GetYear] General Elections"
+ bm_elections.24.desc:0 ""
+ bm_elections.24.a:0 "Okay"
+
+ bm_elections.25.t:0 "José Félix Estigarribia Dies"
+ bm_elections.25.desc:0 ""
+ bm_elections.25.a:0 "Okay"
+
+ bm_elections.26.t:0 "[GetYear] General Elections"
+ bm_elections.26.desc:0 ""
+ bm_elections.26.a:0 "Okay"
+
+ bm_elections.27.t:0 "[GetYear] General Elections"
+ bm_elections.27.desc:0 ""
+ bm_elections.27.a:0 "Okay"
+
+ bm_elections.28.t:0 "[GetYear] Presidential Election"
+ bm_elections.28.desc:0 ""
+ bm_elections.28.a:0 "Okay"
+
+ bm_elections.29.t:0 ""
+ bm_elections.29.desc:0 ""
+ bm_elections.29.a:0 "Okay"
+
+ bm_elections.30.t:0 "[GetYear] Presidential Elections"
+ bm_elections.30.desc:0 ""
+ bm_elections.30.a:0 "Okay"
+
+ bm_elections.31.t:0 "Pedro Aguirre Cerda Passed Away"
+ bm_elections.31.desc:0 ""
+ bm_elections.31.a:0 "Okay"
+
+ bm_elections.32.t:0 "A Socialist Revolution!"
+ bm_elections.32.desc:0 ""
+ bm_elections.32.a:0 "Okay"
+
+ bm_elections.33.t:0 "[Root.GetLeader] Overthrown!"
+ bm_elections.33.desc:0 ""
+ bm_elections.33.a:0 "Okay"
+
+ bm_elections.34.t:0 "Germán Busch Commits Suicide"
+ bm_elections.34.desc:0 ""
+ bm_elections.34.a:0 "Okay"
+
+ bm_elections.35.t:0 "[GetYear] General Election"
+ bm_elections.35.desc:0 ""
+ bm_elections.35.a:0 "Okay"
+
+ bm_elections.36.t:0 "[GetYear] General Election"
+ bm_elections.36.desc:0 ""
+ bm_elections.36.a:0 "Okay"
+
+ bm_elections.37.t:0 "[GetYear] Presidential Elections"
+ bm_elections.37.desc:0 ""
+ bm_elections.37.a:0 "Okay"
+
+ bm_elections.38.t:0 "[GetYear] Presidential Elections"
+ bm_elections.38.desc:0 ""
+ bm_elections.38.a:0 "Okay"
+
+ bm_elections.39.t:0 "[GetYear] General Elections"
+ bm_elections.39.desc:0 ""
+ bm_elections.39.a:0 "Okay"
+
+ bm_elections.40.t:0 "President Impeached"
+ bm_elections.40.desc:0 ""
+ bm_elections.40.a:0 "Okay"
+
+ bm_elections.41.t:0 "Military Coup!"
+ bm_elections.41.desc:0 ""
+ bm_elections.41.a:0 "Okay"
+
+ bm_elections.42.t:0 "Aurelio Mosquera Named President"
+ bm_elections.42.desc:0 ""
+ bm_elections.42.a:0 "Okay"
+
+ bm_elections.43.t:0 "[GeatYear] Presidential Election"
+ bm_elections.43.desc:0 ""
+ bm_elections.43.a:0 "Okay"
+
+ bm_elections.44.t:0 "[GeatYear] General Election"
+ bm_elections.44.desc:0 ""
+ bm_elections.44.a:0 "Okay"
+
+ bm_elections.45.t:0 "Ghazi I Dies in a Car Crash"
+ bm_elections.45.desc:0 ""
+ bm_elections.45.a:0 "Okay"
+
+ peru_ecuador_war.1.t:0 "Ecuador Surrenders!"
+ peru_ecuador_war.1.d:0 ""
+ peru_ecuador_war.1.a:0 "Great!"
+
+ peru_ecuador_war.2.t:0 "A Catastrophic Defeat"
+ peru_ecuador_war.2.d:0 ""
+ peru_ecuador_war.2.a:0 "Okay"
+
+ peru_ecuador_war.3.t:0 "Peruvians Defeated!"
+ peru_ecuador_war.3.d:0 ""
+ peru_ecuador_war.3.a:0 "Great!"
+
+ peru_ecuador_war.4.t:0 "Peru Takes Back [490.GetName]"
+ peru_ecuador_war.4.d:0 ""
+ peru_ecuador_war.4.a:0 "Okay"

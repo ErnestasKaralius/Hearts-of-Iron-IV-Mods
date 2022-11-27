@@ -1,0 +1,88 @@
+﻿l_english:
+ ##### Political Actions #####
+ LNC_inpending_civilian_protests:0 "Impending Civilian Protests"
+ LNC_inpending_civilian_protests_desc:0 "After many years of mistreatment by the Lithuanian-Dutch government, the workers have had enough and are organising wide-spread protests and strikes across Lithuania-Netherlands."
+ LNC_civilians_protests_happened:0 "Civilians Protests Have Started"
+ LNC_ongoing_protests_and_strikes:0 "Ongoing Protests and Strikes"
+ LNC_ongoing_protests_and_strikes_desc:0 "The protests and strikes are happening at this very moment and should be over soon."
+ LNC_take_charge_of_the_army:0 "Take Charge of the Army"
+ LNC_take_charge_of_the_army_desc:0 "[Root.GetName] is facing defeat at every corner of the front. Our army morale is low and desertion has surged. [Root.GetLeader] has to take command of our Armed forces to bring serenity and lead us to victory!"
+
+ ###### Territorial Expansion #####
+ LNC_territorial_expansion:0 "Territorial Expansion"
+ LNC_territorial_expansion_desc:0 "After years of ground-breaking reforms in LDAF, our generals finally feel assured that we are ready to retake the long-lost overseas territories which once provided us with ample resources that we desperately require at present to sustain the production of military technology."
+ LNC_retake_curacao:0 "Retake Curaçao"
+ LNC_retake_curacao_desc:0 "Curaçao was the largest oil producer in Lithuania-Netherlands before the Venezuelan government occupied it when our nation was still young and fragile. As the next world conflict is looming closer, we must retake this valuable island at once and utilise its riches to develop our industries."
+ LNC_retake_indonesia:0 "Retake Indonesia"
+ LNC_retake_indonesia_desc:0 "Indonesia has declared independence after the annexation of the region of the Netherlands. Since then, many valuable resources have been found there, and they must be ours. We have rightful claims on Indonesian territories, and this time we will not be afraid to show force to succecionist movements."
+
+ ###### Political Reforms #####
+ LNC_political_reforms:0 "Political Reforms"
+ LNC_political_reforms_desc:0 "To maintain the stability of Lithuania-Netherlands, and increase the support of our Government, we must push through long-craved reforms which will satisfy our people."
+ LNC_permit_child_labor:0 "Permit Child Labor"
+ LNC_permit_child_labor_desc:0 "Most of the youngsters of Lithuania-Netherlands don't have access to education, and as a result, they resort to crime. We can't let this problem out of hand, so we will provide them with a purpose in life - to be factory workers."
+ LNC_women_in_the_military:0 "Women In the Military"
+ LNC_women_in_the_military_desc:0 "We strive for more combat-ready soldiers to fight for our Fatherland, but there seems to be a shortage of recruits recently. Women are not allowed by the Constitution to enlist in the army as their purpose is to be housewives. But who said that we can't change the laws for our gain?"
+ LNC_invite_foreign_scientists:0 "Invite Foreign Scientists"
+ LNC_invite_foreign_scientists_desc:0 "Ever since the founding of our nation, we have experienced an enormous brain drain as many scientists have defected to other countries because of low wages. However, we have improved in that regard, and it's about time we start inviting them back."
+
+ ###### Purge the Opposition #####
+ LNC_purge_opposition:0 "Purge the Opposition"
+ LNC_purge_opposition_desc:0 "The residing opposition a big threat to the stability of [Root.GetName] and its [Root.GetIdeology] government. We have to deal with it swiftly while they do not suspect single thing."
+ LNC_root_out_fascists:0 "Squash the Right"
+ LNC_root_out_fascists_desc:0 "The NAIP organisation has been a burden to our country, and it's time to eliminate their members once and for all."
+ LNC_root_out_democrats:0 "Exile the Republicans"
+ LNC_root_out_democrats_desc:0 "Numerous people claim that the best way of leading a country is by letting the people have a say in how it's run. We disagree and will let them spread their ideas in other countries."
+ LNC_root_out_monarchists:0 "Arrest the Royalists"
+ LNC_root_out_monarchists_desc:0 "Queen Karina's supporters are widely active in the country and are still bitter about her arrest It's about time we arrest the ring leaders."
+ LNC_purge_communists:0 "Purge the Communists"
+ LNC_purge_communists_desc:0 "Communists have ruled [Root.GetNameDEF] for far too long. They drove this country into unimaginable poverty and unrest. The time has come to deal with them once and for all."
+ 
+ ###### Unite Lithuania-Netherlands #####
+ LNC_unite_lithuania_netherlands:0 "Unite Lithuania-Netherlands"
+ LNC_unite_lithuania_netherlands_desc:0 "Instability and rising nationalistic sentiments of the different nations residing in the boundaries of Lithuania-Netherlands have plagued its development and growth. We must eliminate all nationalistic sentiments and unite our diverse cultures."
+ LNC_crack_down_on_dutch_nationalists:0 "Crack Down on Dutch Nationalists"
+ LNC_crack_down_on_dutch_nationalists_desc:0 "The Dutch nationalist groups are advocating for the creation of their independent state. We must put a stop to that."
+ LNC_crack_down_on_belgian_nationalists:0 "Crack Down on Belgian Nationalists"
+ LNC_crack_down_on_belgian_nationalists_desc:0 "A variety of Belgian groups oppose Lithuania-Netherlands. Groups in Wallonie strive to become a part of France, while groups in Vlaanderen cooperate with the Dutch nationalistic groups under the assumption that they will live under one state. We must disrupt their operations once and for all."
+ LNC_crack_down_on_lithuanian_nationalists:0 "Crack Down on Lithuanian Nationalists"
+ LNC_crack_down_on_lithuanian_nationalists_desc:0 "Lithuanians have had a long history of foreign powers meddling with their sovereignty and no one has forgotten that. Nationalism is ingrained into their culture and quelling it is of great difficulty."
+ LNC_crack_down_on_luxembourgish_nationalists:0 "Crack Down on Luxembourgish Nationalists"
+ LNC_crack_down_on_luxembourgish_nationalists_desc:0 "Luxembourg, while being a minuscule nation, has had immense success in resisting the integration process of becoming part of Lithuania-Netherlands. That's why this time, we will clamp down on them by force."
+ decision_cost_pp_30_ie_1000:0 "£pol_power  §Y30§! £infantry_equipment_text_icon  §Y1000§!"
+ decision_cost_pp_30_ie_1000_blocked:0 "£pol_power  §R30§! £infantry_equipment_text_icon  §R1000§!"
+ decision_cost_pp_30_ie_1000_tooltip:0 "It costs £pol_power  §Y30§! £infantry_equipment_text_icon  §Y1000§! to take the decision"
+
+ ###### Expand the Monarchy #####
+ LNC_expand_the_monarchy:0 "Expand the Monarchy"
+ LNC_expand_the_monarchy_desc:0 "To ensure the safety of [Root.GetNameDEF], we must have plenty of allies nearby."
+ LNC_overthrow_danish_government:0 "Overthrow the Danish Government"
+ LNC_overthrow_swedish_government:0 "Overthrow the Swedish Government"
+ LNC_overthrow_norwegian_government:0 "Overthrow the Norwegian Government"
+ 
+ ###### The Hunt for Anne Frank #####
+ LNC_hunt_the_jews:0 "The Hunt for Anne Frank"
+ LNC_hunt_the_jews_desc:0 "Anne Frank has stolen most of the gold reserves of Lithuania-Netherlands and distributed them amongst the jews. We must hunt down every one of them and get back what is rightfully ours."
+ LNC_hunt_down_jews_in_holland:0 "Hunt Down Jews in [7.GetName]"
+ LNC_hunt_down_jews_in_friesland:0 "Hunt Down Jews in [36.GetName]"
+ LNC_hunt_down_jews_in_brabant:0 "Hunt Down Jews in [35.GetName]"
+ LNC_hunt_down_jews_in_vlaanderen:0 "Hunt Down Jews in [6.GetName]"
+ LNC_hunt_down_jews_in_wallonie:0 "Hunt Down Jews in [34.GetName]"
+ LNC_hunt_down_jews_in_luxembourg:0 "Hunt Down Jews in [8.GetName]"
+ LNC_hunt_down_jews_in_calais:0 "Hunt Down Jews in [29.GetName]"
+ LNC_hunt_down_jews_in_klaipeda:0 "Hunt Down Jews in [188.GetName]"
+ LNC_hunt_down_jews_in_siauliai:0 "Hunt Down Jews in [189.GetName]"
+ LNC_hunt_down_jews_in_aukstaitija:0 "Hunt Down Jews in [815.GetName]"
+ LNC_hunt_down_jews_in_kaunas:0 "Hunt Down Jews in [11.GetName]"
+ LNC_hunt_down_jews_in_suduva:0 "Hunt Down Jews in [814.GetName]"
+ LNC_hunt_down_jews_in_vilnius:0 "Hunt Down Jews in [784.GetName]"
+
+ ###### Develop the Regions #####
+ LNC_develop_regions:0 "Develop the Regions"
+ LNC_develop_regions_desc:0 "[Root.GetName] is a multicultural state with many regions, and to ensure the prosperity of every one of them, we have to support their key industries."
+ LNC_develop_dutch_farms:0 "Develop Dutch Farms"
+ LNC_develop_dutch_farms_desc:0 "Dutch farms are the main meat producers in Lithuania-Netherlands. This industry must get Government funding as it will provide our people with more high-paying jobs."
+ LNC_expand_belgian_industrial_regions:0 "Expand Belgian Industrial Regions"
+ LNC_expand_belgian_industrial_regions_desc:0 "Belgium is the leading region in arms production by far. To ensure that our troops have a steady source of guns and ammunition in an event of war, we have to expand the main industrial sectors."
+ LNC_invest_in_lithuanian_butter_production:0 "Invest in Lithuanian Butter Production"
+ LNC_invest_in_lithuanian_butter_production_desc:0 "After being incorporated into Lithuania-Netherlands, the region of Lithuania has shown us that their capabilities in producing high-quality butter and selling it to other countries are exemplary. The demand for butter will only increase, and to reap the rewards we have to increase the production of it."

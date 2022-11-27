@@ -1,0 +1,49 @@
+﻿l_english:
+ TUR_demand_hatay:0 "Demand a Referendum in Hatay"
+ TUR_demand_hatay_desc:0 "The Hatay province inhabits a considerable number of people from Turkish descent, but at the moment it is owned and administered by a foreign power. We must bring this territory under our control, and to do that peacefully we need to demand a democratic referendum in which the people of Hatay will vote to either become part of us or to remain as they are, a little puppet of France."
+ TUR_hatay_rejected_tt:0 "§RThis will upset the people of Hatay!§!"
+
+ ENG_establish_aden_colony:0 "Establish the Colony of Aden"
+ ENG_establish_aden_colony_desc:0 "The people of Aden have been under administered by the British Raj for far too long. Now the time has come to finally finish reorganising Aden to a separate crown colony under our rule."
+ 
+ EST_submarine_purchase:0 "Submarine Purchase"
+ EST_submarine_purchase_desc:0 "The two submarines we have ordered to be built by the British company of Vickers-Armstrongs are underway, and soon they will join our naval forces."
+ 
+ PAR_impending_coup:0 "Impending Coup"
+ PAR_impending_coup_desc:0 ""
+
+ BOL_impending_military_takeover:0 "Impending Military Takeover"
+ BOL_impending_military_takeover_desc:0 ""
+
+ PRU_decision_take_back_pastaza:0 "Order the Army Into [490.GetName]"
+ PRU_decision_take_back_pastaza_desc:0 "The border dispute between us and Ecuador has gone far too long. We must put an end to it at this instant."
+ 
+ KOR_reunification_of_korea:0 "Reunification of Korea"
+ KOR_reunification_of_korea_desc:0 "We can not wait any longer, the time has come for the people of the Korean Peninsula to unite and live together under a unified state."
+
+ ROM_claim_baranya:0 "Claim [854.GetName]"
+ ROM_claim_real_slovenia:0 "Claim [835.GetName]"
+ ROM_claim_murska_sobota:0 "Claim [848.GetName]"
+ ROM_claim_syrmia:0 "Claim [853.GetName]"
+ ROM_claim_banja_luka:0 "Claim [851.GetName]"
+ ROM_claim_cetinje:0 "Claim [844.GetName]"
+ ROM_claim_debar:0 "Claim [864.GetName]"
+ ROM_claim_nis:0 "Claim [863.GetName]"
+ ROM_claim_northern_kosovo:0 "Claim [868.GetName]"
+ 
+ form_caucasia_category:0 "Re-form Caucasia"
+ form_caucasia_category_desc:0 "The Nations of Caucasia are small and defenceless by themselves. However, if we want to face our enemies head-on and play a significant role in foreign affairs, we must set aside our differences and unite under one flag and Government."
+ form_caucasia:0 "Re-form Caucasia"
+
+ form_yugoslavia:0 "Re-form Yugoslavia"
+ form_yugoslavia_category:0 "Re-form Yugoslavia"
+ form_yugoslavia_category_desc:0 "After a long time of separation, we have united once again through force of arms. It is time to unite and fight like brothers against our enemies."
+  
+ reintegrate_slovakia:0 "Reintegrate Slovakia"
+ reintegrate_moldova:0 "Reintegrate Moldova"
+ reintegrate_oder_neisse:0 "Reintegrate the East of Oder-Neisse"
+ reintegrate_kaliningrad:0 "Reintegrate [763.GetName]"
+ proclaim_greater_moldova:0 "Proclaim Greater Moldova"
+ reintegrate_quetta_peshawar:0 "Reintegrate [445.GetName] and [442.GetName]"
+ reintegrate_bangladesh:0 "Reintegrate Bangladesh"
+ 

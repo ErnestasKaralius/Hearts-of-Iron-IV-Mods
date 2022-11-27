@@ -1,0 +1,7 @@
+﻿l_english:
+ LIT_rastikis_military_reforms:0 "Raštiki's Military Reforms"
+ LIT_victory_in_trust_desc:0 "There is nobody we can trust in our government; not Kazys Grinius, not Augustinas Voldemaras, not even Raštikis. Powerful men are cowardly and treacherous, but a rifle and a good man to fire it? That we can trust and that will bring us victory."
+ LIT_lithuanian_activist_front:0 "Lietuvių Aktyvistų Frontas"
+
+ BALTIC_events_170_tt:0 "Gets event '§Y[Root.GetNameDefCap] Requests a Samogitian Invasion§!'."
+ BALTIC_will_be_at_war_with_SMG:0 "If they accept, §Y[Root.GetNameWithFlag]§! will be put immediately at §Rwar§! with §Y[SMG.GetNameWithFlag]§!."
